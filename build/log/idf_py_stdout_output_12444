@@ -1,0 +1,847 @@
+Command: C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\tianm\CLionProjects\RC_PLANE\build\RC_PLANE.elf C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\bootloader.elf --force-color -m 'C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools\idf.py' '-B'
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382124
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c4
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 15 2026 19:37:32[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bf1ch ( 48924) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001bf44 vaddr=3fc8d800 size=01458h (  5208) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001d3a4 vaddr=40380000 size=02c74h ( 11380) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ecb4h (126132) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=0003ecdc vaddr=40382c74 size=0aa04h ( 43524) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=000496e8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (152) cpu_start: Unicore app[0m
+[0;32mI (160) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (160) cpu_start: Pro cpu start user code[0m
+[0;32mI (160) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (162) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     RC_PLANE[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     Apr 15 2026 19:36:44[0m
+[0;32mI (179) app_init: ELF file SHA256:  a4b22b9b6...[0m
+[0;32mI (183) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (191) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (195) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (199) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 3FC8FD70 len 00030290 (192 KiB): RAM[0m
+[0;32mI (210) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (222) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (266) CONTROLTASK: Starting RC Plane Application[0m
+[0;32mI (270) CONTROLTASK: I2C bus OK[0m
+[0;32mI (324) LSM6DS3: WHO_AM_I OK: 0x69[0m
+[0;32mI (324) LSM6DS3: accel configured (416 Hz, +/-4 g, BW~100 Hz)[0m
+[0;32mI (324) LSM6DS3: gyro configured (416 Hz, 500 dps)[0m
+[0;32mI (326) LSM6DS3: gyro LPF1 enabled (CTRL4_C=0x02)[0m
+[0;32mI (330) LSM6DS3: init complete[0m
+[0;32mI (332) CONTROLTASK: LSM6DS3 OK[0m
+[0;32mI (336) CONTROLTASK: Servo OK[0m
+[0;32mI (338) CONTROLTASK: IBUS OK[0m
+[0;32mI (340) CONTROLTASK: Mahony gains: Kp=1.667 Ki=0.017 (loop 100.0 Hz)[0m
+[0;32mI (348) CONTROLTASK: P=  0.00 R=  0.00 Pt=  0.00 Rt=  0.00 A= 90.00 E= 90.00 Atr= 90.0 Etr= 90.0 FS(i:1 m:1) Age(i:88 m:88) Stk:3788W/3788B[0m
+[0;32mI (360) main_task: Returned from app_main()[0m
+[0;32mI (448) CONTROLTASK: P=  1.89 R= -5.85 Pt=  0.00 Rt=  0.00 A= 98.47 E= 83.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (548) CONTROLTASK: P=  3.27 R= -5.66 Pt=  0.00 Rt=  0.00 A= 98.28 E= 79.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (648) CONTROLTASK: P=  4.34 R= -5.43 Pt=  0.00 Rt=  0.00 A= 98.35 E= 76.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (748) CONTROLTASK: P=  5.24 R= -5.17 Pt=  0.00 Rt=  0.00 A= 97.59 E= 73.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (848) CONTROLTASK: P=  6.06 R= -5.03 Pt=  0.00 Rt=  0.00 A= 97.42 E= 71.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (948) CONTROLTASK: P=  6.69 R= -4.77 Pt=  0.00 Rt=  0.00 A= 97.07 E= 69.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (1048) CONTROLTASK: P=  7.19 R= -4.55 Pt=  0.00 Rt=  0.00 A= 96.77 E= 68.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (1148) CONTROLTASK: P=  7.67 R= -4.45 Pt=  0.00 Rt=  0.00 A= 96.64 E= 66.57 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (1248) CONTROLTASK: P=  8.03 R= -4.39 Pt=  0.00 Rt=  0.00 A= 96.62 E= 65.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (1348) CONTROLTASK: P=  8.36 R= -4.24 Pt=  0.00 Rt=  0.00 A= 96.38 E= 64.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (1448) CONTROLTASK: P=  8.64 R= -4.16 Pt=  0.00 Rt=  0.00 A= 96.32 E= 63.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:0) Stk:1928W/1928B[0m
+[0;32mI (1548) CONTROLTASK: P=  8.88 R= -4.20 Pt=  0.00 Rt=  0.00 A= 96.38 E= 63.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (1648) CONTROLTASK: P=  9.07 R= -4.11 Pt=  0.00 Rt=  0.00 A= 96.13 E= 62.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (1748) CONTROLTASK: P=  9.25 R= -4.09 Pt=  0.00 Rt=  0.00 A= 96.15 E= 61.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (1848) CONTROLTASK: P=  9.31 R= -3.96 Pt=  0.00 Rt=  0.00 A= 95.90 E= 61.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (1948) CONTROLTASK: P=  9.44 R= -3.91 Pt=  0.00 Rt=  0.00 A= 96.00 E= 61.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (2048) CONTROLTASK: P=  9.59 R= -4.02 Pt=  0.00 Rt=  0.00 A= 96.17 E= 61.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (2148) CONTROLTASK: P=  9.67 R= -3.99 Pt=  0.00 Rt=  0.00 A= 96.02 E= 60.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (2248) CONTROLTASK: P=  9.76 R= -4.02 Pt=  0.00 Rt=  0.00 A= 96.01 E= 60.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (2348) CONTROLTASK: P=  9.88 R= -3.78 Pt=  0.00 Rt=  0.00 A= 95.78 E= 60.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (2448) CONTROLTASK: P=  9.93 R= -3.77 Pt=  0.00 Rt=  0.00 A= 95.86 E= 60.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (2548) CONTROLTASK: P=  9.95 R= -3.77 Pt=  0.00 Rt=  0.00 A= 95.76 E= 59.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (2648) CONTROLTASK: P=  9.95 R= -3.84 Pt=  0.00 Rt=  0.00 A= 95.99 E= 59.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (2748) CONTROLTASK: P=  9.96 R= -3.88 Pt=  0.00 Rt=  0.00 A= 95.82 E= 60.11 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (2848) CONTROLTASK: P=  9.99 R= -3.94 Pt=  0.00 Rt=  0.00 A= 96.03 E= 59.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (2948) CONTROLTASK: P= 10.02 R= -3.89 Pt=  0.00 Rt=  0.00 A= 96.01 E= 59.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (3048) CONTROLTASK: P= 10.04 R= -3.94 Pt=  0.00 Rt=  0.00 A= 96.00 E= 59.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (3148) CONTROLTASK: P= 10.06 R= -3.96 Pt=  0.00 Rt=  0.00 A= 96.02 E= 59.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (3248) CONTROLTASK: P= 10.07 R= -3.95 Pt=  0.00 Rt=  0.00 A= 96.00 E= 59.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (3348) CONTROLTASK: P= 10.09 R= -3.90 Pt=  0.00 Rt=  0.00 A= 95.78 E= 59.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (3448) CONTROLTASK: P= 10.11 R= -3.89 Pt=  0.00 Rt=  0.00 A= 95.99 E= 59.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (3548) CONTROLTASK: P= 10.12 R= -3.92 Pt=  0.00 Rt=  0.00 A= 96.02 E= 59.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (3648) CONTROLTASK: P= 10.05 R= -3.89 Pt= -9.24 Rt=  0.00 A= 95.84 E= 32.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (3748) CONTROLTASK: P= 10.43 R= -3.96 Pt=-36.00 Rt=  0.00 A= 95.87 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (3848) CONTROLTASK: P= 10.43 R= -4.11 Pt=-36.00 Rt=  0.00 A= 96.31 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (3948) CONTROLTASK: P= 10.35 R= -4.14 Pt=-18.36 Rt=  0.00 A= 96.38 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (4048) CONTROLTASK: P= 10.25 R= -4.05 Pt=  9.24 Rt=  0.00 A= 95.58 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (4148) CONTROLTASK: P= 10.81 R= -3.92 Pt= 33.78 Rt=  0.00 A= 95.51 E=154.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (4248) CONTROLTASK: P= 10.87 R= -4.54 Pt= 36.00 Rt=  0.00 A= 96.75 E=165.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (4348) CONTROLTASK: P= 10.15 R= -4.52 Pt= 36.00 Rt=  0.00 A= 96.30 E=167.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (4448) CONTROLTASK: P= 10.13 R= -4.34 Pt= 36.00 Rt=  0.00 A= 96.62 E=167.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (4548) CONTROLTASK: P= 10.15 R= -4.29 Pt= 35.94 Rt=  0.00 A= 96.76 E=167.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (4648) CONTROLTASK: P= 10.11 R= -4.31 Pt= 31.32 Rt=  0.00 A= 96.28 E=153.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (4748) CONTROLTASK: P= 10.12 R= -4.17 Pt=  4.92 Rt=  0.00 A= 96.36 E= 73.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (4848) CONTROLTASK: P= 10.21 R= -3.73 Pt=  0.00 Rt=  0.00 A= 95.60 E= 59.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (4948) CONTROLTASK: P= 10.08 R= -4.54 Pt=  0.00 Rt=  0.00 A= 96.92 E= 59.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (5048) CONTROLTASK: P=  9.97 R= -4.32 Pt=-31.32 Rt=  0.00 A= 95.98 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (5148) CONTROLTASK: P= 10.18 R= -4.09 Pt=-36.00 Rt=  0.00 A= 96.09 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (5248) CONTROLTASK: P= 10.14 R= -4.09 Pt=-36.00 Rt=  0.00 A= 96.31 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (5348) CONTROLTASK: P= 10.11 R= -4.04 Pt=-36.00 Rt=  0.00 A= 96.20 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (5448) CONTROLTASK: P= 10.10 R= -4.03 Pt=-36.00 Rt=  0.00 A= 96.28 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (5548) CONTROLTASK: P= 10.11 R= -4.03 Pt= -8.46 Rt=  0.00 A= 96.19 E= 33.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (5648) CONTROLTASK: P= 10.05 R= -3.51 Pt=  5.34 Rt=  0.00 A= 94.75 E=115.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (5748) CONTROLTASK: P=  9.81 R= -3.88 Pt= 13.74 Rt=  0.00 A= 96.78 E=103.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (5848) CONTROLTASK: P=  9.80 R= -3.59 Pt=  6.84 Rt=  0.00 A= 95.85 E= 80.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (5948) CONTROLTASK: P=  9.42 R= -3.09 Pt=  0.00 Rt=  0.00 A= 95.76 E= 61.54 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (6048) CONTROLTASK: P=  9.65 R= -3.23 Pt=  0.00 Rt=  0.00 A= 95.12 E= 60.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (6148) CONTROLTASK: P=  9.71 R= -3.26 Pt=  0.00 Rt=  0.00 A= 94.92 E= 60.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (6248) CONTROLTASK: P=  9.76 R= -3.33 Pt=  0.00 Rt=  0.00 A= 95.11 E= 60.11 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (6348) CONTROLTASK: P=  9.76 R= -3.45 Pt=  0.00 Rt=  0.00 A= 95.53 E= 60.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (6448) CONTROLTASK: P=  9.77 R= -3.65 Pt=  7.80 Rt=  0.00 A= 95.91 E=142.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (6548) CONTROLTASK: P= 10.02 R= -3.92 Pt= 22.32 Rt=  0.00 A= 97.75 E=125.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (6648) CONTROLTASK: P=  9.92 R= -3.96 Pt= 32.46 Rt=  0.00 A= 96.82 E=156.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (6748) CONTROLTASK: P=  9.87 R= -4.12 Pt= 12.54 Rt=  0.00 A= 95.06 E=144.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (6848) CONTROLTASK: P=  9.86 R= -3.64 Pt=  0.00 Rt=  0.00 A= 96.00 E= 59.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (6948) CONTROLTASK: P= 10.04 R= -3.56 Pt=  0.00 Rt=  0.00 A= 95.22 E= 59.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (7048) CONTROLTASK: P= 10.02 R= -3.57 Pt=  0.00 Rt=  0.00 A= 95.46 E= 59.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (7148) CONTROLTASK: P=  9.93 R= -3.58 Pt=  0.00 Rt=  0.00 A= 95.67 E= 59.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (7248) CONTROLTASK: P=  9.95 R= -3.73 Pt=  0.00 Rt=  0.00 A= 95.80 E= 59.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (7348) CONTROLTASK: P=  9.95 R= -3.91 Pt= 14.52 Rt=  0.00 A= 97.08 E=103.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (7448) CONTROLTASK: P= 10.27 R= -4.01 Pt= 31.20 Rt=  0.00 A= 96.45 E=152.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+I (7548) CONTROLTASK: P=  9.85 R= -3.46 Pt= 26.88 Rt=  0.00 A= 94.83 E=154.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B
+[0;32mI (7648) CONTROLTASK: P=  9.77 R= -3.70 Pt=  5.82 Rt=  0.00 A= 95.73 E= 77.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (7748) CONTROLTASK: P= 10.10 R= -3.44 Pt=  0.00 Rt=  0.00 A= 95.21 E= 59.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (7848) CONTROLTASK: P= 10.11 R= -3.17 Pt=  0.00 Rt=  0.00 A= 95.14 E= 59.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (7948) CONTROLTASK: P= 10.11 R= -3.24 Pt=  0.00 Rt=  0.00 A= 95.19 E= 59.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (8048) CONTROLTASK: P= 10.10 R= -3.31 Pt=  0.00 Rt=  0.00 A= 95.19 E= 59.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (8148) CONTROLTASK: P= 10.06 R= -3.49 Pt=  0.00 Rt=  0.00 A= 95.70 E= 59.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (8248) CONTROLTASK: P= 10.03 R= -3.47 Pt=  0.00 Rt=  0.00 A= 95.47 E= 59.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (8348) CONTROLTASK: P= 10.01 R= -3.55 Pt=  0.00 Rt=  0.00 A= 95.63 E= 59.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+I (8448) CONTROLTASK: P= 10.00 R= -3.61 Pt=  0.00 Rt=  0.00 A= 95.75 E= 59.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B
+[0;32mI (8548) CONTROLTASK: P=  9.99 R= -3.65 Pt=  0.00 Rt=  0.00 A= 95.70 E= 59.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (8648) CONTROLTASK: P=  9.99 R= -3.69 Pt=  0.00 Rt=  0.00 A= 95.76 E= 59.37 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (8748) CONTROLTASK: P=  9.97 R= -3.76 Pt=  0.00 Rt=  0.00 A= 95.98 E= 59.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (8848) CONTROLTASK: P=  9.98 R= -3.87 Pt=  0.00 Rt=  0.00 A= 96.17 E= 59.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (8948) CONTROLTASK: P=  9.91 R= -3.89 Pt=  0.00 Rt=  0.00 A= 96.08 E= 59.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (9048) CONTROLTASK: P=  9.96 R= -3.94 Pt=  0.00 Rt= -5.58 A= 87.82 E= 59.37 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (9148) CONTROLTASK: P=  9.91 R= -3.59 Pt=  0.00 Rt=-15.06 A= 72.72 E= 60.54 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (9248) CONTROLTASK: P=  9.95 R= -4.06 Pt=  0.00 Rt=-32.76 A= 47.77 E= 59.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (9348) CONTROLTASK: P=  9.42 R= -4.49 Pt=  0.00 Rt= -4.20 A=170.00 E= 62.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (9448) CONTROLTASK: P=  9.64 R= -3.95 Pt=  0.00 Rt=  0.00 A= 96.13 E= 60.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (9548) CONTROLTASK: P=  9.59 R= -3.70 Pt=  0.00 Rt=  0.00 A= 95.74 E= 60.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (9648) CONTROLTASK: P=  9.65 R= -3.70 Pt= -8.34 Rt=  0.00 A= 95.74 E= 60.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (9748) CONTROLTASK: P=  9.64 R= -4.01 Pt=-26.04 Rt=  3.96 A=102.33 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (9848) CONTROLTASK: P=  9.49 R= -3.98 Pt=-36.00 Rt=  0.00 A= 96.39 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (9948) CONTROLTASK: P=  9.48 R= -3.83 Pt=-36.00 Rt=  0.00 A= 96.18 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+I (10048) CONTROLTASK: P=  9.55 R= -3.87 Pt=-36.00 Rt=  3.06 A=100.48 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B
+[0;32mI (10148) CONTROLTASK: P=  9.60 R= -3.73 Pt= -9.12 Rt=  0.00 A= 72.57 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (10248) CONTROLTASK: P=  9.79 R= -3.35 Pt=  0.00 Rt=  0.00 A= 96.19 E= 59.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (10348) CONTROLTASK: P=  9.94 R= -3.44 Pt=  0.00 Rt=  0.00 A= 95.34 E= 59.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (10448) CONTROLTASK: P=  9.96 R= -3.54 Pt=  0.00 Rt=  0.00 A= 95.65 E= 59.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (10548) CONTROLTASK: P=  9.95 R= -3.57 Pt=  0.00 Rt=  0.00 A= 95.55 E= 59.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (10648) CONTROLTASK: P=  9.96 R= -3.62 Pt=  0.00 Rt=  0.00 A= 95.76 E= 59.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (10748) CONTROLTASK: P= 10.04 R= -3.64 Pt=  9.48 Rt=  0.00 A= 95.63 E= 87.05 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (10848) CONTROLTASK: P= 10.12 R= -3.84 Pt= 24.36 Rt=  0.00 A= 96.04 E=132.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (10948) CONTROLTASK: P=  9.91 R= -3.58 Pt= 33.54 Rt=  0.00 A= 95.36 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (11048) CONTROLTASK: P= 10.30 R= -4.10 Pt= 33.90 Rt=  0.00 A= 96.18 E=160.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (11148) CONTROLTASK: P= 10.08 R= -3.94 Pt= 35.94 Rt=  0.00 A= 96.16 E=167.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (11248) CONTROLTASK: P= 10.08 R= -3.92 Pt= 35.64 Rt=  0.00 A= 96.23 E=166.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (11348) CONTROLTASK: P= 10.02 R= -3.83 Pt= 21.54 Rt=  0.00 A= 95.55 E=123.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (11448) CONTROLTASK: P= 10.06 R= -4.11 Pt=  0.00 Rt=  0.00 A= 95.20 E= 57.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (11548) CONTROLTASK: P= 10.77 R= -4.49 Pt= -4.02 Rt=  0.00 A= 95.99 E= 45.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (11648) CONTROLTASK: P= 10.75 R= -4.08 Pt=-16.14 Rt=  0.00 A= 96.68 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (11748) CONTROLTASK: P= 10.70 R= -3.96 Pt=-34.38 Rt=  0.00 A= 96.46 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (11848) CONTROLTASK: P= 10.57 R= -4.00 Pt=-36.00 Rt=  0.00 A= 96.32 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (11948) CONTROLTASK: P= 10.45 R= -4.00 Pt=-33.54 Rt=  0.00 A= 96.35 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (12048) CONTROLTASK: P= 10.36 R= -3.81 Pt= -6.60 Rt=  0.00 A= 95.86 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (12148) CONTROLTASK: P= 10.30 R= -4.14 Pt=  0.00 Rt=  0.00 A= 96.80 E= 57.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (12248) CONTROLTASK: P= 10.21 R= -3.64 Pt=  3.90 Rt=  0.00 A= 95.70 E= 99.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (12348) CONTROLTASK: P= 10.18 R= -3.67 Pt=  7.92 Rt=  0.00 A= 96.00 E= 81.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (12448) CONTROLTASK: P=  9.89 R= -3.61 Pt= 16.20 Rt=  0.00 A= 95.63 E=108.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (12548) CONTROLTASK: P=  9.90 R= -3.77 Pt= 24.42 Rt=  0.00 A= 95.93 E=163.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (12648) CONTROLTASK: P=  9.81 R= -3.63 Pt= 28.98 Rt=  0.00 A= 94.99 E=146.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (12748) CONTROLTASK: P=  9.99 R= -3.53 Pt= 36.00 Rt=  0.00 A= 95.47 E=167.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (12848) CONTROLTASK: P=  9.64 R= -3.63 Pt= 35.34 Rt=  0.00 A= 95.85 E=167.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (12948) CONTROLTASK: P=  9.65 R= -3.56 Pt= 28.44 Rt=  0.00 A= 95.17 E=145.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (13048) CONTROLTASK: P=  9.57 R= -3.59 Pt=  5.10 Rt=  0.00 A= 96.45 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (13148) CONTROLTASK: P= 11.17 R= -4.61 Pt=  0.00 Rt=  0.00 A= 94.80 E= 55.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (13248) CONTROLTASK: P= 11.55 R= -3.91 Pt=  0.00 Rt=  0.00 A= 95.30 E= 52.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (13348) CONTROLTASK: P= 11.23 R= -4.20 Pt=  0.00 Rt=  0.00 A= 96.79 E= 55.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (13448) CONTROLTASK: P= 11.25 R= -4.01 Pt=  0.00 Rt=  0.00 A= 96.37 E= 55.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (13548) CONTROLTASK: P= 11.00 R= -4.03 Pt=  0.00 Rt=  0.00 A= 96.65 E= 56.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (13648) CONTROLTASK: P= 10.49 R= -4.17 Pt=  0.00 Rt=  0.00 A= 96.57 E= 57.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (13748) CONTROLTASK: P= 10.48 R= -4.02 Pt=  0.00 Rt=  0.00 A= 96.52 E= 57.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (13848) CONTROLTASK: P= 10.29 R= -4.01 Pt=  0.00 Rt=  0.00 A= 96.30 E= 58.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (13948) CONTROLTASK: P= 10.29 R= -3.33 Pt=  0.00 Rt=  0.00 A= 95.06 E= 58.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (14048) CONTROLTASK: P= 10.22 R= -3.52 Pt=  0.00 Rt=  0.00 A= 95.58 E= 58.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (14148) CONTROLTASK: P= 10.19 R= -4.11 Pt=  0.00 Rt=  0.00 A= 97.45 E= 58.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (14248) CONTROLTASK: P= 10.16 R= -4.22 Pt=  0.00 Rt=  0.00 A= 96.71 E= 58.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (14348) CONTROLTASK: P=  9.55 R= -3.87 Pt=  0.00 Rt=  0.00 A= 95.95 E= 60.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (14448) CONTROLTASK: P= 10.00 R= -3.73 Pt=  0.00 Rt=  0.00 A= 95.93 E= 57.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (14548) CONTROLTASK: P= 12.50 R= -4.44 Pt=  0.00 Rt=  0.00 A= 97.49 E= 49.05 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (14648) CONTROLTASK: P= 16.04 R= -5.79 Pt=  0.00 Rt=  0.00 A=100.27 E= 38.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (14748) CONTROLTASK: P= 19.20 R= -8.04 Pt=  0.00 Rt=  0.00 A=103.44 E= 29.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+I (14848) CONTROLTASK: P= 21.24 R= -8.95 Pt=  0.00 Rt=  0.00 A=103.93 E= 24.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B
+[0;32mI (14948) CONTROLTASK: P= 22.54 R= -8.33 Pt=  0.00 Rt=  0.00 A=102.53 E= 20.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (15048) CONTROLTASK: P= 24.42 R= -8.03 Pt=  0.00 Rt=  0.00 A=102.02 E= 13.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (15148) CONTROLTASK: P= 26.08 R= -8.10 Pt=  0.00 Rt=  0.00 A=102.38 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (15248) CONTROLTASK: P= 28.53 R= -7.93 Pt=  0.00 Rt=  0.00 A=102.31 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (15348) CONTROLTASK: P= 29.82 R= -7.55 Pt=  0.00 Rt=  0.00 A=101.66 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (15448) CONTROLTASK: P= 30.17 R= -7.75 Pt=  0.00 Rt=  0.00 A=102.43 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (15548) CONTROLTASK: P= 28.91 R= -8.55 Pt=  0.00 Rt=  0.00 A=103.83 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (15648) CONTROLTASK: P= 24.86 R= -8.79 Pt=  0.00 Rt=  0.00 A=103.37 E= 18.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (15748) CONTROLTASK: P= 18.43 R= -8.18 Pt=  0.00 Rt=  0.00 A=102.28 E= 38.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (15848) CONTROLTASK: P= 10.87 R= -6.55 Pt=  0.00 Rt=  0.00 A= 99.15 E= 61.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (15948) CONTROLTASK: P=  2.79 R= -4.83 Pt=  0.00 Rt=  0.00 A= 96.64 E= 87.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (16048) CONTROLTASK: P= -6.00 R= -3.35 Pt=  0.00 Rt=  0.00 A= 94.64 E=113.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (16148) CONTROLTASK: P=-14.94 R= -2.54 Pt=  0.00 Rt=  0.00 A= 94.07 E=140.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (16248) CONTROLTASK: P=-20.62 R= -2.14 Pt=  0.00 Rt=  0.00 A= 96.81 E=152.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (16348) CONTROLTASK: P=-23.17 R= -1.39 Pt=  0.00 Rt=  0.00 A= 91.97 E=159.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (16448) CONTROLTASK: P=-24.81 R= -1.47 Pt=  0.00 Rt=  0.00 A= 93.11 E=163.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (16548) CONTROLTASK: P=-24.99 R= -2.37 Pt=  0.00 Rt=  0.00 A= 94.37 E=163.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (16648) CONTROLTASK: P=-24.65 R= -2.78 Pt=  0.00 Rt=  0.00 A= 94.82 E=162.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (16748) CONTROLTASK: P=-23.23 R= -3.01 Pt=  0.00 Rt=  0.00 A= 95.32 E=156.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (16848) CONTROLTASK: P=-19.95 R= -4.12 Pt=  0.00 Rt=  0.00 A= 97.80 E=144.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (16948) CONTROLTASK: P=-13.20 R= -5.92 Pt=  0.00 Rt=  0.00 A=100.57 E=121.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (17048) CONTROLTASK: P= -2.77 R= -6.47 Pt=  0.00 Rt=  0.00 A= 99.59 E= 89.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (17148) CONTROLTASK: P=  7.55 R= -7.27 Pt=  0.00 Rt=  0.00 A=102.14 E= 57.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (17248) CONTROLTASK: P= 16.36 R= -9.06 Pt=  0.00 Rt=  0.00 A=105.29 E= 34.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (17348) CONTROLTASK: P= 19.84 R= -9.77 Pt=  0.00 Rt=  0.00 A=106.25 E= 28.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (17448) CONTROLTASK: P= 19.92 R=-10.02 Pt=  0.00 Rt=  0.00 A=105.42 E= 29.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (17548) CONTROLTASK: P= 20.16 R= -9.43 Pt=  0.00 Rt=  0.00 A=104.41 E= 28.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (17648) CONTROLTASK: P= 19.89 R= -9.28 Pt=  0.00 Rt=  0.00 A=104.42 E= 30.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (17748) CONTROLTASK: P= 17.81 R= -9.58 Pt=  0.00 Rt=  0.00 A=105.11 E= 37.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (17848) CONTROLTASK: P= 13.21 R= -9.29 Pt=  0.00 Rt=  0.00 A=104.52 E= 54.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (17948) CONTROLTASK: P=  3.59 R= -7.78 Pt=  0.00 Rt=  0.00 A=101.07 E= 86.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (18048) CONTROLTASK: P= -9.63 R= -6.51 Pt=  0.00 Rt=  0.00 A=100.39 E=126.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (18148) CONTROLTASK: P=-19.51 R= -4.38 Pt=  0.00 Rt=  0.00 A= 95.77 E=152.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (18248) CONTROLTASK: P=-24.19 R= -2.20 Pt=  0.00 Rt=  0.00 A= 93.50 E=163.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (18348) CONTROLTASK: P=-26.15 R= -1.88 Pt=  0.00 Rt=  0.00 A= 93.96 E=168.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (18448) CONTROLTASK: P=-27.22 R= -2.69 Pt=  0.00 Rt=  0.00 A= 95.03 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (18548) CONTROLTASK: P=-27.42 R= -3.02 Pt=  0.00 Rt=  0.00 A= 95.16 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (18648) CONTROLTASK: P=-27.20 R= -3.06 Pt=  0.00 Rt=  0.00 A= 95.18 E=169.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (18748) CONTROLTASK: P=-26.70 R= -2.92 Pt=  0.00 Rt=  0.00 A= 94.84 E=168.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (18848) CONTROLTASK: P=-26.35 R= -2.85 Pt=  0.00 Rt=  0.00 A= 94.82 E=167.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (18948) CONTROLTASK: P=-26.02 R= -2.78 Pt=  0.00 Rt=  0.00 A= 94.78 E=166.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (19048) CONTROLTASK: P=-25.90 R= -2.48 Pt=  0.00 Rt=  0.00 A= 94.20 E=166.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (19148) CONTROLTASK: P=-25.99 R= -2.33 Pt=  0.00 Rt=  0.00 A= 94.17 E=167.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (19248) CONTROLTASK: P=-25.91 R= -2.49 Pt=  0.00 Rt=  0.00 A= 94.51 E=166.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (19348) CONTROLTASK: P=-25.86 R= -2.46 Pt=  0.00 Rt=  0.00 A= 94.03 E=166.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (19448) CONTROLTASK: P=-25.95 R= -2.41 Pt=  0.00 Rt=  0.00 A= 94.20 E=166.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (19548) CONTROLTASK: P=-25.98 R= -2.40 Pt=  0.00 Rt=  0.00 A= 94.08 E=166.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (19648) CONTROLTASK: P=-25.98 R= -2.49 Pt=  0.00 Rt=  0.00 A= 94.50 E=166.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (19748) CONTROLTASK: P=-25.97 R= -2.68 Pt=  0.00 Rt=  0.00 A= 94.70 E=166.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (19848) CONTROLTASK: P=-25.92 R= -2.72 Pt=  0.00 Rt=  0.00 A= 94.71 E=166.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (19948) CONTROLTASK: P=-25.75 R= -2.58 Pt=  0.00 Rt=  0.00 A= 94.49 E=166.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (20048) CONTROLTASK: P=-25.60 R= -2.40 Pt=  0.00 Rt=  0.00 A= 93.90 E=165.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (20148) CONTROLTASK: P=-25.58 R= -2.20 Pt=  0.00 Rt=  0.00 A= 93.54 E=166.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (20248) CONTROLTASK: P=-25.69 R= -1.57 Pt=  0.00 Rt=  0.00 A= 92.62 E=165.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (20348) CONTROLTASK: P=-24.89 R= -1.25 Pt=  0.00 Rt=  0.00 A= 92.49 E=163.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (20448) CONTROLTASK: P=-25.17 R= -1.25 Pt=  0.00 Rt=  0.00 A= 92.66 E=164.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (20548) CONTROLTASK: P=-23.70 R= -1.52 Pt=  0.00 Rt=  0.00 A= 93.27 E=158.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (20648) CONTROLTASK: P=-18.49 R= -2.75 Pt=  0.00 Rt=  0.00 A= 95.53 E=139.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (20748) CONTROLTASK: P=-11.40 R= -4.44 Pt=  0.00 Rt=  0.00 A= 98.31 E=117.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (20848) CONTROLTASK: P= -2.34 R= -5.64 Pt=  0.00 Rt=  0.00 A=100.36 E= 90.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (20948) CONTROLTASK: P=  8.07 R= -4.11 Pt=  0.00 Rt=  0.00 A= 96.64 E= 58.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (21048) CONTROLTASK: P= 15.26 R= -3.81 Pt=  0.00 Rt=  0.00 A= 96.29 E= 38.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (21148) CONTROLTASK: P= 21.25 R= -4.69 Pt=  0.00 Rt=  0.00 A= 97.47 E= 20.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (21248) CONTROLTASK: P= 26.32 R= -6.06 Pt=  0.00 Rt=  0.00 A=100.84 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (21348) CONTROLTASK: P= 29.93 R= -6.74 Pt=  0.00 Rt=  0.00 A=101.10 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (21448) CONTROLTASK: P= 31.16 R= -7.43 Pt=  0.00 Rt=  0.00 A=102.05 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (21548) CONTROLTASK: P= 29.55 R= -7.79 Pt=  0.00 Rt=  0.00 A=102.29 E= 10.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (21648) CONTROLTASK: P= 25.68 R= -7.43 Pt=  0.00 Rt=  0.00 A=101.38 E= 15.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (21748) CONTROLTASK: P= 20.49 R= -6.73 Pt=  0.00 Rt=  0.00 A=100.20 E= 31.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (21848) CONTROLTASK: P= 15.47 R= -5.66 Pt=  0.00 Rt=  0.00 A= 98.30 E= 46.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (21948) CONTROLTASK: P= 10.66 R= -4.75 Pt=  0.00 Rt=  0.00 A= 97.52 E= 60.78 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (22048) CONTROLTASK: P=  5.88 R= -4.25 Pt=  0.00 Rt=  0.00 A= 96.57 E= 75.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (22148) CONTROLTASK: P=  1.58 R= -3.90 Pt=  0.00 Rt=  0.00 A= 95.96 E= 86.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (22248) CONTROLTASK: P= -1.20 R= -3.23 Pt=  0.00 Rt=  0.00 A= 95.01 E= 94.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (22348) CONTROLTASK: P= -2.45 R= -3.08 Pt=  0.00 Rt=  0.00 A= 95.11 E= 96.57 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (22448) CONTROLTASK: P= -1.57 R= -2.58 Pt=  0.00 Rt=  0.00 A= 94.34 E= 92.54 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (22548) CONTROLTASK: P= -0.66 R= -2.13 Pt=  0.00 Rt=  0.00 A= 94.24 E= 91.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (22648) CONTROLTASK: P= -4.46 R= -1.88 Pt=  0.00 Rt=  0.00 A= 92.84 E=108.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (22748) CONTROLTASK: P=-14.18 R= -1.90 Pt=  0.00 Rt=  0.00 A= 93.32 E=138.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (22848) CONTROLTASK: P=-20.12 R= -1.62 Pt=  0.00 Rt=  0.00 A= 93.05 E=150.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (22948) CONTROLTASK: P=-16.05 R= -1.64 Pt=  0.00 Rt=  0.00 A= 93.14 E=130.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (23048) CONTROLTASK: P= -5.55 R= -1.42 Pt=  0.00 Rt=  0.00 A= 92.99 E= 96.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (23148) CONTROLTASK: P=  4.83 R= -1.80 Pt=  0.00 Rt=  0.00 A= 93.66 E= 69.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (23248) CONTROLTASK: P=  6.62 R= -2.81 Pt=  0.00 Rt=  0.00 A= 95.78 E= 70.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (23348) CONTROLTASK: P=  3.09 R= -4.01 Pt=  0.00 Rt=  0.00 A= 97.71 E= 82.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (23448) CONTROLTASK: P=  0.33 R= -4.08 Pt=  0.00 Rt=  0.00 A= 96.59 E= 89.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (23548) CONTROLTASK: P=  0.09 R= -3.41 Pt=  0.00 Rt=  0.00 A= 95.77 E= 88.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (23648) CONTROLTASK: P=  0.46 R= -3.57 Pt=  0.00 Rt=  0.00 A= 96.40 E= 87.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (23748) CONTROLTASK: P=  0.27 R= -3.98 Pt=  0.00 Rt=  0.00 A= 96.95 E= 88.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:10) Stk:1928W/1928B[0m
+[0;32mI (23848) CONTROLTASK: P= -0.09 R= -3.83 Pt=  0.00 Rt=  0.00 A= 96.15 E= 89.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (23948) CONTROLTASK: P= -0.17 R= -3.54 Pt=  0.00 Rt=  0.00 A= 96.01 E= 89.57 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (24048) CONTROLTASK: P= -0.41 R= -3.53 Pt=  0.00 Rt=  0.00 A= 95.95 E= 90.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (24148) CONTROLTASK: P= -2.93 R= -3.28 Pt=  0.00 Rt=  0.00 A= 95.17 E=101.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (24248) CONTROLTASK: P=-10.83 R= -3.22 Pt=  0.00 Rt=  0.00 A= 95.87 E=129.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+I (24348) CONTROLTASK: P=-21.62 R= -3.43 Pt=  0.00 Rt=  0.00 A= 95.64 E=160.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B
+[0;32mI (24448) CONTROLTASK: P=-28.02 R= -3.85 Pt=  0.00 Rt=  0.00 A= 96.84 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (24548) CONTROLTASK: P=-28.05 R= -4.57 Pt=  0.00 Rt=  0.00 A= 97.50 E=170.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (24648) CONTROLTASK: P=-21.43 R= -3.52 Pt=  0.00 Rt=  0.00 A= 95.08 E=147.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (24748) CONTROLTASK: P=-10.54 R= -2.54 Pt=  0.00 Rt=  0.00 A= 93.54 E=111.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (24848) CONTROLTASK: P=  3.64 R= -3.85 Pt=  0.00 Rt=  0.00 A= 97.89 E= 69.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (24948) CONTROLTASK: P= 10.33 R= -5.03 Pt=  0.00 Rt=  0.00 A= 99.05 E= 58.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (25048) CONTROLTASK: P=  6.73 R= -5.44 Pt=  0.00 Rt=  0.00 A= 98.98 E= 73.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (25148) CONTROLTASK: P=  0.14 R= -5.18 Pt=  0.00 Rt=  0.00 A= 98.65 E= 93.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (25248) CONTROLTASK: P= -4.06 R= -4.60 Pt=  0.00 Rt=  0.00 A= 97.21 E=103.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (25348) CONTROLTASK: P= -4.40 R= -3.67 Pt=  0.00 Rt=  0.00 A= 95.96 E=101.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (25448) CONTROLTASK: P= -3.43 R= -3.76 Pt=  0.00 Rt=  0.00 A= 96.65 E= 98.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+I (25548) CONTROLTASK: P= -2.88 R= -3.98 Pt=  0.00 Rt=  0.00 A= 96.82 E= 97.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B
+[0;32mI (25648) CONTROLTASK: P= -2.53 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.32 E= 96.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (25748) CONTROLTASK: P= -1.89 R= -3.38 Pt=  0.00 Rt=  0.00 A= 95.71 E= 94.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (25848) CONTROLTASK: P= -0.89 R= -3.50 Pt=  0.00 Rt=  0.00 A= 96.32 E= 91.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (25948) CONTROLTASK: P= -0.34 R= -3.64 Pt=  0.00 Rt=  0.00 A= 96.02 E= 90.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (26048) CONTROLTASK: P=  0.60 R= -2.57 Pt=  0.00 Rt=  0.00 A= 90.92 E= 80.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (26148) CONTROLTASK: P=  4.81 R= -2.16 Pt=  0.00 Rt=  0.00 A= 93.72 E= 70.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (26248) CONTROLTASK: P=  8.06 R= -1.84 Pt=  0.00 Rt=  0.00 A= 93.66 E= 64.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (26348) CONTROLTASK: P=  9.22 R= -2.23 Pt=  0.00 Rt=  0.00 A= 93.99 E= 61.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (26448) CONTROLTASK: P=  8.93 R= -3.21 Pt=  0.00 Rt=  0.00 A= 95.99 E= 62.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (26548) CONTROLTASK: P=  9.43 R= -3.12 Pt=  0.00 Rt=  0.00 A= 95.35 E= 60.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (26648) CONTROLTASK: P=  9.50 R= -3.09 Pt=  0.00 Rt=  0.00 A= 95.45 E= 60.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (26748) CONTROLTASK: P=  9.67 R= -3.02 Pt=  0.00 Rt=  0.00 A= 95.18 E= 60.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (26848) CONTROLTASK: P=  9.36 R= -3.22 Pt=  0.00 Rt=  0.00 A= 95.72 E= 61.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (26948) CONTROLTASK: P=  9.30 R= -3.11 Pt=  0.00 Rt=  0.00 A= 95.20 E= 61.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (27048) CONTROLTASK: P=  9.27 R= -3.41 Pt=  0.00 Rt=  0.00 A= 95.95 E= 61.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (27148) CONTROLTASK: P=  9.34 R= -3.43 Pt=  0.00 Rt=  0.00 A= 95.96 E= 60.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (27248) CONTROLTASK: P=  9.35 R= -3.36 Pt=  0.00 Rt=  0.00 A= 95.97 E= 61.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (27348) CONTROLTASK: P=  9.37 R= -3.67 Pt=  0.00 Rt=  0.00 A= 96.69 E= 60.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (27448) CONTROLTASK: P=  9.32 R= -3.55 Pt=  0.00 Rt=  0.00 A= 96.06 E= 61.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (27548) CONTROLTASK: P=  9.37 R= -3.70 Pt=  0.00 Rt=  0.00 A= 96.62 E= 60.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (27648) CONTROLTASK: P=  9.36 R= -3.70 Pt=  0.00 Rt=  0.00 A= 96.36 E= 60.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (27748) CONTROLTASK: P=  9.35 R= -3.74 Pt=  0.00 Rt=  0.00 A= 96.45 E= 61.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (27848) CONTROLTASK: P=  9.34 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.71 E= 61.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (27948) CONTROLTASK: P=  9.33 R= -3.78 Pt=  0.00 Rt=  0.00 A= 96.47 E= 60.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (28048) CONTROLTASK: P=  9.31 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.72 E= 61.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (28148) CONTROLTASK: P=  9.30 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.68 E= 61.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (28248) CONTROLTASK: P=  9.27 R= -3.78 Pt=  0.00 Rt=  0.00 A= 96.54 E= 61.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (28348) CONTROLTASK: P=  9.23 R= -3.78 Pt=  0.00 Rt=  0.00 A= 96.53 E= 61.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (28448) CONTROLTASK: P=  9.21 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.73 E= 61.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (28548) CONTROLTASK: P=  9.21 R= -3.81 Pt=  0.00 Rt=  0.00 A= 96.46 E= 61.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (28648) CONTROLTASK: P=  9.24 R= -3.81 Pt=  0.00 Rt=  0.00 A= 96.53 E= 61.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (28748) CONTROLTASK: P=  9.25 R= -3.85 Pt=  0.00 Rt=  0.00 A= 96.76 E= 61.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (28848) CONTROLTASK: P=  9.24 R= -3.85 Pt=  0.00 Rt=  0.00 A= 96.65 E= 61.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (28948) CONTROLTASK: P=  9.24 R= -3.80 Pt=  0.00 Rt=  0.00 A= 96.50 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (29048) CONTROLTASK: P=  9.24 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.69 E= 61.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (29148) CONTROLTASK: P=  9.20 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.69 E= 61.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (29248) CONTROLTASK: P=  9.22 R= -3.77 Pt=  0.00 Rt=  0.00 A= 96.45 E= 61.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (29348) CONTROLTASK: P=  9.22 R= -3.77 Pt=  0.00 Rt=  0.00 A= 96.57 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (29448) CONTROLTASK: P=  9.22 R= -3.81 Pt=  0.00 Rt=  0.00 A= 96.60 E= 61.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (29548) CONTROLTASK: P=  9.22 R= -3.80 Pt=  0.00 Rt=  0.00 A= 96.63 E= 61.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+I (29648) CONTROLTASK: P=  9.23 R= -3.85 Pt=  0.00 Rt=  0.00 A= 96.73 E= 61.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B
+[0;32mI (29748) CONTROLTASK: P=  9.23 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.60 E= 61.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (29848) CONTROLTASK: P=  9.22 R= -3.81 Pt=  0.00 Rt=  0.00 A= 96.71 E= 61.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (29948) CONTROLTASK: P=  9.21 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.65 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (30048) CONTROLTASK: P=  9.20 R= -3.85 Pt=  0.00 Rt=  0.00 A= 96.72 E= 61.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (30148) CONTROLTASK: P=  9.21 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.72 E= 61.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (30248) CONTROLTASK: P=  9.19 R= -3.79 Pt=  0.00 Rt=  0.00 A= 96.55 E= 61.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (30348) CONTROLTASK: P=  9.19 R= -3.82 Pt=  0.00 Rt=  0.00 A= 96.66 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (30448) CONTROLTASK: P=  9.20 R= -3.88 Pt=  0.00 Rt=  0.00 A= 96.79 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (30548) CONTROLTASK: P=  9.19 R= -3.86 Pt=  0.00 Rt=  0.00 A= 96.68 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (30648) CONTROLTASK: P=  9.19 R= -3.79 Pt=  0.00 Rt=  0.00 A= 96.61 E= 61.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (30748) CONTROLTASK: P=  9.19 R= -3.78 Pt=  0.00 Rt=  0.00 A= 96.64 E= 61.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (30848) CONTROLTASK: P=  9.17 R= -3.78 Pt=  0.00 Rt=  0.00 A= 96.61 E= 61.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (30948) CONTROLTASK: P=  9.19 R= -3.76 Pt=  0.00 Rt=  0.00 A= 96.52 E= 61.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (31048) CONTROLTASK: P=  9.16 R= -3.73 Pt=  0.00 Rt=  0.00 A= 96.48 E= 61.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (31148) CONTROLTASK: P=  9.16 R= -3.73 Pt=  0.00 Rt=  0.00 A= 96.68 E= 61.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (31248) CONTROLTASK: P=  9.15 R= -3.77 Pt=  0.00 Rt=  0.00 A= 96.71 E= 61.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (31348) CONTROLTASK: P=  9.15 R= -3.77 Pt=  0.00 Rt=  0.00 A= 96.59 E= 61.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (31448) CONTROLTASK: P=  9.15 R= -3.76 Pt=  0.00 Rt=  0.00 A= 96.58 E= 61.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:0) Stk:1928W/1928B[0m
+[0;32mI (31548) CONTROLTASK: P=  9.16 R= -3.74 Pt=  0.00 Rt=  0.00 A= 96.56 E= 61.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (31648) CONTROLTASK: P=  9.16 R= -3.74 Pt=  0.00 Rt=  0.00 A= 96.63 E= 61.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (31748) CONTROLTASK: P=  9.16 R= -3.76 Pt=  0.00 Rt=  0.00 A= 96.56 E= 61.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (31848) CONTROLTASK: P=  9.14 R= -3.75 Pt=  0.00 Rt=  0.00 A= 96.55 E= 61.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (31948) CONTROLTASK: P=  9.15 R= -3.76 Pt=  0.00 Rt=  0.00 A= 96.67 E= 61.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (32048) CONTROLTASK: P=  9.14 R= -3.80 Pt=  0.00 Rt=  0.00 A= 96.74 E= 61.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (32148) CONTROLTASK: P=  9.14 R= -3.88 Pt=  0.00 Rt=  0.00 A= 96.73 E= 61.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (32248) CONTROLTASK: P=  9.16 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.77 E= 61.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (32348) CONTROLTASK: P=  9.15 R= -3.90 Pt=  0.00 Rt=  0.00 A= 96.85 E= 61.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (32448) CONTROLTASK: P=  9.13 R= -3.91 Pt=  0.00 Rt=  0.00 A= 96.85 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (32548) CONTROLTASK: P=  9.11 R= -3.80 Pt=  0.00 Rt=  0.00 A= 96.73 E= 61.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (32648) CONTROLTASK: P=  9.11 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.72 E= 61.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (32748) CONTROLTASK: P=  9.13 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.82 E= 61.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (32848) CONTROLTASK: P=  9.07 R= -3.93 Pt=  0.00 Rt=  0.00 A= 96.55 E= 60.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (32948) CONTROLTASK: P=  9.53 R= -3.90 Pt=  0.00 Rt=  0.00 A= 97.25 E= 59.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (33048) CONTROLTASK: P=  9.20 R= -4.02 Pt=  0.00 Rt=  0.00 A= 96.83 E= 61.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (33148) CONTROLTASK: P=  9.20 R= -3.95 Pt=  0.00 Rt=  0.00 A= 97.33 E= 60.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (33248) CONTROLTASK: P=  9.32 R= -4.31 Pt=  0.00 Rt=  0.00 A= 97.29 E= 60.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (33348) CONTROLTASK: P=  9.70 R= -4.06 Pt=  0.00 Rt=  0.00 A= 96.79 E= 55.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (33448) CONTROLTASK: P=  9.59 R= -4.10 Pt=  0.00 Rt=  0.00 A= 97.05 E= 59.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (33548) CONTROLTASK: P=  9.50 R= -4.03 Pt=  0.00 Rt=  0.00 A= 97.08 E= 60.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (33648) CONTROLTASK: P=  9.43 R= -4.17 Pt=  0.00 Rt=  0.00 A= 97.31 E= 60.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (33748) CONTROLTASK: P=  9.40 R= -4.08 Pt=  0.00 Rt=  0.00 A= 97.11 E= 60.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (33848) CONTROLTASK: P=  9.42 R= -4.05 Pt=  0.00 Rt=  0.00 A= 97.15 E= 60.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (33948) CONTROLTASK: P=  9.30 R= -3.98 Pt=  0.00 Rt=  0.00 A= 96.85 E= 60.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (34048) CONTROLTASK: P= 10.02 R= -4.03 Pt=  0.00 Rt=  0.00 A= 96.87 E= 58.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (34148) CONTROLTASK: P=  9.91 R= -3.75 Pt=  0.00 Rt=  0.00 A= 96.03 E= 58.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+I (34248) CONTROLTASK: P=  9.60 R= -3.90 Pt=  0.00 Rt=  0.00 A= 97.06 E= 59.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B
+[0;32mI (34348) CONTROLTASK: P=  9.57 R= -4.02 Pt=  0.00 Rt=  0.00 A= 97.04 E= 59.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (34448) CONTROLTASK: P=  9.29 R= -3.97 Pt=  0.00 Rt=  0.00 A= 97.15 E= 60.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (34548) CONTROLTASK: P=  9.16 R= -4.00 Pt=  0.00 Rt=  0.00 A= 96.98 E= 60.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (34648) CONTROLTASK: P=  9.25 R= -3.93 Pt=  0.00 Rt=  0.00 A= 96.97 E= 60.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (34748) CONTROLTASK: P=  9.03 R= -3.96 Pt=  0.00 Rt=  0.00 A= 96.98 E= 61.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (34848) CONTROLTASK: P=  8.80 R= -3.86 Pt=  0.00 Rt=  0.00 A= 96.99 E= 62.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (34948) CONTROLTASK: P=  8.81 R= -4.11 Pt=  0.00 Rt=  0.00 A= 97.23 E= 61.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (35048) CONTROLTASK: P=  8.67 R= -4.17 Pt=  0.00 Rt=  0.00 A= 97.32 E= 62.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (35148) CONTROLTASK: P=  8.58 R= -4.45 Pt=  0.00 Rt=  0.00 A= 98.00 E= 62.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (35248) CONTROLTASK: P= 10.82 R=-16.61 Pt=  0.00 Rt=  0.00 A=143.86 E= 56.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (35348) CONTROLTASK: P=  8.31 R=-22.18 Pt=  0.00 Rt=  0.00 A=124.06 E= 67.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[1;31mE (35394) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35394) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35416) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35436) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[0;32mI (35448) CONTROLTASK: P=  3.83 R=-21.47 Pt=  0.00 Rt=  0.00 A=121.45 E= 82.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[1;31mE (35456) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35464) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35464) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35496) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35516) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35524) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35524) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[0;32mI (35548) CONTROLTASK: P= -0.33 R=-20.95 Pt=  0.00 Rt=  0.00 A=122.17 E= 96.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[1;31mE (35556) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35564) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35564) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35596) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35616) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35624) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35624) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35644) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35644) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[0;32mI (35656) CONTROLTASK: P= -4.14 R=-21.75 Pt=  0.00 Rt=  0.00 A=123.78 E=100.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:28) Stk:1928W/1928B[0m
+[1;31mE (35664) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35664) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35676) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35684) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35684) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35704) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35704) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35724) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35724) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35744) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35744) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[0;32mI (35756) CONTROLTASK: P= -8.61 R=-24.66 Pt=  0.00 Rt=  0.00 A=128.16 E=114.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:28) Stk:1928W/1928B[0m
+[1;31mE (35764) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35764) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35784) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35784) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35804) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35804) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35824) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35824) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35848) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[0;32mI (35858) CONTROLTASK: P=-10.92 R=-26.52 Pt=  0.00 Rt=  0.00 A=130.97 E=121.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:88) Stk:1928W/1928B[0m
+[1;31mE (35864) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35864) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35888) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35904) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (35904) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35928) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (35948) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36000) i2c.master: clear bus failed.[0m
+[1;31mE (36000) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36000) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36056) i2c.master: clear bus failed.[0m
+[1;31mE (36056) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36056) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36112) i2c.master: clear bus failed.[0m
+[1;31mE (36112) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36112) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36168) i2c.master: clear bus failed.[0m
+[1;31mE (36168) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36168) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36224) i2c.master: clear bus failed.[0m
+[1;31mE (36224) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36224) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36280) i2c.master: clear bus failed.[0m
+[1;31mE (36280) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36280) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36336) i2c.master: clear bus failed.[0m
+[1;31mE (36336) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36336) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36392) i2c.master: clear bus failed.[0m
+[1;31mE (36392) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36392) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36448) i2c.master: clear bus failed.[0m
+[1;31mE (36448) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36448) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36504) i2c.master: clear bus failed.[0m
+[1;31mE (36504) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36504) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36560) i2c.master: clear bus failed.[0m
+[1;31mE (36560) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36560) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36616) i2c.master: clear bus failed.[0m
+[1;31mE (36616) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36616) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36672) i2c.master: clear bus failed.[0m
+[1;31mE (36672) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36672) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36728) i2c.master: clear bus failed.[0m
+[1;31mE (36728) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36728) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36784) i2c.master: clear bus failed.[0m
+[1;31mE (36784) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36784) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36840) i2c.master: clear bus failed.[0m
+[1;31mE (36840) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36840) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36896) i2c.master: clear bus failed.[0m
+[1;31mE (36896) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36896) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (36952) i2c.master: clear bus failed.[0m
+[1;31mE (36952) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (36952) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37008) i2c.master: clear bus failed.[0m
+[1;31mE (37008) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37008) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37064) i2c.master: clear bus failed.[0m
+[1;31mE (37064) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37064) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37120) i2c.master: clear bus failed.[0m
+[1;31mE (37120) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37120) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37176) i2c.master: clear bus failed.[0m
+[1;31mE (37176) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37176) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37232) i2c.master: clear bus failed.[0m
+[1;31mE (37232) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37232) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37288) i2c.master: clear bus failed.[0m
+[1;31mE (37288) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37288) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37344) i2c.master: clear bus failed.[0m
+[1;31mE (37344) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37344) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37400) i2c.master: clear bus failed.[0m
+[1;31mE (37400) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37400) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37456) i2c.master: clear bus failed.[0m
+[1;31mE (37456) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37456) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37512) i2c.master: clear bus failed.[0m
+[1;31mE (37512) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37512) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37568) i2c.master: clear bus failed.[0m
+[1;31mE (37568) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37568) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37624) i2c.master: clear bus failed.[0m
+[1;31mE (37624) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37624) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37680) i2c.master: clear bus failed.[0m
+[1;31mE (37680) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37680) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37736) i2c.master: clear bus failed.[0m
+[1;31mE (37736) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37736) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37792) i2c.master: clear bus failed.[0m
+[1;31mE (37792) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37792) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37848) i2c.master: clear bus failed.[0m
+[1;31mE (37848) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37848) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37904) i2c.master: clear bus failed.[0m
+[1;31mE (37904) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37904) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (37960) i2c.master: clear bus failed.[0m
+[1;31mE (37960) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (37960) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38016) i2c.master: clear bus failed.[0m
+[1;31mE (38016) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38016) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38072) i2c.master: clear bus failed.[0m
+[1;31mE (38072) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38072) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38128) i2c.master: clear bus failed.[0m
+[1;31mE (38128) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38128) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38184) i2c.master: clear bus failed.[0m
+[1;31mE (38184) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38184) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38240) i2c.master: clear bus failed.[0m
+[1;31mE (38240) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38240) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38296) i2c.master: clear bus failed.[0m
+[1;31mE (38296) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38296) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38352) i2c.master: clear bus failed.[0m
+[1;31mE (38352) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38352) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38408) i2c.master: clear bus failed.[0m
+[1;31mE (38408) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38408) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38464) i2c.master: clear bus failed.[0m
+[1;31mE (38464) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38464) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38520) i2c.master: clear bus failed.[0m
+[1;31mE (38520) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38520) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38576) i2c.master: clear bus failed.[0m
+[1;31mE (38576) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38576) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38632) i2c.master: clear bus failed.[0m
+[1;31mE (38632) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38632) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38688) i2c.master: clear bus failed.[0m
+[1;31mE (38688) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38688) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38744) i2c.master: clear bus failed.[0m
+[1;31mE (38744) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38744) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38800) i2c.master: clear bus failed.[0m
+[1;31mE (38800) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38800) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38856) i2c.master: clear bus failed.[0m
+[1;31mE (38856) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38856) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38912) i2c.master: clear bus failed.[0m
+[1;31mE (38912) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38912) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (38968) i2c.master: clear bus failed.[0m
+[1;31mE (38968) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (38968) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39024) i2c.master: clear bus failed.[0m
+[1;31mE (39024) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39024) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39080) i2c.master: clear bus failed.[0m
+[1;31mE (39080) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39080) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39136) i2c.master: clear bus failed.[0m
+[1;31mE (39136) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39136) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39192) i2c.master: clear bus failed.[0m
+[1;31mE (39192) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39192) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39248) i2c.master: clear bus failed.[0m
+[1;31mE (39248) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39248) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39304) i2c.master: clear bus failed.[0m
+[1;31mE (39304) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39304) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39360) i2c.master: clear bus failed.[0m
+[1;31mE (39360) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39360) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39416) i2c.master: clear bus failed.[0m
+[1;31mE (39416) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39416) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39472) i2c.master: clear bus failed.[0m
+[1;31mE (39472) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39472) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39528) i2c.master: clear bus failed.[0m
+[1;31mE (39528) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39528) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39584) i2c.master: clear bus failed.[0m
+[1;31mE (39584) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39584) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39640) i2c.master: clear bus failed.[0m
+[1;31mE (39640) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39640) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39696) i2c.master: clear bus failed.[0m
+[1;31mE (39696) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39696) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39752) i2c.master: clear bus failed.[0m
+[1;31mE (39752) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39752) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39808) i2c.master: clear bus failed.[0m
+[1;31mE (39808) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39808) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39864) i2c.master: clear bus failed.[0m
+[1;31mE (39864) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39864) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39920) i2c.master: clear bus failed.[0m
+[1;31mE (39920) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39920) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (39976) i2c.master: clear bus failed.[0m
+[1;31mE (39976) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (39976) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40032) i2c.master: clear bus failed.[0m
+[1;31mE (40032) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40032) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40088) i2c.master: clear bus failed.[0m
+[1;31mE (40088) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40088) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40144) i2c.master: clear bus failed.[0m
+[1;31mE (40144) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40144) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40200) i2c.master: clear bus failed.[0m
+[1;31mE (40200) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40200) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40256) i2c.master: clear bus failed.[0m
+[1;31mE (40256) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40256) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40312) i2c.master: clear bus failed.[0m
+[1;31mE (40312) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40312) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40368) i2c.master: clear bus failed.[0m
+[1;31mE (40368) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40368) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40424) i2c.master: clear bus failed.[0m
+[1;31mE (40424) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40424) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40480) i2c.master: clear bus failed.[0m
+[1;31mE (40480) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40480) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40536) i2c.master: clear bus failed.[0m
+[1;31mE (40536) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40536) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40592) i2c.master: clear bus failed.[0m
+[1;31mE (40592) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40592) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40648) i2c.master: clear bus failed.[0m
+[1;31mE (40648) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40648) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40704) i2c.master: clear bus failed.[0m
+[1;31mE (40704) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40704) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40760) i2c.master: clear bus failed.[0m
+[1;31mE (40760) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40760) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40816) i2c.master: clear bus failed.[0m
+[1;31mE (40816) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40816) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40872) i2c.master: clear bus failed.[0m
+[1;31mE (40872) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40872) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40928) i2c.master: clear bus failed.[0m
+[1;31mE (40928) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (40928) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (40944) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (40944) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (40944) task_wdt: Tasks currently running:[0m
+[1;31mE (40944) task_wdt: CPU 0: flight_control_[0m
+[1;31mE (40944) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x4201b81c  RA      : 0x4201b826  SP      : 0x3fc96a40  GP      : 0x3fc8e000  
+TP      : 0x3fc96c90  T0      : 0x00000000  T1      : 0x0000000b  T2      : 0x00000000  
+S0/FP   : 0x3fc937cc  S1      : 0x00004f70  A0      : 0x00000006  A1      : 0x3fc96a58  
+A2      : 0x00000000  A3      : 0x00000800  A4      : 0x00000813  A5      : 0x00000001  
+A6      : 0x3fc96baf  A7      : 0x00001c00  S2      : 0x00000001  S3      : 0x3fc937dc  
+S4      : 0x3fc93470  S5      : 0x3fc937dc  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x3fc96ba4  T5      : 0x00001800  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[1;31mE (41042) i2c.master: clear bus failed.[0m
+[1;31mE (41044) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41052) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41110) i2c.master: clear bus failed.[0m
+[1;31mE (41110) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41110) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41166) i2c.master: clear bus failed.[0m
+[1;31mE (41166) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41166) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41222) i2c.master: clear bus failed.[0m
+[1;31mE (41222) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41222) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41278) i2c.master: clear bus failed.[0m
+[1;31mE (41278) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41278) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41334) i2c.master: clear bus failed.[0m
+[1;31mE (41334) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41334) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41390) i2c.master: clear bus failed.[0m
+[1;31mE (41390) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41390) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41446) i2c.master: clear bus failed.[0m
+[1;31mE (41446) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41446) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41502) i2c.master: clear bus failed.[0m
+[1;31mE (41502) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41502) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41558) i2c.master: clear bus failed.[0m
+[1;31mE (41558) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41558) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41614) i2c.master: clear bus failed.[0m
+[1;31mE (41614) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41614) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41670) i2c.master: clear bus failed.[0m
+[1;31mE (41670) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41670) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41726) i2c.master: clear bus failed.[0m
+[1;31mE (41726) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41726) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41782) i2c.master: clear bus failed.[0m
+[1;31mE (41782) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41782) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41838) i2c.master: clear bus failed.[0m
+[1;31mE (41838) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41838) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41894) i2c.master: clear bus failed.[0m
+[1;31mE (41894) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41894) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (41950) i2c.master: clear bus failed.[0m
+[1;31mE (41950) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (41950) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42006) i2c.master: clear bus failed.[0m
+[1;31mE (42006) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42006) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42062) i2c.master: clear bus failed.[0m
+[1;31mE (42062) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42062) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42118) i2c.master: clear bus failed.[0m
+[1;31mE (42118) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42118) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42174) i2c.master: clear bus failed.[0m
+[1;31mE (42174) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42174) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42230) i2c.master: clear bus failed.[0m
+[1;31mE (42230) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42230) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42286) i2c.master: clear bus failed.[0m
+[1;31mE (42286) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42286) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42342) i2c.master: clear bus failed.[0m
+[1;31mE (42342) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42342) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42398) i2c.master: clear bus failed.[0m
+[1;31mE (42398) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42398) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42454) i2c.master: clear bus failed.[0m
+[1;31mE (42454) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42454) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42510) i2c.master: clear bus failed.[0m
+[1;31mE (42510) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42510) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42566) i2c.master: clear bus failed.[0m
+[1;31mE (42566) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42566) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42622) i2c.master: clear bus failed.[0m
+[1;31mE (42622) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42622) LSM6DS3: burst read at 0x22 failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (42678) i2c.master: clear bus failed.[0m
+[1;31mE (42678) i2c.master: s_i2c_transaction_start(675): reset hardware failed[0m
+[1;31mE (42678) LSM6DS3: burst read at 0

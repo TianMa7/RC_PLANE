@@ -1,0 +1,879 @@
+Command: C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\tianm\CLionProjects\RC_PLANE\build\RC_PLANE.elf C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\bootloader.elf --force-color -m 'C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools\idf.py' '-B'
+[0;32mI (42648) CONTROLTASK: P=  3.29 R=  6.28 Pt=  0.00 Rt=  0.00 A= ESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382124
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c4
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 15 2026 19:37:32[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bf1ch ( 48924) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001bf44 vaddr=3fc8d800 size=01458h (  5208) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001d3a4 vaddr=40380000 size=02c74h ( 11380) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ecb4h (126132) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=0003ecdc vaddr=40382c74 size=0aa04h ( 43524) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=000496e8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (152) cpu_start: Unicore app[0m
+[0;32mI (160) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (160) cpu_start: Pro cpu start user code[0m
+[0;32mI (160) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (162) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     RC_PLANE[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     Apr 15 2026 19:36:44[0m
+[0;32mI (179) app_init: ELF file SHA256:  c6a98081a...[0m
+[0;32mI (183) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (191) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (195) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (199) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 3FC8FD70 len 00030290 (192 KiB): RAM[0m
+[0;32mI (210) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (222) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (266) CONTROLTASK: Starting RC Plane Application[0m
+[0;32mI (270) CONTROLTASK: I2C bus OK[0m
+[0;32mI (324) LSM6DS3: WHO_AM_I OK: 0x69[0m
+[0;32mI (324) LSM6DS3: accel configured (416 Hz, +/-4 g, BW~100 Hz)[0m
+[0;32mI (324) LSM6DS3: gyro configured (416 Hz, 500 dps)[0m
+[0;32mI (326) LSM6DS3: gyro LPF1 enabled (CTRL4_C=0x02)[0m
+[0;32mI (330) LSM6DS3: init complete[0m
+[0;32mI (332) CONTROLTASK: LSM6DS3 OK[0m
+[0;32mI (336) CONTROLTASK: Servo OK[0m
+[0;32mI (338) CONTROLTASK: IBUS OK[0m
+[0;32mI (340) CONTROLTASK: Mahony gains: Kp=1.667 Ki=0.017 (loop 100.0 Hz)[0m
+[0;32mI (348) CONTROLTASK: P=  0.00 R=  0.00 Pt=  0.00 Rt=  0.00 A= 90.00 E= 90.00 Atr= 90.0 Etr= 90.0 FS(i:1 m:1) Age(i:88 m:88) Stk:3788W/3788B[0m
+[0;32mI (360) main_task: Returned from app_main()[0m
+[0;32mI (448) CONTROLTASK: P=  4.06 R= -5.98 Pt=  0.00 Rt=  0.00 A= 98.82 E= 83.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (548) CONTROLTASK: P=  5.02 R= -5.78 Pt=  0.00 Rt=  0.00 A= 98.26 E= 81.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (648) CONTROLTASK: P=  5.87 R= -5.27 Pt=  0.00 Rt=  0.00 A= 97.75 E= 80.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (748) CONTROLTASK: P=  6.48 R= -5.11 Pt=  0.00 Rt=  0.00 A= 97.50 E= 79.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (848) CONTROLTASK: P=  7.04 R= -4.88 Pt=  0.00 Rt=  0.00 A= 97.15 E= 79.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (948) CONTROLTASK: P=  7.53 R= -4.75 Pt=  0.00 Rt=  0.00 A= 97.15 E= 78.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (1048) CONTROLTASK: P=  7.94 R= -4.54 Pt=  0.00 Rt=  0.00 A= 96.69 E= 77.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (1148) CONTROLTASK: P=  8.22 R= -4.45 Pt=  0.00 Rt=  0.00 A= 96.60 E= 77.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (1248) CONTROLTASK: P=  8.52 R= -4.38 Pt=  0.00 Rt=  0.00 A= 96.61 E= 77.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (1348) CONTROLTASK: P=  8.77 R= -4.32 Pt=  0.00 Rt=  0.00 A= 96.32 E= 76.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (1448) CONTROLTASK: P=  8.95 R= -4.29 Pt=  0.00 Rt=  0.00 A= 96.24 E= 76.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (1548) CONTROLTASK: P=  9.16 R= -4.33 Pt=  0.00 Rt=  0.00 A= 96.38 E= 76.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (1648) CONTROLTASK: P=  9.28 R= -4.27 Pt=  0.00 Rt=  0.00 A= 96.30 E= 75.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (1748) CONTROLTASK: P=  9.37 R= -4.16 Pt=  0.00 Rt=  0.00 A= 96.23 E= 75.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (1848) CONTROLTASK: P=  9.45 R= -4.08 Pt=  0.00 Rt=  0.00 A= 96.24 E= 75.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (1948) CONTROLTASK: P=  9.53 R= -4.06 Pt=  0.00 Rt=  0.00 A= 96.24 E= 75.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (2048) CONTROLTASK: P=  9.60 R= -4.04 Pt=  0.00 Rt=  0.00 A= 96.04 E= 75.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (2148) CONTROLTASK: P=  9.66 R= -3.98 Pt=  0.00 Rt=  0.00 A= 95.98 E= 75.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (2248) CONTROLTASK: P=  9.71 R= -3.92 Pt=  0.00 Rt=  0.00 A= 96.00 E= 75.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (2348) CONTROLTASK: P=  9.75 R= -3.92 Pt=  0.00 Rt=  0.00 A= 95.90 E= 75.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (2448) CONTROLTASK: P=  9.80 R= -3.93 Pt=  0.00 Rt=  0.00 A= 95.81 E= 75.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (2548) CONTROLTASK: P=  9.83 R= -3.86 Pt=  0.00 Rt=  0.00 A= 95.86 E= 75.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (2648) CONTROLTASK: P=  9.83 R= -3.88 Pt=  0.00 Rt=  0.00 A= 95.85 E= 75.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (2748) CONTROLTASK: P=  9.87 R= -3.94 Pt=  0.00 Rt=  0.00 A= 96.04 E= 74.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (2848) CONTROLTASK: P=  9.90 R= -3.95 Pt=  0.00 Rt=  0.00 A= 96.20 E= 74.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (2948) CONTROLTASK: P=  9.91 R= -3.90 Pt=  0.00 Rt=  0.00 A= 96.06 E= 74.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (3048) CONTROLTASK: P=  9.91 R= -3.93 Pt=  0.00 Rt=  0.00 A= 96.21 E= 74.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (3148) CONTROLTASK: P=  9.93 R= -3.88 Pt=  0.00 Rt=  0.00 A= 95.99 E= 74.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (3248) CONTROLTASK: P=  9.95 R= -3.81 Pt=  0.00 Rt=  0.00 A= 95.85 E= 74.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (3348) CONTROLTASK: P=  9.97 R= -3.79 Pt=  0.00 Rt=  0.00 A= 95.67 E= 74.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (3448) CONTROLTASK: P=  9.97 R= -3.80 Pt=  0.00 Rt=  0.00 A= 95.87 E= 74.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (3548) CONTROLTASK: P=  9.95 R= -3.80 Pt=  0.00 Rt=  0.00 A= 95.85 E= 74.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (3648) CONTROLTASK: P=  9.97 R= -3.81 Pt=  0.00 Rt=  0.00 A= 95.69 E= 74.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (3748) CONTROLTASK: P=  9.96 R= -3.80 Pt=  0.00 Rt=  0.00 A= 95.71 E= 74.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (3848) CONTROLTASK: P=  9.97 R= -3.77 Pt=  0.00 Rt=  0.00 A= 95.62 E= 74.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (3948) CONTROLTASK: P=  9.96 R= -3.73 Pt=  0.00 Rt=  0.00 A= 95.57 E= 74.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (4048) CONTROLTASK: P=  9.95 R= -3.73 Pt=  0.00 Rt=  0.00 A= 95.69 E= 74.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (4148) CONTROLTASK: P=  9.95 R= -3.68 Pt=  0.00 Rt=  0.00 A= 95.53 E= 74.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (4248) CONTROLTASK: P=  9.94 R= -3.68 Pt=  0.00 Rt=  0.00 A= 95.61 E= 74.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (4348) CONTROLTASK: P=  9.92 R= -3.71 Pt=  0.00 Rt=  0.00 A= 95.76 E= 74.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (4448) CONTROLTASK: P=  9.94 R= -3.75 Pt=  0.00 Rt=  0.00 A= 95.84 E= 74.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (4548) CONTROLTASK: P=  9.96 R= -3.74 Pt=  0.00 Rt=  0.00 A= 95.80 E= 74.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (4648) CONTROLTASK: P=  9.95 R= -3.76 Pt=  0.00 Rt=  0.00 A= 95.71 E= 74.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (4748) CONTROLTASK: P=  9.91 R= -3.65 Pt=  0.00 Rt=  0.00 A= 95.64 E= 74.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (4848) CONTROLTASK: P=  9.92 R= -3.69 Pt=  0.00 Rt=  0.00 A= 95.79 E= 74.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (4948) CONTROLTASK: P=  9.95 R= -3.81 Pt=  0.00 Rt=  0.00 A= 95.62 E= 74.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (5048) CONTROLTASK: P=  9.97 R= -3.69 Pt=  0.00 Rt=  0.00 A= 95.85 E= 74.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (5148) CONTROLTASK: P=  9.99 R= -3.78 Pt=  0.00 Rt=  0.00 A= 95.82 E= 74.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (5248) CONTROLTASK: P=  9.99 R= -3.78 Pt=  0.00 Rt=  0.00 A= 95.63 E= 74.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (5348) CONTROLTASK: P=  9.96 R= -3.58 Pt=  0.00 Rt=  0.00 A= 95.51 E= 74.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (5448) CONTROLTASK: P=  9.95 R= -3.65 Pt=  0.00 Rt=  0.00 A= 95.81 E= 74.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (5548) CONTROLTASK: P=  9.89 R= -3.51 Pt=  0.00 Rt=  0.00 A= 95.33 E= 74.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (5648) CONTROLTASK: P=  9.91 R= -3.63 Pt=  0.00 Rt=  0.00 A= 95.73 E= 74.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (5748) CONTROLTASK: P= 10.00 R= -3.75 Pt=  0.00 Rt=  0.00 A= 95.99 E= 74.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (5848) CONTROLTASK: P=  9.96 R= -3.50 Pt=  0.00 Rt=  0.00 A= 95.53 E= 74.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (5948) CONTROLTASK: P=  9.90 R= -3.64 Pt=  0.00 Rt=  0.00 A= 95.58 E= 74.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:10) Stk:1928W/1928B[0m
+[0;32mI (6048) CONTROLTASK: P=  9.93 R= -3.91 Pt=  0.00 Rt=  0.00 A= 96.46 E= 74.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (6148) CONTROLTASK: P=  9.91 R= -3.77 Pt=  0.00 Rt=  0.00 A= 95.61 E= 74.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (6248) CONTROLTASK: P=  9.84 R= -3.74 Pt=  0.00 Rt=  0.00 A= 95.94 E= 74.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (6348) CONTROLTASK: P=  9.91 R= -3.94 Pt=  0.00 Rt=  0.00 A= 96.19 E= 74.57 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (6448) CONTROLTASK: P=  9.91 R= -3.78 Pt=  0.00 Rt=  0.00 A= 95.74 E= 74.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (6548) CONTROLTASK: P=  9.87 R= -3.87 Pt=  0.00 Rt=  0.00 A= 96.14 E= 74.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (6648) CONTROLTASK: P=  9.92 R= -3.88 Pt=  0.00 Rt=  0.00 A= 95.90 E= 74.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (6748) CONTROLTASK: P=  9.91 R= -3.88 Pt=  0.00 Rt=  0.00 A= 95.96 E= 74.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (6848) CONTROLTASK: P=  9.90 R= -3.85 Pt=  0.00 Rt=  0.00 A= 95.81 E= 74.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (6948) CONTROLTASK: P=  9.85 R= -3.81 Pt=  0.00 Rt=  0.00 A= 95.85 E= 74.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (7048) CONTROLTASK: P=  9.81 R= -3.77 Pt=  0.00 Rt=  0.00 A= 95.94 E= 74.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (7148) CONTROLTASK: P=  9.80 R= -3.85 Pt=  0.00 Rt=  0.00 A= 96.02 E= 74.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (7248) CONTROLTASK: P=  9.83 R= -3.87 Pt=  0.00 Rt=  0.00 A= 96.14 E= 74.54 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (7348) CONTROLTASK: P=  9.82 R= -3.88 Pt=  0.00 Rt=  0.00 A= 96.09 E= 74.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (7448) CONTROLTASK: P=  9.86 R= -3.88 Pt=  0.00 Rt=  0.00 A= 95.98 E= 74.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (7548) CONTROLTASK: P=  9.82 R= -3.84 Pt=  0.00 Rt=  0.00 A= 96.08 E= 74.65 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (7648) CONTROLTASK: P=  9.82 R= -3.86 Pt=  0.00 Rt=  0.00 A= 96.04 E= 74.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (7748) CONTROLTASK: P=  9.80 R= -3.86 Pt=  0.00 Rt=  0.00 A= 96.02 E= 74.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (7848) CONTROLTASK: P=  9.73 R= -4.09 Pt=  0.00 Rt=  0.00 A= 96.70 E= 74.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (7948) CONTROLTASK: P=  9.93 R= -4.37 Pt=  0.00 Rt=  0.00 A= 97.22 E= 74.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (8048) CONTROLTASK: P=  9.94 R= -4.73 Pt=  0.00 Rt=  0.00 A= 97.38 E= 74.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (8148) CONTROLTASK: P=  9.95 R= -4.32 Pt=  0.00 Rt=  0.00 A= 96.44 E= 74.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (8248) CONTROLTASK: P=  9.79 R= -4.07 Pt=  0.00 Rt=  0.00 A= 96.15 E= 74.65 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (8348) CONTROLTASK: P=  9.80 R= -4.14 Pt=  0.00 Rt=  0.00 A= 96.29 E= 74.48 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (8448) CONTROLTASK: P=  9.62 R= -3.94 Pt=  0.00 Rt=  0.00 A= 96.06 E= 75.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (8548) CONTROLTASK: P=  9.73 R= -4.43 Pt=  0.00 Rt=  0.00 A= 97.08 E= 74.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (8648) CONTROLTASK: P=  9.57 R= -3.83 Pt=  0.00 Rt=  0.00 A= 95.57 E= 75.05 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (8748) CONTROLTASK: P=  9.66 R= -3.68 Pt=  0.00 Rt=  0.00 A= 95.78 E= 74.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (8848) CONTROLTASK: P= 10.67 R= -3.74 Pt=  0.00 Rt=  0.00 A= 96.01 E= 72.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (8948) CONTROLTASK: P= 10.37 R= -3.88 Pt=  0.00 Rt=  0.00 A= 96.16 E= 75.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (9048) CONTROLTASK: P=  6.35 R= -3.57 Pt=  0.00 Rt=  0.00 A= 95.41 E= 82.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (9148) CONTROLTASK: P=  3.08 R= -3.86 Pt=  0.00 Rt=  0.00 A= 96.52 E= 86.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (9248) CONTROLTASK: P=  1.97 R= -4.39 Pt=  0.00 Rt=  0.00 A= 97.02 E= 86.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (9348) CONTROLTASK: P=  2.29 R= -4.32 Pt=  0.00 Rt=  0.00 A= 96.54 E= 85.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (9448) CONTROLTASK: P=  3.55 R= -3.80 Pt=  0.00 Rt=  0.00 A= 95.46 E= 83.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (9548) CONTROLTASK: P=  4.45 R= -3.02 Pt=  0.00 Rt=  0.00 A= 94.55 E= 82.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (9648) CONTROLTASK: P=  3.77 R= -2.34 Pt=  0.00 Rt=  0.00 A= 93.32 E= 83.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (9748) CONTROLTASK: P=  3.82 R= -1.93 Pt=  0.00 Rt=  0.00 A= 92.58 E= 82.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (9848) CONTROLTASK: P=  5.80 R= -0.73 Pt=  0.00 Rt=  0.00 A= 90.40 E= 78.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (9948) CONTROLTASK: P=  7.60 R= -0.32 Pt=  0.00 Rt=  0.00 A= 91.10 E= 76.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (10048) CONTROLTASK: P=  7.09 R= -1.43 Pt=  0.00 Rt=  0.00 A= 93.14 E= 79.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (10148) CONTROLTASK: P=  5.41 R= -2.24 Pt=  0.00 Rt=  0.00 A= 94.13 E= 82.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (10248) CONTROLTASK: P=  4.01 R= -2.71 Pt=  0.00 Rt=  0.00 A= 94.37 E= 83.78 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (10348) CONTROLTASK: P=  3.47 R= -2.74 Pt=  0.00 Rt=  0.00 A= 94.47 E= 83.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (10448) CONTROLTASK: P=  3.74 R= -3.63 Pt=  0.00 Rt=  0.00 A= 96.14 E= 83.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (10548) CONTROLTASK: P=  4.32 R= -3.95 Pt=  0.00 Rt=  0.00 A= 96.23 E= 81.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (10648) CONTROLTASK: P=  4.86 R= -3.89 Pt=  0.00 Rt=  0.00 A= 96.07 E= 81.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (10748) CONTROLTASK: P=  4.51 R= -4.25 Pt=  0.00 Rt=  0.00 A= 97.12 E= 83.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (10848) CONTROLTASK: P=  3.59 R= -4.59 Pt=  0.00 Rt=  0.00 A= 96.77 E= 84.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (10948) CONTROLTASK: P=  2.93 R= -3.04 Pt=  0.00 Rt=  0.00 A= 93.13 E= 84.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (11048) CONTROLTASK: P=  2.67 R=  1.78 Pt=  0.00 Rt=  0.00 A= 84.01 E= 85.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (11148) CONTROLTASK: P=  2.45 R=  8.30 Pt=  0.00 Rt=  0.00 A= 73.35 E= 85.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (11248) CONTROLTASK: P=  2.42 R= 15.68 Pt=  0.00 Rt=  0.00 A= 62.61 E= 85.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (11348) CONTROLTASK: P=  2.23 R= 22.26 Pt=  0.00 Rt=  0.00 A= 53.13 E= 85.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (11448) CONTROLTASK: P=  0.84 R= 27.11 Pt=  0.00 Rt=  0.00 A= 47.76 E= 88.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (11548) CONTROLTASK: P=  1.49 R= 30.26 Pt=  0.00 Rt=  0.00 A= 43.98 E= 86.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (11648) CONTROLTASK: P=  1.82 R= 31.28 Pt=  0.00 Rt=  0.00 A= 42.65 E= 86.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (11748) CONTROLTASK: P=  1.80 R= 32.82 Pt=  0.00 Rt=  0.00 A= 39.75 E= 86.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (11848) CONTROLTASK: P=  1.70 R= 33.96 Pt=  0.00 Rt=  0.00 A= 38.93 E= 86.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (11948) CONTROLTASK: P=  1.73 R= 34.07 Pt=  0.00 Rt=  0.00 A= 39.58 E= 86.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (12048) CONTROLTASK: P=  1.82 R= 32.69 Pt=  0.00 Rt=  0.00 A= 42.22 E= 86.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (12148) CONTROLTASK: P=  1.96 R= 29.43 Pt=  0.00 Rt=  0.00 A= 48.46 E= 86.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (12248) CONTROLTASK: P=  1.84 R= 24.36 Pt=  0.00 Rt=  0.00 A= 56.82 E= 86.65 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (12348) CONTROLTASK: P=  2.29 R= 18.95 Pt=  0.00 Rt=  0.00 A= 64.60 E= 85.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (12448) CONTROLTASK: P=  2.18 R= 13.57 Pt=  0.00 Rt=  0.00 A= 72.49 E= 85.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (12548) CONTROLTASK: P=  1.89 R=  8.28 Pt=  0.00 Rt=  0.00 A= 80.66 E= 86.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (12648) CONTROLTASK: P=  1.86 R=  3.08 Pt=  0.00 Rt=  0.00 A= 88.10 E= 86.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (12748) CONTROLTASK: P=  1.61 R= -0.96 Pt=  0.00 Rt=  0.00 A= 93.38 E= 86.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (12848) CONTROLTASK: P=  1.71 R= -3.56 Pt=  0.00 Rt=  0.00 A= 96.86 E= 86.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (12948) CONTROLTASK: P=  1.83 R= -5.80 Pt=  0.00 Rt=  0.00 A=100.23 E= 86.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (13048) CONTROLTASK: P=  2.09 R= -8.18 Pt=  0.00 Rt=  0.00 A=103.88 E= 85.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (13148) CONTROLTASK: P=  2.42 R=-11.40 Pt=  0.00 Rt=  0.00 A=108.99 E= 84.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (13248) CONTROLTASK: P=  2.75 R=-14.51 Pt=  0.00 Rt=  0.00 A=113.45 E= 84.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (13348) CONTROLTASK: P=  3.07 R=-18.08 Pt=  0.00 Rt=  0.00 A=119.75 E= 84.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (13448) CONTROLTASK: P=  3.60 R=-22.26 Pt=  0.00 Rt=  0.00 A=125.80 E= 83.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (13548) CONTROLTASK: P=  4.28 R=-26.68 Pt=  0.00 Rt=  0.00 A=132.76 E= 82.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (13648) CONTROLTASK: P=  5.77 R=-31.71 Pt=  0.00 Rt=  0.00 A=139.90 E= 80.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:10) Stk:1928W/1928B[0m
+[0;32mI (13748) CONTROLTASK: P=  6.55 R=-34.42 Pt=  0.00 Rt=  0.00 A=143.09 E= 78.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (13848) CONTROLTASK: P=  6.91 R=-35.75 Pt=  0.00 Rt=  0.00 A=144.27 E= 78.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (13948) CONTROLTASK: P=  7.14 R=-36.94 Pt=  0.00 Rt=  0.00 A=146.51 E= 78.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (14048) CONTROLTASK: P=  7.06 R=-38.49 Pt=  0.00 Rt=  0.00 A=148.69 E= 78.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (14148) CONTROLTASK: P=  6.99 R=-39.71 Pt=  0.00 Rt=  0.00 A=150.40 E= 78.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (14248) CONTROLTASK: P=  7.17 R=-40.73 Pt=  0.00 Rt=  0.00 A=151.96 E= 78.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (14348) CONTROLTASK: P=  7.11 R=-41.50 Pt=  0.00 Rt=  0.00 A=153.03 E= 78.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (14448) CONTROLTASK: P=  7.23 R=-42.30 Pt=  0.00 Rt=  0.00 A=154.35 E= 78.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (14548) CONTROLTASK: P=  7.86 R=-43.17 Pt=  0.00 Rt=  0.00 A=155.82 E= 77.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (14648) CONTROLTASK: P=  7.84 R=-43.73 Pt=  0.00 Rt=  0.00 A=156.40 E= 77.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (14748) CONTROLTASK: P=  7.61 R=-44.00 Pt=  0.00 Rt=  0.00 A=156.68 E= 77.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (14848) CONTROLTASK: P=  7.46 R=-44.25 Pt=  0.00 Rt=  0.00 A=157.15 E= 77.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (14948) CONTROLTASK: P=  7.26 R=-44.78 Pt=  0.00 Rt=  0.00 A=158.25 E= 78.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (15048) CONTROLTASK: P=  7.28 R=-45.52 Pt=  0.00 Rt=  0.00 A=159.25 E= 77.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (15148) CONTROLTASK: P=  7.34 R=-45.92 Pt=  0.00 Rt=  0.00 A=159.64 E= 77.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (15248) CONTROLTASK: P=  7.46 R=-45.53 Pt=  0.00 Rt=  0.00 A=158.41 E= 77.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (15348) CONTROLTASK: P=  7.21 R=-43.30 Pt=  0.00 Rt=  0.00 A=153.64 E= 78.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (15448) CONTROLTASK: P=  7.12 R=-38.51 Pt=  0.00 Rt=  0.00 A=145.19 E= 77.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (15548) CONTROLTASK: P=  6.31 R=-32.46 Pt=  0.00 Rt=  0.00 A=135.68 E= 80.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (15648) CONTROLTASK: P=  5.83 R=-26.19 Pt=  0.00 Rt=  0.00 A=126.55 E= 80.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (15748) CONTROLTASK: P=  4.99 R=-20.10 Pt=  0.00 Rt=  0.00 A=117.25 E= 81.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (15848) CONTROLTASK: P=  4.94 R=-14.26 Pt=  0.00 Rt=  0.00 A=108.80 E= 81.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (15948) CONTROLTASK: P=  4.64 R= -9.14 Pt=  0.00 Rt=  0.00 A=101.53 E= 81.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (16048) CONTROLTASK: P=  4.46 R= -3.91 Pt=  0.00 Rt=  0.00 A= 93.59 E= 82.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (16148) CONTROLTASK: P=  3.66 R=  1.31 Pt=  0.00 Rt=  0.00 A= 85.70 E= 83.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (16248) CONTROLTASK: P=  4.64 R=  6.75 Pt=  0.00 Rt=  0.00 A= 77.06 E= 81.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (16348) CONTROLTASK: P=  6.35 R= 13.25 Pt=  0.00 Rt=  0.00 A= 66.87 E= 79.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (16448) CONTROLTASK: P=  6.03 R= 18.84 Pt=  0.00 Rt=  0.00 A= 59.55 E= 79.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (16548) CONTROLTASK: P=  6.01 R= 22.78 Pt=  0.00 Rt=  0.00 A= 55.45 E= 80.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (16648) CONTROLTASK: P=  5.82 R= 25.55 Pt=  0.00 Rt=  0.00 A= 49.48 E= 80.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (16748) CONTROLTASK: P=  5.86 R= 28.11 Pt=  0.00 Rt=  0.00 A= 47.44 E= 80.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (16848) CONTROLTASK: P=  5.60 R= 30.61 Pt=  0.00 Rt=  0.00 A= 43.32 E= 80.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (16948) CONTROLTASK: P=  5.31 R= 33.00 Pt=  0.00 Rt=  0.00 A= 40.39 E= 80.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (17048) CONTROLTASK: P=  5.02 R= 34.28 Pt=  0.00 Rt=  0.00 A= 38.87 E= 81.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (17148) CONTROLTASK: P=  4.79 R= 34.54 Pt=  0.00 Rt=  0.00 A= 39.07 E= 81.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (17248) CONTROLTASK: P=  4.08 R= 33.69 Pt=  0.00 Rt=  0.00 A= 40.51 E= 83.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (17348) CONTROLTASK: P=  2.02 R= 32.06 Pt=  0.00 Rt=  0.00 A= 43.80 E= 87.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (17448) CONTROLTASK: P= -1.21 R= 29.32 Pt=  0.00 Rt=  0.00 A= 48.32 E= 93.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (17548) CONTROLTASK: P= -4.84 R= 25.65 Pt=  0.00 Rt=  0.00 A= 54.60 E= 98.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (17648) CONTROLTASK: P= -7.92 R= 21.06 Pt=  0.00 Rt=  0.00 A= 61.60 E=102.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (17748) CONTROLTASK: P=-10.39 R= 16.07 Pt=  0.00 Rt=  0.00 A= 69.44 E=106.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (17848) CONTROLTASK: P=-13.16 R= 10.76 Pt=  0.00 Rt=  0.00 A= 77.39 E=109.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (17948) CONTROLTASK: P=-15.47 R=  6.14 Pt=  0.00 Rt=  0.00 A= 83.70 E=113.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (18048) CONTROLTASK: P=-17.02 R=  2.08 Pt=  0.00 Rt=  0.00 A= 89.88 E=115.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (18148) CONTROLTASK: P=-17.77 R= -2.20 Pt=  0.00 Rt=  0.00 A= 96.76 E=115.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (18248) CONTROLTASK: P=-17.74 R= -6.61 Pt=  0.00 Rt=  0.00 A=102.84 E=115.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (18348) CONTROLTASK: P=-17.26 R=-10.35 Pt=  0.00 Rt=  0.00 A=108.21 E=114.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (18448) CONTROLTASK: P=-16.15 R=-13.79 Pt=  0.00 Rt=  0.00 A=113.49 E=111.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (18548) CONTROLTASK: P=-14.67 R=-16.59 Pt=  0.00 Rt=  0.00 A=117.28 E=109.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (18648) CONTROLTASK: P=-13.12 R=-19.80 Pt=  0.00 Rt=  0.00 A=122.47 E=107.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (18748) CONTROLTASK: P=-11.52 R=-23.66 Pt=  0.00 Rt=  0.00 A=128.26 E=104.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (18848) CONTROLTASK: P= -9.47 R=-27.11 Pt=  0.00 Rt=  0.00 A=133.15 E=100.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (18948) CONTROLTASK: P= -6.76 R=-29.98 Pt=  0.00 Rt=  0.00 A=137.00 E= 96.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (19048) CONTROLTASK: P= -3.28 R=-31.83 Pt=  0.00 Rt=  0.00 A=139.68 E= 91.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (19148) CONTROLTASK: P= -0.42 R=-33.20 Pt=  0.00 Rt=  0.00 A=140.98 E= 87.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (19248) CONTROLTASK: P=  2.18 R=-33.42 Pt=  0.00 Rt=  0.00 A=140.55 E= 83.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (19348) CONTROLTASK: P=  4.53 R=-32.43 Pt=  0.00 Rt=  0.00 A=138.50 E= 80.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (19448) CONTROLTASK: P=  7.19 R=-31.09 Pt=  0.00 Rt=  0.00 A=136.24 E= 75.78 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (19548) CONTROLTASK: P= 10.54 R=-29.62 Pt=  0.00 Rt=  0.00 A=134.14 E= 70.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (19648) CONTROLTASK: P= 14.00 R=-28.10 Pt=  0.00 Rt=  0.00 A=131.89 E= 65.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (19748) CONTROLTASK: P= 17.35 R=-26.32 Pt=  0.00 Rt=  0.00 A=129.18 E= 60.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (19848) CONTROLTASK: P= 21.01 R=-24.75 Pt=  0.00 Rt=  0.00 A=126.64 E= 54.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (19948) CONTROLTASK: P= 24.01 R=-22.56 Pt=  0.00 Rt=  0.00 A=122.95 E= 51.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (20048) CONTROLTASK: P= 25.96 R=-19.48 Pt=  0.00 Rt=  0.00 A=117.62 E= 48.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (20148) CONTROLTASK: P= 28.04 R=-14.92 Pt=  0.00 Rt=  0.00 A=110.66 E= 45.57 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+I (20248) CONTROLTASK: P= 29.76 R= -9.12 Pt=  0.00 Rt=  0.00 A=101.29 E= 43.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B
+[0;32mI (20348) CONTROLTASK: P= 31.55 R= -3.15 Pt=  0.00 Rt=  0.00 A= 92.38 E= 40.57 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (20448) CONTROLTASK: P= 32.20 R=  2.36 Pt=  0.00 Rt=  0.00 A= 84.35 E= 40.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (20548) CONTROLTASK: P= 32.79 R=  7.07 Pt=  0.00 Rt=  0.00 A= 77.80 E= 40.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (20648) CONTROLTASK: P= 30.97 R= 11.73 Pt=  0.00 Rt=  0.00 A= 69.80 E= 43.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (20748) CONTROLTASK: P= 29.34 R= 16.63 Pt=  0.00 Rt=  0.00 A= 62.60 E= 45.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (20848) CONTROLTASK: P= 28.23 R= 21.41 Pt=  0.00 Rt=  0.00 A= 56.20 E= 47.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (20948) CONTROLTASK: P= 26.63 R= 24.96 Pt=  0.00 Rt=  0.00 A= 51.79 E= 50.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (21048) CONTROLTASK: P= 24.24 R= 27.76 Pt=  0.00 Rt=  0.00 A= 48.25 E= 54.05 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (21148) CONTROLTASK: P= 21.52 R= 30.08 Pt=  0.00 Rt=  0.00 A= 44.93 E= 58.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (21248) CONTROLTASK: P= 19.75 R= 30.91 Pt=  0.00 Rt=  0.00 A= 44.02 E= 60.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (21348) CONTROLTASK: P= 17.57 R= 31.19 Pt=  0.00 Rt=  0.00 A= 43.51 E= 63.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:0) Stk:1928W/1928B[0m
+[0;32mI (21448) CONTROLTASK: P= 15.60 R= 32.80 Pt=  0.00 Rt=  0.00 A= 40.27 E= 67.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (21548) CONTROLTASK: P= 13.04 R= 34.78 Pt=  0.00 Rt=  0.00 A= 37.89 E= 71.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (21648) CONTROLTASK: P=  9.65 R= 35.32 Pt=  0.00 Rt=  0.00 A= 37.92 E= 76.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (21748) CONTROLTASK: P=  5.53 R= 34.62 Pt=  0.00 Rt=  0.00 A= 38.93 E= 83.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (21848) CONTROLTASK: P=  0.29 R= 32.55 Pt=  0.00 Rt=  0.00 A= 43.44 E= 92.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (21948) CONTROLTASK: P= -4.83 R= 29.87 Pt=  0.00 Rt=  0.00 A= 47.25 E= 99.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (22048) CONTROLTASK: P= -8.94 R= 27.48 Pt=  0.00 Rt=  0.00 A= 50.77 E=104.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (22148) CONTROLTASK: P=-10.88 R= 25.66 Pt=  0.00 Rt=  0.00 A= 52.81 E=105.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (22248) CONTROLTASK: P=-12.46 R= 24.38 Pt=  0.00 Rt=  0.00 A= 54.93 E=108.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (22348) CONTROLTASK: P=-13.69 R= 22.58 Pt=  0.00 Rt=  0.00 A= 58.44 E=109.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (22448) CONTROLTASK: P=-14.58 R= 19.49 Pt=  0.00 Rt=  0.00 A= 63.44 E=111.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (22548) CONTROLTASK: P=-16.52 R= 15.61 Pt=  0.00 Rt=  0.00 A= 68.39 E=114.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (22648) CONTROLTASK: P=-19.09 R= 12.85 Pt=  0.00 Rt=  0.00 A= 72.86 E=119.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (22748) CONTROLTASK: P=-21.46 R= 11.09 Pt=  0.00 Rt=  0.00 A= 75.00 E=122.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (22848) CONTROLTASK: P=-23.26 R=  9.72 Pt=  0.00 Rt=  0.00 A= 76.32 E=124.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (22948) CONTROLTASK: P=-24.55 R=  7.98 Pt=  0.00 Rt=  0.00 A= 79.20 E=126.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (23048) CONTROLTASK: P=-25.98 R=  6.59 Pt=  0.00 Rt=  0.00 A= 81.40 E=128.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (23148) CONTROLTASK: P=-26.29 R=  5.66 Pt=  0.00 Rt=  0.00 A= 82.96 E=127.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (23248) CONTROLTASK: P=-24.60 R=  3.98 Pt=  0.00 Rt=  0.00 A= 85.10 E=123.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (23348) CONTROLTASK: P=-21.46 R=  2.21 Pt=  0.00 Rt=  0.00 A= 87.99 E=117.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (23448) CONTROLTASK: P=-17.04 R= -0.02 Pt=  0.00 Rt=  0.00 A= 92.43 E=108.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (23548) CONTROLTASK: P=-12.49 R= -4.38 Pt=  0.00 Rt=  0.00 A=100.38 E=104.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (23648) CONTROLTASK: P= -8.94 R=-10.42 Pt=  0.00 Rt=  0.00 A=109.52 E= 99.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (23748) CONTROLTASK: P= -5.17 R=-15.67 Pt=  0.00 Rt=  0.00 A=116.44 E= 93.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (23848) CONTROLTASK: P= -1.03 R=-19.58 Pt=  0.00 Rt=  0.00 A=121.38 E= 86.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (23948) CONTROLTASK: P=  3.98 R=-21.73 Pt=  0.00 Rt=  0.00 A=124.34 E= 79.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (24048) CONTROLTASK: P=  8.60 R=-22.77 Pt=  0.00 Rt=  0.00 A=124.38 E= 72.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (24148) CONTROLTASK: P= 12.20 R=-21.72 Pt=  0.00 Rt=  0.00 A=122.16 E= 68.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (24248) CONTROLTASK: P= 14.29 R=-19.37 Pt=  0.00 Rt=  0.00 A=117.91 E= 66.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (24348) CONTROLTASK: P= 16.10 R=-16.51 Pt=  0.00 Rt=  0.00 A=114.02 E= 63.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (24448) CONTROLTASK: P= 18.18 R=-14.71 Pt=  0.00 Rt=  0.00 A=111.71 E= 59.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (24548) CONTROLTASK: P= 19.38 R=-15.92 Pt=  0.00 Rt=  0.00 A=115.72 E= 59.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (24648) CONTROLTASK: P= 19.67 R=-20.11 Pt=  0.00 Rt=  0.00 A=124.46 E= 58.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (24748) CONTROLTASK: P= 19.85 R=-26.47 Pt=  0.00 Rt=  0.00 A=133.75 E= 58.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (24848) CONTROLTASK: P= 18.92 R=-30.86 Pt=  0.00 Rt=  0.00 A=139.48 E= 60.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (24948) CONTROLTASK: P= 18.99 R=-34.96 Pt=  0.00 Rt=  0.00 A=144.81 E= 61.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (25048) CONTROLTASK: P= 16.99 R=-37.82 Pt=  0.00 Rt=  0.00 A=148.67 E= 64.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (25148) CONTROLTASK: P= 15.82 R=-40.07 Pt=  0.00 Rt=  0.00 A=151.80 E= 65.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (25248) CONTROLTASK: P= 14.86 R=-41.40 Pt=  0.00 Rt=  0.00 A=153.84 E= 66.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (25348) CONTROLTASK: P= 14.48 R=-42.70 Pt=  0.00 Rt=  0.00 A=155.47 E= 66.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (25448) CONTROLTASK: P= 14.57 R=-43.57 Pt=  0.00 Rt=  0.00 A=156.58 E= 66.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (25548) CONTROLTASK: P= 14.59 R=-43.51 Pt=  0.00 Rt=  0.00 A=155.86 E= 66.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (25648) CONTROLTASK: P= 14.44 R=-42.76 Pt=  0.00 Rt=  0.00 A=154.13 E= 67.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (25748) CONTROLTASK: P= 13.71 R=-39.84 Pt=  0.00 Rt=  0.00 A=148.08 E= 68.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (25848) CONTROLTASK: P= 11.93 R=-32.36 Pt=  0.00 Rt=  0.00 A=132.86 E= 68.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (25948) CONTROLTASK: P= 10.13 R=-22.10 Pt=  0.00 Rt=  0.00 A=117.64 E= 74.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (26048) CONTROLTASK: P=  8.32 R=-10.97 Pt=  0.00 Rt=  0.00 A=101.14 E= 76.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (26148) CONTROLTASK: P=  7.75 R= -1.59 Pt=  0.00 Rt=  0.00 A= 88.82 E= 77.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (26248) CONTROLTASK: P=  7.41 R=  5.67 Pt=  0.00 Rt=  0.00 A= 78.34 E= 76.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (26348) CONTROLTASK: P= 12.36 R= 11.48 Pt=  0.00 Rt=  0.00 A= 71.13 E= 70.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (26448) CONTROLTASK: P= 11.18 R= 16.76 Pt=  0.00 Rt=  0.00 A= 62.65 E= 72.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (26548) CONTROLTASK: P= 10.15 R= 21.51 Pt=  0.00 Rt=  0.00 A= 55.23 E= 73.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (26648) CONTROLTASK: P=  8.65 R= 26.76 Pt=  0.00 Rt=  0.00 A= 46.99 E= 77.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (26748) CONTROLTASK: P=  8.73 R= 30.76 Pt=  0.00 Rt=  0.00 A= 42.90 E= 75.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (26848) CONTROLTASK: P=  9.47 R= 32.53 Pt=  0.00 Rt=  0.00 A= 42.04 E= 74.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (26948) CONTROLTASK: P=  9.04 R= 31.33 Pt=  0.00 Rt=  0.00 A= 45.44 E= 75.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (27048) CONTROLTASK: P=  8.21 R= 28.07 Pt=  0.00 Rt=  0.00 A= 51.22 E= 76.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (27148) CONTROLTASK: P=  7.58 R= 23.32 Pt=  0.00 Rt=  0.00 A= 59.17 E= 77.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (27248) CONTROLTASK: P=  7.11 R= 17.94 Pt=  0.00 Rt=  0.00 A= 68.73 E= 78.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (27348) CONTROLTASK: P=  5.96 R=  8.20 Pt=  0.00 Rt=  0.00 A= 85.21 E= 80.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (27448) CONTROLTASK: P=  4.28 R= -1.84 Pt=  0.00 Rt=  0.00 A= 99.72 E= 82.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (27548) CONTROLTASK: P=  3.21 R=-13.56 Pt=  0.00 Rt=  0.00 A=118.52 E= 83.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (27648) CONTROLTASK: P=  2.96 R=-26.45 Pt=  0.00 Rt=  0.00 A=136.22 E= 83.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (27748) CONTROLTASK: P=  5.28 R=-33.81 Pt=  0.00 Rt=  0.00 A=144.80 E= 77.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (27848) CONTROLTASK: P=  7.23 R=-37.87 Pt=  0.00 Rt=  0.00 A=147.74 E= 76.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (27948) CONTROLTASK: P=  8.76 R=-36.89 Pt=  0.00 Rt=  0.00 A=144.33 E= 74.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (28048) CONTROLTASK: P= 10.40 R=-31.30 Pt=  0.00 Rt=  0.00 A=133.81 E= 71.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (28148) CONTROLTASK: P= 12.66 R=-25.17 Pt=  0.00 Rt=  0.00 A=125.18 E= 67.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (28248) CONTROLTASK: P= 16.23 R=-19.97 Pt=  0.00 Rt=  0.00 A=118.64 E= 61.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (28348) CONTROLTASK: P= 20.81 R=-15.51 Pt=  0.00 Rt=  0.00 A=111.76 E= 53.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (28448) CONTROLTASK: P= 26.29 R=-12.59 Pt=  0.00 Rt=  0.00 A=107.98 E= 44.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (28548) CONTROLTASK: P= 32.16 R=-10.32 Pt=  0.00 Rt=  0.00 A=106.35 E= 35.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (28648) CONTROLTASK: P= 36.96 R=-10.48 Pt=  0.00 Rt=  0.00 A=107.08 E= 29.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (28748) CONTROLTASK: P= 39.10 R= -9.45 Pt=  0.00 Rt=  0.00 A=105.03 E= 29.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (28848) CONTROLTASK: P= 36.58 R= -7.88 Pt=  0.00 Rt=  0.00 A=101.35 E= 36.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (28948) CONTROLTASK: P= 29.40 R= -6.35 Pt=  0.00 Rt=  0.00 A= 99.51 E= 51.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (29048) CONTROLTASK: P= 17.62 R= -3.87 Pt=  0.00 Rt=  0.00 A= 95.72 E= 71.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (29148) CONTROLTASK: P=  6.31 R= -2.61 Pt=  0.00 Rt=  0.00 A= 93.90 E= 87.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (29248) CONTROLTASK: P= -4.70 R= -2.58 Pt=  0.00 Rt=  0.00 A= 94.51 E=102.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (29348) CONTROLTASK: P=-16.84 R= -2.06 Pt=  0.00 Rt=  0.00 A= 94.63 E=122.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (29448) CONTROLTASK: P=-21.25 R= -1.74 Pt=  0.00 Rt=  0.00 A= 93.33 E=122.11 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (29548) CONTROLTASK: P=-20.45 R= -1.74 Pt=  0.00 Rt=  0.00 A= 94.22 E=116.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (29648) CONTROLTASK: P=-14.39 R= -2.69 Pt=  0.00 Rt=  0.00 A= 95.54 E=103.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (29748) CONTROLTASK: P= -5.93 R= -3.46 Pt=  0.00 Rt=  0.00 A= 96.45 E= 90.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (29848) CONTROLTASK: P=  0.59 R= -3.66 Pt=  0.00 Rt=  0.00 A= 96.54 E= 83.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (29948) CONTROLTASK: P=  3.84 R= -3.68 Pt=  0.00 Rt=  0.00 A= 96.59 E= 81.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (30048) CONTROLTASK: P=  6.15 R= -4.19 Pt=  0.00 Rt=  0.00 A= 97.86 E= 76.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (30148) CONTROLTASK: P=  9.18 R= -5.31 Pt=  0.00 Rt=  0.00 A= 99.43 E= 71.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+I (30248) CONTROLTASK: P= 12.46 R= -5.44 Pt=  0.00 Rt=  0.00 A= 98.86 E= 66.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B
+[0;32mI (30348) CONTROLTASK: P= 15.82 R= -4.94 Pt=  0.00 Rt=  0.00 A= 98.12 E= 61.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (30448) CONTROLTASK: P= 18.65 R= -4.63 Pt=  0.00 Rt=  0.00 A= 97.66 E= 58.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (30548) CONTROLTASK: P= 19.32 R= -4.53 Pt=  0.00 Rt=  0.00 A= 97.98 E= 59.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (30648) CONTROLTASK: P= 15.88 R= -5.17 Pt=  0.00 Rt=  0.00 A= 99.03 E= 69.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (30748) CONTROLTASK: P=  7.45 R= -6.08 Pt=  0.00 Rt=  0.00 A=100.26 E= 84.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (30848) CONTROLTASK: P= -0.25 R= -9.14 Pt=  0.00 Rt=  0.00 A=108.34 E= 93.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (30948) CONTROLTASK: P= -3.36 R=-16.29 Pt=  0.00 Rt=  0.00 A=120.10 E= 96.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (31048) CONTROLTASK: P= -2.07 R=-25.08 Pt=  0.00 Rt=  0.00 A=133.22 E= 89.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (31148) CONTROLTASK: P=  0.02 R=-31.52 Pt=  0.00 Rt=  0.00 A=141.03 E= 86.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (31248) CONTROLTASK: P=  2.39 R=-32.95 Pt=  0.00 Rt=  0.00 A=139.20 E= 82.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (31348) CONTROLTASK: P=  4.65 R=-25.78 Pt=  0.00 Rt=  0.00 A=123.71 E= 82.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (31448) CONTROLTASK: P=  6.60 R=-12.39 Pt=  0.00 Rt=  0.00 A=100.77 E= 77.04 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (31548) CONTROLTASK: P=  5.93 R=  1.63 Pt=  0.00 Rt=  0.00 A= 81.26 E= 82.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (31648) CONTROLTASK: P=  3.02 R= 12.86 Pt=  0.00 Rt=  0.00 A= 66.50 E=101.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (31748) CONTROLTASK: P= -1.12 R= 21.96 Pt=  0.00 Rt=  0.00 A= 54.00 E= 92.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (31848) CONTROLTASK: P= -4.32 R= 26.19 Pt=  0.00 Rt=  0.00 A= 50.77 E= 96.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (31948) CONTROLTASK: P= -7.80 R= 25.18 Pt=  0.00 Rt=  0.00 A= 54.99 E=102.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (32048) CONTROLTASK: P=-12.40 R= 21.25 Pt=  0.00 Rt=  0.00 A= 62.39 E=110.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (32148) CONTROLTASK: P=-17.06 R= 16.15 Pt=  0.00 Rt=  0.00 A= 70.54 E=116.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (32248) CONTROLTASK: P=-19.03 R=  9.35 Pt=  0.00 Rt=  0.00 A= 81.12 E=116.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (32348) CONTROLTASK: P=-15.58 R=  2.05 Pt=  0.00 Rt=  0.00 A= 93.19 E=103.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (32448) CONTROLTASK: P= -9.28 R= -6.46 Pt=  0.00 Rt=  0.00 A=106.15 E= 96.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (32548) CONTROLTASK: P= -1.93 R=-13.53 Pt=  0.00 Rt=  0.00 A=114.93 E= 85.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (32648) CONTROLTASK: P=  3.90 R=-17.19 Pt=  0.00 Rt=  0.00 A=118.84 E= 78.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (32748) CONTROLTASK: P=  7.30 R=-20.46 Pt=  0.00 Rt=  0.00 A=124.52 E= 75.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (32848) CONTROLTASK: P=  8.42 R=-25.81 Pt=  0.00 Rt=  0.00 A=133.41 E= 74.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (32948) CONTROLTASK: P=  8.95 R=-30.65 Pt=  0.00 Rt=  0.00 A=139.14 E= 74.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (33048) CONTROLTASK: P=  8.37 R=-31.49 Pt=  0.00 Rt=  0.00 A=137.91 E= 75.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (33148) CONTROLTASK: P=  6.73 R=-28.37 Pt=  0.00 Rt=  0.00 A=130.69 E= 79.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (33248) CONTROLTASK: P=  3.43 R=-20.12 Pt=  0.00 Rt=  0.00 A=115.14 E= 85.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (33348) CONTROLTASK: P= -0.02 R= -8.17 Pt=  0.00 Rt=  0.00 A= 96.36 E= 90.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (33448) CONTROLTASK: P= -3.59 R=  4.29 Pt=  0.00 Rt=  0.00 A= 77.69 E= 94.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (33548) CONTROLTASK: P= -4.41 R= 15.89 Pt=  0.00 Rt=  0.00 A= 60.79 E= 95.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (33648) CONTROLTASK: P= -3.57 R= 25.60 Pt=  0.00 Rt=  0.00 A= 47.99 E= 92.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (33748) CONTROLTASK: P= -2.26 R= 31.79 Pt=  0.00 Rt=  0.00 A= 41.05 E= 90.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (33848) CONTROLTASK: P= -0.67 R= 33.37 Pt=  0.00 Rt=  0.00 A= 42.32 E= 88.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (33948) CONTROLTASK: P=  0.15 R= 25.99 Pt=  0.00 Rt=  0.00 A= 58.30 E= 86.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (34048) CONTROLTASK: P=  1.71 R= 13.52 Pt=  0.00 Rt=  0.00 A= 79.14 E= 83.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (34148) CONTROLTASK: P=  2.66 R= -0.63 Pt=  0.00 Rt=  0.00 A=100.31 E= 83.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (34248) CONTROLTASK: P=  3.84 R=-13.10 Pt=  0.00 Rt=  0.00 A=117.50 E= 80.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (34348) CONTROLTASK: P=  5.91 R=-22.23 Pt=  0.00 Rt=  0.00 A=128.97 E= 76.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (34448) CONTROLTASK: P=  8.80 R=-25.63 Pt=  0.00 Rt=  0.00 A=129.74 E= 72.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (34548) CONTROLTASK: P= 11.92 R=-22.40 Pt=  0.00 Rt=  0.00 A=121.53 E= 67.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (34648) CONTROLTASK: P= 16.11 R=-15.93 Pt=  0.00 Rt=  0.00 A=110.84 E= 59.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (34748) CONTROLTASK: P= 20.62 R=-10.52 Pt=  0.00 Rt=  0.00 A=104.15 E= 53.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (34848) CONTROLTASK: P= 23.57 R= -7.50 Pt=  0.00 Rt=  0.00 A=101.11 E= 51.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (34948) CONTROLTASK: P= 22.25 R= -5.79 Pt=  0.00 Rt=  0.00 A= 99.33 E= 57.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (35048) CONTROLTASK: P= 15.09 R= -4.20 Pt=  0.00 Rt=  0.00 A= 95.68 E= 72.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (35148) CONTROLTASK: P=  5.41 R= -1.84 Pt=  0.00 Rt=  0.00 A= 93.41 E= 89.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (35248) CONTROLTASK: P= -6.77 R=  0.89 Pt=  0.00 Rt=  0.00 A= 88.74 E=106.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (35348) CONTROLTASK: P=-14.88 R=  2.17 Pt=  0.00 Rt=  0.00 A= 87.44 E=114.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (35448) CONTROLTASK: P=-19.34 R=  2.71 Pt=  0.00 Rt=  0.00 A= 86.43 E=118.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (35548) CONTROLTASK: P=-19.84 R=  2.26 Pt=  0.00 Rt=  0.00 A= 88.67 E=116.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (35648) CONTROLTASK: P=-17.01 R=  1.53 Pt=  0.00 Rt=  0.00 A= 89.16 E=111.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (35748) CONTROLTASK: P=-12.80 R=  0.57 Pt=  0.00 Rt=  0.00 A= 90.98 E=102.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (35848) CONTROLTASK: P= -4.39 R= -0.58 Pt=  0.00 Rt=  0.00 A= 93.10 E= 87.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (35948) CONTROLTASK: P=  7.51 R= -1.71 Pt=  0.00 Rt=  0.00 A= 94.53 E= 68.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (36048) CONTROLTASK: P= 16.92 R= -3.16 Pt=  0.00 Rt=  0.00 A= 96.44 E= 57.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (36148) CONTROLTASK: P= 21.12 R= -3.75 Pt=  0.00 Rt=  0.00 A= 97.29 E= 54.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (36248) CONTROLTASK: P= 19.16 R= -4.20 Pt=  0.00 Rt=  0.00 A= 97.51 E= 62.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (36348) CONTROLTASK: P= 11.14 R= -4.62 Pt=  0.00 Rt=  0.00 A= 97.55 E= 78.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+I (36448) CONTROLTASK: P= -1.58 R= -2.74 Pt=  0.00 Rt=  0.00 A= 93.44 E=100.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B
+[0;32mI (36548) CONTROLTASK: P=-13.30 R=  0.84 Pt=  0.00 Rt=  0.00 A= 87.65 E=115.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (36648) CONTROLTASK: P=-22.54 R=  2.87 Pt=  0.00 Rt=  0.00 A= 86.43 E=127.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (36748) CONTROLTASK: P=-26.67 R=  2.91 Pt=  0.00 Rt=  0.00 A= 86.90 E=128.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (36848) CONTROLTASK: P=-24.03 R=  2.29 Pt=  0.00 Rt=  0.00 A= 88.79 E=120.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (36948) CONTROLTASK: P=-16.71 R=  0.34 Pt=  0.00 Rt=  0.00 A= 91.98 E=105.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (37048) CONTROLTASK: P= -6.87 R= -1.51 Pt=  0.00 Rt=  0.00 A= 94.59 E= 90.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (37148) CONTROLTASK: P=  3.68 R= -2.33 Pt=  0.00 Rt=  0.00 A= 94.74 E= 74.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (37248) CONTROLTASK: P= 13.12 R= -3.28 Pt=  0.00 Rt=  0.00 A= 96.09 E= 61.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (37348) CONTROLTASK: P= 19.54 R= -4.34 Pt=  0.00 Rt=  0.00 A= 97.79 E= 56.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (37448) CONTROLTASK: P= 22.40 R= -5.02 Pt=  0.00 Rt=  0.00 A= 98.88 E= 53.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (37548) CONTROLTASK: P= 23.46 R= -4.61 Pt=  0.00 Rt=  0.00 A= 98.21 E= 53.04 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (37648) CONTROLTASK: P= 20.46 R= -4.65 Pt=  0.00 Rt=  0.00 A= 98.39 E= 61.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (37748) CONTROLTASK: P= 12.17 R= -4.92 Pt=  0.00 Rt=  0.00 A= 98.51 E= 77.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (37848) CONTROLTASK: P=  1.98 R= -3.15 Pt=  0.00 Rt=  0.00 A= 95.00 E= 92.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (37948) CONTROLTASK: P= -8.47 R= -1.99 Pt=  0.00 Rt=  0.00 A= 94.14 E=107.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (38048) CONTROLTASK: P=-17.62 R= -1.33 Pt=  0.00 Rt=  0.00 A= 93.51 E=120.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (38148) CONTROLTASK: P=-24.57 R= -0.78 Pt=  0.00 Rt=  0.00 A= 92.09 E=129.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (38248) CONTROLTASK: P=-28.40 R=  0.38 Pt=  0.00 Rt=  0.00 A= 89.79 E=132.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (38348) CONTROLTASK: P=-27.86 R=  1.48 Pt=  0.00 Rt=  0.00 A= 89.05 E=128.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (38448) CONTROLTASK: P=-24.24 R=  0.17 Pt=  0.00 Rt=  0.00 A= 92.50 E=120.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (38548) CONTROLTASK: P=-17.34 R= -2.23 Pt=  0.00 Rt=  0.00 A= 95.96 E=107.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (38648) CONTROLTASK: P= -7.40 R= -4.32 Pt=  0.00 Rt=  0.00 A= 98.95 E= 90.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (38748) CONTROLTASK: P=  3.63 R= -5.27 Pt=  0.00 Rt=  0.00 A= 99.57 E= 75.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (38848) CONTROLTASK: P= 10.90 R= -4.96 Pt=  0.00 Rt=  0.00 A= 98.01 E= 67.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (38948) CONTROLTASK: P= 15.77 R= -3.62 Pt=  0.00 Rt=  0.00 A= 95.85 E= 61.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (39048) CONTROLTASK: P= 19.60 R= -2.51 Pt=  0.00 Rt=  0.00 A= 94.76 E= 56.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (39148) CONTROLTASK: P= 21.62 R= -1.83 Pt=  0.00 Rt=  0.00 A= 93.64 E= 55.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (39248) CONTROLTASK: P= 20.75 R= -1.44 Pt=  0.00 Rt=  0.00 A= 93.98 E= 58.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (39348) CONTROLTASK: P= 14.62 R= -1.82 Pt=  0.00 Rt=  0.00 A= 94.05 E= 72.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (39448) CONTROLTASK: P=  4.33 R= -0.69 Pt=  0.00 Rt=  0.00 A= 91.41 E= 90.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (39548) CONTROLTASK: P= -7.14 R=  0.43 Pt=  0.00 Rt=  0.00 A= 90.10 E=106.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (39648) CONTROLTASK: P=-16.63 R=  1.85 Pt=  0.00 Rt=  0.00 A= 87.76 E=119.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (39748) CONTROLTASK: P=-23.41 R=  2.13 Pt=  0.00 Rt=  0.00 A= 87.95 E=126.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (39848) CONTROLTASK: P=-25.22 R=  0.91 Pt=  0.00 Rt=  0.00 A= 90.79 E=125.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (39948) CONTROLTASK: P=-23.38 R= -0.20 Pt=  0.00 Rt=  0.00 A= 91.99 E=120.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (40048) CONTROLTASK: P=-17.53 R= -0.49 Pt=  0.00 Rt=  0.00 A= 91.95 E=108.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (40148) CONTROLTASK: P= -7.33 R= -0.39 Pt=  0.00 Rt=  0.00 A= 91.57 E= 90.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (40248) CONTROLTASK: P=  4.69 R= -0.51 Pt=  0.00 Rt=  0.00 A= 91.88 E= 72.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (40348) CONTROLTASK: P= 14.32 R= -1.10 Pt=  0.00 Rt=  0.00 A= 93.56 E= 60.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (40448) CONTROLTASK: P= 20.28 R= -1.59 Pt=  0.00 Rt=  0.00 A= 93.78 E= 54.54 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (40548) CONTROLTASK: P= 21.65 R= -1.72 Pt=  0.00 Rt=  0.00 A= 94.01 E= 55.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (40648) CONTROLTASK: P= 22.11 R= -1.84 Pt=  0.00 Rt=  0.00 A= 94.20 E= 54.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (40748) CONTROLTASK: P= 24.12 R= -1.99 Pt=  0.00 Rt=  0.00 A= 94.48 E= 49.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (40848) CONTROLTASK: P= 27.11 R= -2.27 Pt=  0.00 Rt=  0.00 A= 95.03 E= 44.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (40948) CONTROLTASK: P= 29.22 R= -2.59 Pt=  0.00 Rt=  0.00 A= 95.24 E= 42.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (41048) CONTROLTASK: P= 30.46 R= -2.73 Pt=  0.00 Rt=  0.00 A= 95.57 E= 41.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (41148) CONTROLTASK: P= 31.43 R= -2.75 Pt=  0.00 Rt=  0.00 A= 95.45 E= 40.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (41248) CONTROLTASK: P= 31.97 R= -2.96 Pt=  0.00 Rt=  0.00 A= 95.85 E= 39.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (41348) CONTROLTASK: P= 31.89 R= -2.91 Pt=  0.00 Rt=  0.00 A= 95.68 E= 39.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (41448) CONTROLTASK: P= 31.79 R= -2.85 Pt=  0.00 Rt=  0.00 A= 95.48 E= 40.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (41548) CONTROLTASK: P= 31.64 R= -2.81 Pt=  0.00 Rt=  0.00 A= 95.41 E= 40.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (41648) CONTROLTASK: P= 31.60 R= -2.99 Pt=  0.00 Rt=  0.00 A= 95.90 E= 40.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (41748) CONTROLTASK: P= 31.87 R= -3.01 Pt=  0.00 Rt=  0.00 A= 95.69 E= 39.78 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (41848) CONTROLTASK: P= 32.36 R= -3.04 Pt=  0.00 Rt=  0.00 A= 95.69 E= 38.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (41948) CONTROLTASK: P= 32.95 R= -3.02 Pt=  0.00 Rt=  0.00 A= 95.90 E= 37.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (42048) CONTROLTASK: P= 33.72 R= -3.31 Pt=  0.00 Rt=  0.00 A= 96.36 E= 36.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (42148) CONTROLTASK: P= 34.36 R= -3.53 Pt=  0.00 Rt=  0.00 A= 96.78 E= 35.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (42248) CONTROLTASK: P= 34.63 R= -3.59 Pt=  0.00 Rt=  0.00 A= 96.55 E= 35.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (42348) CONTROLTASK: P= 34.77 R= -3.51 Pt=  0.00 Rt=  0.00 A= 96.66 E= 35.37 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (42448) CONTROLTASK: P= 34.67 R= -3.52 Pt=  0.00 Rt=  0.00 A= 96.63 E= 35.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (42548) CONTROLTASK: P= 34.74 R= -3.58 Pt=  0.00 Rt=  0.00 A= 96.69 E= 35.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (42648) CONTROLTASK: P= 34.92 R= -3.64 Pt=  0.00 Rt=  0.00 A= 96.88 E= 34.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (42748) CONTROLTASK: P= 35.15 R= -3.65 Pt=  0.00 Rt=  0.00 A= 96.74 E= 34.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (42848) CONTROLTASK: P= 34.55 R= -3.58 Pt=  0.00 Rt=  0.00 A= 96.81 E= 36.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (42948) CONTROLTASK: P= 32.14 R= -3.76 Pt=  0.00 Rt=  0.00 A= 97.16 E= 41.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (43048) CONTROLTASK: P= 27.00 R= -3.74 Pt=  0.00 Rt=  0.00 A= 96.87 E= 51.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (43148) CONTROLTASK: P= 19.62 R= -3.34 Pt=  0.00 Rt=  0.00 A= 96.01 E= 63.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (43248) CONTROLTASK: P= 11.21 R= -3.24 Pt=  0.00 Rt=  0.00 A= 97.19 E= 76.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (43348) CONTROLTASK: P=  2.40 R= -3.01 Pt=  0.00 Rt=  0.00 A= 95.59 E= 89.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (43448) CONTROLTASK: P= -5.82 R= -2.72 Pt=  0.00 Rt=  0.00 A= 95.24 E=101.78 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (43548) CONTROLTASK: P=-13.51 R= -2.25 Pt=  0.00 Rt=  0.00 A= 94.19 E=112.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (43648) CONTROLTASK: P=-19.99 R= -1.95 Pt=  0.00 Rt=  0.00 A= 94.53 E=121.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:10) Stk:1928W/1928B[0m
+[0;32mI (43748) CONTROLTASK: P=-24.70 R= -2.00 Pt=  0.00 Rt=  0.00 A= 94.68 E=126.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (43848) CONTROLTASK: P=-27.14 R= -2.46 Pt=  0.00 Rt=  0.00 A= 95.39 E=129.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (43948) CONTROLTASK: P=-28.14 R= -2.59 Pt=  0.00 Rt=  0.00 A= 95.27 E=129.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (44048) CONTROLTASK: P=-27.91 R= -2.63 Pt=  0.00 Rt=  0.00 A= 95.33 E=128.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (44148) CONTROLTASK: P=-27.53 R= -2.45 Pt=  0.00 Rt=  0.00 A= 94.89 E=128.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (44248) CONTROLTASK: P=-27.20 R= -2.24 Pt=  0.00 Rt=  0.00 A= 94.65 E=127.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (44348) CONTROLTASK: P=-26.99 R= -2.22 Pt=  0.00 Rt=  0.00 A= 94.71 E=127.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (44448) CONTROLTASK: P=-26.82 R= -2.18 Pt=  0.00 Rt=  0.00 A= 94.29 E=127.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (44548) CONTROLTASK: P=-26.55 R= -2.09 Pt=  0.00 Rt=  0.00 A= 94.28 E=127.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (44648) CONTROLTASK: P=-26.68 R= -1.92 Pt=  0.00 Rt=  0.00 A= 94.19 E=127.65 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (44748) CONTROLTASK: P=-26.45 R= -1.98 Pt=  0.00 Rt=  0.00 A= 94.48 E=127.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (44848) CONTROLTASK: P=-26.14 R= -1.94 Pt=  0.00 Rt=  0.00 A= 94.28 E=126.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (44948) CONTROLTASK: P=-26.18 R= -2.00 Pt=  0.00 Rt=  0.00 A= 94.28 E=126.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (45048) CONTROLTASK: P=-26.21 R= -1.82 Pt=  0.00 Rt=  0.00 A= 93.99 E=126.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+I (45148) CONTROLTASK: P=-26.14 R= -1.53 Pt=  0.00 Rt=  0.00 A= 93.53 E=126.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B
+[0;32mI (45248) CONTROLTASK: P=-26.22 R= -1.40 Pt=  0.00 Rt=  0.00 A= 93.37 E=127.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (45348) CONTROLTASK: P=-26.36 R= -1.41 Pt=  0.00 Rt=  0.00 A= 93.45 E=127.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (45448) CONTROLTASK: P=-26.30 R= -1.35 Pt=  0.00 Rt=  0.00 A= 93.29 E=127.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (45548) CONTROLTASK: P=-26.26 R= -1.29 Pt=  0.00 Rt=  0.00 A= 93.23 E=126.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (45648) CONTROLTASK: P=-26.15 R= -1.29 Pt=  0.00 Rt=  0.00 A= 93.36 E=126.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (45748) CONTROLTASK: P=-26.03 R= -1.42 Pt=  0.00 Rt=  0.00 A= 93.62 E=126.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (45848) CONTROLTASK: P=-26.03 R= -1.46 Pt=  0.00 Rt=  0.00 A= 93.57 E=126.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (45948) CONTROLTASK: P=-26.11 R= -1.52 Pt=  0.00 Rt=  0.00 A= 93.79 E=127.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (46048) CONTROLTASK: P=-26.11 R= -1.59 Pt=  0.00 Rt=  0.00 A= 93.81 E=127.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (46148) CONTROLTASK: P=-26.08 R= -1.60 Pt=  0.00 Rt=  0.00 A= 93.77 E=127.04 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (46248) CONTROLTASK: P=-25.96 R= -1.59 Pt=  0.00 Rt=  0.00 A= 93.72 E=126.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (46348) CONTROLTASK: P=-25.89 R= -1.64 Pt=  0.00 Rt=  0.00 A= 93.91 E=126.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (46448) CONTROLTASK: P=-25.95 R= -1.72 Pt=  0.00 Rt=  0.00 A= 94.00 E=127.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (46548) CONTROLTASK: P=-26.03 R= -1.62 Pt=  0.00 Rt=  0.00 A= 93.78 E=127.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (46648) CONTROLTASK: P=-26.08 R= -1.61 Pt=  0.00 Rt=  0.00 A= 93.98 E=127.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (46748) CONTROLTASK: P=-26.08 R= -1.72 Pt=  0.00 Rt=  0.00 A= 93.98 E=127.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (46848) CONTROLTASK: P=-26.07 R= -1.69 Pt=  0.00 Rt=  0.00 A= 93.91 E=127.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (46948) CONTROLTASK: P=-26.04 R= -1.77 Pt=  0.00 Rt=  0.00 A= 94.02 E=127.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (47048) CONTROLTASK: P=-26.07 R= -1.77 Pt=  0.00 Rt=  0.00 A= 94.05 E=127.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (47148) CONTROLTASK: P=-26.17 R= -1.57 Pt=  0.00 Rt=  0.00 A= 93.53 E=127.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (47248) CONTROLTASK: P=-26.46 R= -1.22 Pt=  0.00 Rt=  0.00 A= 93.06 E=128.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (47348) CONTROLTASK: P=-26.73 R= -1.18 Pt=  0.00 Rt=  0.00 A= 93.38 E=128.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (47448) CONTROLTASK: P=-26.93 R= -1.31 Pt=  0.00 Rt=  0.00 A= 93.34 E=128.66 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (47548) CONTROLTASK: P=-27.08 R= -1.53 Pt=  0.00 Rt=  0.00 A= 93.75 E=129.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (47648) CONTROLTASK: P=-27.70 R= -1.99 Pt=  0.00 Rt=  0.00 A= 94.68 E=130.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (47748) CONTROLTASK: P=-28.17 R= -2.39 Pt=  0.00 Rt=  0.00 A= 95.00 E=130.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (47848) CONTROLTASK: P=-28.22 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.03 E=130.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (47948) CONTROLTASK: P=-28.58 R= -3.04 Pt=  0.00 Rt=  0.00 A= 96.04 E=131.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (48048) CONTROLTASK: P=-28.81 R= -3.44 Pt=  0.00 Rt=  0.00 A= 96.94 E=131.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (48148) CONTROLTASK: P=-27.73 R= -3.51 Pt=  0.00 Rt=  0.00 A= 96.74 E=128.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (48248) CONTROLTASK: P=-25.35 R= -3.42 Pt=  0.00 Rt=  0.00 A= 96.46 E=123.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (48348) CONTROLTASK: P=-20.58 R= -3.28 Pt=  0.00 Rt=  0.00 A= 96.05 E=114.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (48448) CONTROLTASK: P=-12.58 R= -2.44 Pt=  0.00 Rt=  0.00 A= 94.83 E=100.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+I (48548) CONTROLTASK: P= -2.19 R= -2.18 Pt=  0.00 Rt=  0.00 A= 94.57 E= 83.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B
+[0;32mI (48648) CONTROLTASK: P=  8.67 R= -1.46 Pt=  0.00 Rt=  0.00 A= 93.22 E= 69.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (48748) CONTROLTASK: P= 17.45 R= -2.08 Pt=  0.00 Rt=  0.00 A= 94.72 E= 56.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (48848) CONTROLTASK: P= 22.96 R= -2.29 Pt=  0.00 Rt=  0.00 A= 94.91 E= 50.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (48948) CONTROLTASK: P= 25.54 R= -2.42 Pt=  0.00 Rt=  0.00 A= 94.96 E= 48.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (49048) CONTROLTASK: P= 27.50 R= -2.45 Pt=  0.00 Rt=  0.00 A= 95.22 E= 45.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (49148) CONTROLTASK: P= 29.52 R= -2.19 Pt=  0.00 Rt=  0.00 A= 94.44 E= 42.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (49248) CONTROLTASK: P= 31.45 R= -2.13 Pt=  0.00 Rt=  0.00 A= 95.24 E= 40.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (49348) CONTROLTASK: P= 34.01 R= -2.08 Pt=  0.00 Rt=  0.00 A= 94.52 E= 35.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (49448) CONTROLTASK: P= 36.32 R= -1.79 Pt=  0.00 Rt=  0.00 A= 93.93 E= 32.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (49548) CONTROLTASK: P= 37.96 R= -2.27 Pt=  0.00 Rt=  0.00 A= 95.17 E= 30.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (49648) CONTROLTASK: P= 38.62 R= -2.57 Pt=  0.00 Rt=  0.00 A= 95.47 E= 29.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (49748) CONTROLTASK: P= 39.67 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.39 E= 27.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (49848) CONTROLTASK: P= 40.67 R= -3.55 Pt=  0.00 Rt=  0.00 A= 97.07 E= 26.54 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (49948) CONTROLTASK: P= 41.03 R= -3.74 Pt=  0.00 Rt=  0.00 A= 96.98 E= 26.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (50048) CONTROLTASK: P= 41.35 R= -3.77 Pt=  0.00 Rt=  0.00 A= 97.30 E= 25.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (50148) CONTROLTASK: P= 42.03 R= -4.24 Pt=  0.00 Rt=  0.00 A= 98.72 E= 24.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (50248) CONTROLTASK: P= 42.21 R= -4.08 Pt=  0.00 Rt=  0.00 A= 97.70 E= 24.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (50348) CONTROLTASK: P= 42.33 R= -4.18 Pt=  0.00 Rt=  0.00 A= 97.88 E= 24.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (50448) CONTROLTASK: P= 42.37 R= -4.25 Pt=  0.00 Rt=  0.00 A= 97.76 E= 24.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (50548) CONTROLTASK: P= 42.33 R= -4.39 Pt=  0.00 Rt=  0.00 A= 98.27 E= 24.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (50648) CONTROLTASK: P= 42.60 R= -4.60 Pt=  0.00 Rt=  0.00 A= 98.24 E= 23.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (50748) CONTROLTASK: P= 42.83 R= -4.63 Pt=  0.00 Rt=  0.00 A= 98.57 E= 23.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (50848) CONTROLTASK: P= 42.64 R= -4.70 Pt=  0.00 Rt=  0.00 A= 98.51 E= 23.91 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (50948) CONTROLTASK: P= 42.43 R= -4.65 Pt=  0.00 Rt=  0.00 A= 98.39 E= 24.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (51048) CONTROLTASK: P= 42.33 R= -4.83 Pt=  0.00 Rt=  0.00 A= 98.72 E= 24.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (51148) CONTROLTASK: P= 42.25 R= -4.90 Pt=  0.00 Rt=  0.00 A= 98.81 E= 24.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (51248) CONTROLTASK: P= 42.09 R= -4.97 Pt=  0.00 Rt=  0.00 A= 98.77 E= 24.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (51348) CONTROLTASK: P= 41.83 R= -4.76 Pt=  0.00 Rt=  0.00 A= 98.81 E= 25.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:0) Stk:1928W/1928B[0m
+[0;32mI (51448) CONTROLTASK: P= 41.59 R= -4.83 Pt=  0.00 Rt=  0.00 A= 98.76 E= 25.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (51548) CONTROLTASK: P= 41.51 R= -4.95 Pt=  0.00 Rt=  0.00 A= 98.83 E= 25.15 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (51648) CONTROLTASK: P= 41.41 R= -4.62 Pt=  0.00 Rt=  0.00 A= 98.35 E= 25.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (51748) CONTROLTASK: P= 41.37 R= -4.49 Pt=  0.00 Rt=  0.00 A= 98.08 E= 25.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (51848) CONTROLTASK: P= 41.43 R= -4.28 Pt=  0.00 Rt=  0.00 A= 98.09 E= 25.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (51948) CONTROLTASK: P= 41.63 R= -4.49 Pt=  0.00 Rt=  0.00 A= 98.28 E= 24.63 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (52048) CONTROLTASK: P= 41.71 R= -4.63 Pt=  0.00 Rt=  0.00 A= 98.44 E= 24.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (52148) CONTROLTASK: P= 41.56 R= -4.31 Pt=  0.00 Rt=  0.00 A= 97.87 E= 24.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (52248) CONTROLTASK: P= 40.88 R= -4.21 Pt=  0.00 Rt=  0.00 A= 97.70 E= 26.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (52348) CONTROLTASK: P= 37.53 R= -3.61 Pt=  0.00 Rt=  0.00 A= 96.67 E= 34.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (52448) CONTROLTASK: P= 30.12 R= -3.36 Pt=  0.00 Rt=  0.00 A= 96.82 E= 49.08 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (52548) CONTROLTASK: P= 21.37 R= -3.44 Pt=  0.00 Rt=  0.00 A= 97.00 E= 61.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (52648) CONTROLTASK: P= 10.16 R= -2.88 Pt=  0.00 Rt=  0.00 A= 94.93 E= 77.37 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (52748) CONTROLTASK: P= -0.99 R= -2.28 Pt=  0.00 Rt=  0.00 A= 94.78 E= 96.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (52848) CONTROLTASK: P=-11.25 R= -1.73 Pt=  0.00 Rt=  0.00 A= 93.55 E=111.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (52948) CONTROLTASK: P=-20.48 R= -1.03 Pt=  0.00 Rt=  0.00 A= 92.96 E=123.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (53048) CONTROLTASK: P=-28.39 R= -1.57 Pt=  0.00 Rt=  0.00 A= 94.02 E=134.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (53148) CONTROLTASK: P=-32.82 R= -1.89 Pt=  0.00 Rt=  0.00 A= 93.62 E=139.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (53248) CONTROLTASK: P=-32.76 R= -1.89 Pt=  0.00 Rt=  0.00 A= 94.39 E=135.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (53348) CONTROLTASK: P=-30.95 R= -1.91 Pt=  0.00 Rt=  0.00 A= 94.31 E=132.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (53448) CONTROLTASK: P=-29.88 R= -1.89 Pt=  0.00 Rt=  0.00 A= 94.27 E=131.71 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (53548) CONTROLTASK: P=-29.83 R= -1.91 Pt=  0.00 Rt=  0.00 A= 94.27 E=131.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (53648) CONTROLTASK: P=-29.99 R= -2.17 Pt=  0.00 Rt=  0.00 A= 94.87 E=132.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (53748) CONTROLTASK: P=-30.00 R= -2.20 Pt=  0.00 Rt=  0.00 A= 94.75 E=132.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (53848) CONTROLTASK: P=-29.99 R= -1.88 Pt=  0.00 Rt=  0.00 A= 94.28 E=132.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (53948) CONTROLTASK: P=-29.88 R= -1.71 Pt=  0.00 Rt=  0.00 A= 94.16 E=131.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (54048) CONTROLTASK: P=-29.50 R= -1.60 Pt=  0.00 Rt=  0.00 A= 93.89 E=131.48 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (54148) CONTROLTASK: P=-29.38 R= -1.43 Pt=  0.00 Rt=  0.00 A= 93.67 E=131.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (54248) CONTROLTASK: P=-29.33 R= -1.40 Pt=  0.00 Rt=  0.00 A= 93.73 E=131.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (54348) CONTROLTASK: P=-29.20 R= -1.52 Pt=  0.00 Rt=  0.00 A= 93.87 E=131.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (54448) CONTROLTASK: P=-29.02 R= -1.57 Pt=  0.00 Rt=  0.00 A= 93.96 E=130.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (54548) CONTROLTASK: P=-28.95 R= -1.46 Pt=  0.00 Rt=  0.00 A= 93.67 E=130.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (54648) CONTROLTASK: P=-28.88 R= -1.24 Pt=  0.00 Rt=  0.00 A= 93.45 E=130.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+I (54748) CONTROLTASK: P=-28.81 R= -1.26 Pt=  0.00 Rt=  0.00 A= 93.49 E=130.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B
+[0;32mI (54848) CONTROLTASK: P=-28.32 R= -1.45 Pt=  0.00 Rt=  0.00 A= 93.98 E=129.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (54948) CONTROLTASK: P=-26.32 R= -1.80 Pt=  0.00 Rt=  0.00 A= 94.43 E=124.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (55048) CONTROLTASK: P=-20.93 R= -2.40 Pt=  0.00 Rt=  0.00 A= 95.67 E=113.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (55148) CONTROLTASK: P=-12.37 R= -2.70 Pt=  0.00 Rt=  0.00 A= 95.84 E= 99.26 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (55248) CONTROLTASK: P= -2.30 R= -2.82 Pt=  0.00 Rt=  0.00 A= 96.13 E= 83.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (55348) CONTROLTASK: P=  7.60 R= -2.55 Pt=  0.00 Rt=  0.00 A= 94.90 E= 68.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (55448) CONTROLTASK: P= 16.30 R= -2.25 Pt=  0.00 Rt=  0.00 A= 94.81 E= 56.99 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (55548) CONTROLTASK: P= 23.44 R= -2.00 Pt=  0.00 Rt=  0.00 A= 94.69 E= 47.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (55648) CONTROLTASK: P= 28.81 R= -1.99 Pt=  0.00 Rt=  0.00 A= 94.48 E= 41.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (55748) CONTROLTASK: P= 32.01 R= -2.22 Pt=  0.00 Rt=  0.00 A= 94.55 E= 37.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (55848) CONTROLTASK: P= 34.35 R= -2.27 Pt=  0.00 Rt=  0.00 A= 94.98 E= 34.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (55948) CONTROLTASK: P= 36.67 R= -2.16 Pt=  0.00 Rt=  0.00 A= 94.63 E= 30.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (56048) CONTROLTASK: P= 38.19 R= -2.03 Pt=  0.00 Rt=  0.00 A= 94.70 E= 29.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+I (56148) CONTROLTASK: P= 38.65 R= -2.27 Pt=  0.00 Rt=  0.00 A= 95.23 E= 29.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B
+[0;32mI (56248) CONTROLTASK: P= 38.90 R= -2.76 Pt=  0.00 Rt=  0.00 A= 96.03 E= 28.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (56348) CONTROLTASK: P= 39.41 R= -3.01 Pt=  0.00 Rt=  0.00 A= 95.99 E= 27.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (56448) CONTROLTASK: P= 39.73 R= -2.87 Pt=  0.00 Rt=  0.00 A= 95.61 E= 27.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (56548) CONTROLTASK: P= 39.90 R= -2.72 Pt=  0.00 Rt=  0.00 A= 95.69 E= 27.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (56648) CONTROLTASK: P= 40.02 R= -2.87 Pt=  0.00 Rt=  0.00 A= 95.94 E= 27.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (56748) CONTROLTASK: P= 39.99 R= -2.92 Pt=  0.00 Rt=  0.00 A= 96.17 E= 27.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (56848) CONTROLTASK: P= 39.71 R= -2.86 Pt=  0.00 Rt=  0.00 A= 95.99 E= 28.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (56948) CONTROLTASK: P= 39.03 R= -2.96 Pt=  0.00 Rt=  0.00 A= 96.10 E= 29.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (57048) CONTROLTASK: P= 38.11 R= -2.86 Pt=  0.00 Rt=  0.00 A= 95.81 E= 30.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (57148) CONTROLTASK: P= 36.67 R= -2.44 Pt=  0.00 Rt=  0.00 A= 95.11 E= 33.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (57248) CONTROLTASK: P= 33.66 R= -2.83 Pt=  0.00 Rt=  0.00 A= 95.93 E= 39.48 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (57348) CONTROLTASK: P= 28.71 R= -2.86 Pt=  0.00 Rt=  0.00 A= 95.96 E= 48.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (57448) CONTROLTASK: P= 22.07 R= -2.78 Pt=  0.00 Rt=  0.00 A= 95.87 E= 59.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (57548) CONTROLTASK: P= 14.05 R= -2.77 Pt=  0.00 Rt=  0.00 A= 95.80 E= 72.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (57648) CONTROLTASK: P=  5.06 R= -3.22 Pt=  0.00 Rt=  0.00 A= 97.05 E= 86.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (57748) CONTROLTASK: P= -4.20 R= -3.02 Pt=  0.00 Rt=  0.00 A= 95.49 E= 99.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (57848) CONTROLTASK: P=-12.91 R= -2.07 Pt=  0.00 Rt=  0.00 A= 94.30 E=112.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (57948) CONTROLTASK: P=-20.22 R= -1.22 Pt=  0.00 Rt=  0.00 A= 93.09 E=122.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (58048) CONTROLTASK: P=-25.59 R= -1.43 Pt=  0.00 Rt=  0.00 A= 93.92 E=128.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (58148) CONTROLTASK: P=-28.74 R= -1.75 Pt=  0.00 Rt=  0.00 A= 94.42 E=131.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (58248) CONTROLTASK: P=-29.81 R= -1.73 Pt=  0.00 Rt=  0.00 A= 93.94 E=132.12 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (58348) CONTROLTASK: P=-29.52 R= -1.41 Pt=  0.00 Rt=  0.00 A= 93.50 E=130.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (58448) CONTROLTASK: P=-28.57 R= -1.27 Pt=  0.00 Rt=  0.00 A= 93.48 E=129.04 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (58548) CONTROLTASK: P=-26.95 R= -1.52 Pt=  0.00 Rt=  0.00 A= 94.08 E=125.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (58648) CONTROLTASK: P=-23.28 R= -1.98 Pt=  0.00 Rt=  0.00 A= 94.92 E=118.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (58748) CONTROLTASK: P=-18.72 R= -2.32 Pt=  0.00 Rt=  0.00 A= 95.33 E=111.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (58848) CONTROLTASK: P=-14.06 R= -2.49 Pt=  0.00 Rt=  0.00 A= 95.21 E=104.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (58948) CONTROLTASK: P= -9.69 R= -2.49 Pt=  0.00 Rt=  0.00 A= 95.59 E= 98.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (59048) CONTROLTASK: P= -4.96 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.15 E= 91.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:0 m:0) Stk:1928W/1928B[0m
+[0;32mI (59148) CONTROLTASK: P= -0.72 R= -3.39 Pt=  0.00 Rt=  0.00 A= 97.17 E= 84.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (59248) CONTROLTASK: P=  3.78 R= -4.01 Pt=  0.00 Rt=  0.00 A= 97.85 E= 78.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (59348) CONTROLTASK: P=  7.58 R= -4.12 Pt=  0.00 Rt=  0.00 A= 97.74 E= 73.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (59448) CONTROLTASK: P= 11.02 R= -3.67 Pt=  0.00 Rt=  0.00 A= 96.71 E= 68.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (59548) CONTROLTASK: P= 14.18 R= -3.18 Pt=  0.00 Rt=  0.00 A= 96.18 E= 63.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (59648) CONTROLTASK: P= 17.25 R= -3.13 Pt=  0.00 Rt=  0.00 A= 96.34 E= 58.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (59748) CONTROLTASK: P= 20.44 R= -3.00 Pt=  0.00 Rt=  0.00 A= 96.17 E= 53.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (59848) CONTROLTASK: P= 24.24 R= -2.96 Pt=  0.00 Rt=  0.00 A= 95.93 E= 47.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (59948) CONTROLTASK: P= 27.74 R= -3.07 Pt=  0.00 Rt=  0.00 A= 96.10 E= 43.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (60048) CONTROLTASK: P= 30.29 R= -3.24 Pt=  0.00 Rt=  0.00 A= 96.95 E= 40.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (60148) CONTROLTASK: P= 31.43 R= -3.57 Pt=  0.00 Rt=  0.00 A= 97.30 E= 39.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (60248) CONTROLTASK: P= 31.24 R= -3.62 Pt=  0.00 Rt=  0.00 A= 97.11 E= 40.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (60348) CONTROLTASK: P= 30.02 R= -2.98 Pt=  0.00 Rt=  0.00 A= 95.56 E= 43.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (60448) CONTROLTASK: P= 27.87 R= -1.85 Pt=  0.00 Rt=  0.00 A= 93.70 E= 46.62 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (60548) CONTROLTASK: P= 25.54 R= -1.28 Pt=  0.00 Rt=  0.00 A= 93.56 E= 50.78 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (60648) CONTROLTASK: P= 21.54 R= -1.10 Pt=  0.00 Rt=  0.00 A= 93.49 E= 58.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (60748) CONTROLTASK: P= 15.63 R= -1.37 Pt=  0.00 Rt=  0.00 A= 93.79 E= 68.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (60848) CONTROLTASK: P=  9.00 R= -1.52 Pt=  0.00 Rt=  0.00 A= 94.12 E= 78.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (60948) CONTROLTASK: P=  3.07 R= -1.70 Pt=  0.00 Rt=  0.00 A= 94.37 E= 86.51 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (61048) CONTROLTASK: P= -1.96 R= -1.74 Pt=  0.00 Rt=  0.00 A= 94.36 E= 93.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (61148) CONTROLTASK: P= -4.78 R= -2.00 Pt=  0.00 Rt=  0.00 A= 94.90 E= 95.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (61248) CONTROLTASK: P= -5.77 R= -2.55 Pt=  0.00 Rt=  0.00 A= 96.02 E= 95.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (61348) CONTROLTASK: P= -5.37 R= -3.05 Pt=  0.00 Rt=  0.00 A= 96.39 E= 94.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (61448) CONTROLTASK: P= -4.07 R= -3.25 Pt=  0.00 Rt=  0.00 A= 96.87 E= 92.21 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (61548) CONTROLTASK: P= -3.85 R= -3.33 Pt=  0.00 Rt=  0.00 A= 96.61 E= 92.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (61648) CONTROLTASK: P= -4.38 R= -3.34 Pt=  0.00 Rt=  0.00 A= 96.79 E= 93.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (61748) CONTROLTASK: P= -4.72 R= -3.37 Pt=  0.00 Rt=  0.00 A= 96.76 E= 93.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (61848) CONTROLTASK: P= -4.23 R= -3.30 Pt=  0.00 Rt=  0.00 A= 96.59 E= 92.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (61948) CONTROLTASK: P= -3.47 R= -3.33 Pt=  0.00 Rt=  0.00 A= 96.79 E= 91.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (62048) CONTROLTASK: P= -3.15 R= -3.42 Pt=  0.00 Rt=  0.00 A= 96.96 E= 91.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (62148) CONTROLTASK: P= -2.47 R= -3.09 Pt=  0.00 Rt=  0.00 A= 95.95 E= 90.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (62248) CONTROLTASK: P= -2.79 R= -1.53 Pt=  0.00 Rt=  0.00 A= 93.05 E= 91.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (62348) CONTROLTASK: P= -3.35 R= -0.80 Pt=  0.00 Rt=  0.00 A= 92.83 E= 92.05 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (62448) CONTROLTASK: P= -3.05 R= -0.80 Pt=  0.00 Rt=  0.00 A= 93.22 E= 90.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (62548) CONTROLTASK: P= -1.87 R= -1.61 Pt=  0.00 Rt=  0.00 A= 94.69 E= 88.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (62648) CONTROLTASK: P= -0.21 R= -1.85 Pt=  0.00 Rt=  0.00 A= 94.45 E= 86.14 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (62748) CONTROLTASK: P=  0.13 R= -2.09 Pt=  0.00 Rt=  0.00 A= 94.88 E= 87.01 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (62848) CONTROLTASK: P= -0.52 R= -1.69 Pt=  0.00 Rt=  0.00 A= 94.05 E= 88.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (62948) CONTROLTASK: P= -0.12 R= -1.85 Pt=  0.00 Rt=  0.00 A= 94.96 E= 86.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (63048) CONTROLTASK: P=  1.34 R= -2.14 Pt=  0.00 Rt=  0.00 A= 94.98 E= 83.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (63148) CONTROLTASK: P=  2.47 R= -1.95 Pt=  0.00 Rt=  0.00 A= 94.51 E= 81.05 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (63248) CONTROLTASK: P=  4.25 R= -1.75 Pt=  0.00 Rt=  0.00 A= 94.42 E= 78.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (63348) CONTROLTASK: P=  6.97 R= -2.00 Pt=  0.00 Rt=  0.00 A= 95.06 E= 74.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (63448) CONTROLTASK: P=  8.17 R= -2.73 Pt=  0.00 Rt=  0.00 A= 96.08 E= 74.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (63548) CONTROLTASK: P=  7.56 R= -3.25 Pt=  0.00 Rt=  0.00 A= 96.54 E= 76.33 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (63648) CONTROLTASK: P=  8.17 R= -3.20 Pt=  0.00 Rt=  0.00 A= 96.51 E= 74.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (63748) CONTROLTASK: P=  8.19 R= -3.33 Pt=  0.00 Rt=  0.00 A= 97.12 E= 74.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (63848) CONTROLTASK: P=  8.23 R= -2.83 Pt=  0.00 Rt=  0.00 A= 95.42 E= 74.59 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (63948) CONTROLTASK: P=  8.14 R= -2.59 Pt=  0.00 Rt=  0.00 A= 95.53 E= 74.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (64048) CONTROLTASK: P=  8.16 R= -2.76 Pt=  0.00 Rt=  0.00 A= 95.91 E= 74.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (64148) CONTROLTASK: P=  8.14 R= -2.72 Pt=  0.00 Rt=  0.00 A= 95.92 E= 74.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (64248) CONTROLTASK: P=  8.13 R= -2.79 Pt=  0.00 Rt=  0.00 A= 95.99 E= 74.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (64348) CONTROLTASK: P=  8.17 R= -2.66 Pt=  0.00 Rt=  0.00 A= 95.91 E= 74.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (64448) CONTROLTASK: P=  8.15 R= -2.62 Pt=  0.00 Rt=  0.00 A= 95.63 E= 74.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (64548) CONTROLTASK: P=  8.20 R= -2.64 Pt=  0.00 Rt=  0.00 A= 95.73 E= 74.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (64648) CONTROLTASK: P=  8.18 R= -2.62 Pt=  0.00 Rt=  0.00 A= 95.60 E= 74.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (64748) CONTROLTASK: P=  8.20 R= -2.65 Pt=  0.00 Rt=  0.00 A= 95.69 E= 74.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (64848) CONTROLTASK: P=  8.18 R= -2.61 Pt=  0.00 Rt=  0.00 A= 95.64 E= 74.45 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (64948) CONTROLTASK: P=  8.15 R= -2.58 Pt=  0.00 Rt=  0.00 A= 95.51 E= 74.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (65048) CONTROLTASK: P=  8.16 R= -2.58 Pt=  0.00 Rt=  0.00 A= 95.66 E= 74.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (65148) CONTROLTASK: P=  8.12 R= -2.54 Pt=  0.00 Rt=  0.00 A= 95.51 E= 74.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (65248) CONTROLTASK: P=  8.16 R= -2.55 Pt=  0.00 Rt=  0.00 A= 95.43 E= 74.49 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (65348) CONTROLTASK: P=  8.15 R= -2.51 Pt=  0.00 Rt=  0.00 A= 95.54 E= 74.42 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (65448) CONTROLTASK: P=  8.16 R= -2.46 Pt=  0.00 Rt=  0.00 A= 95.25 E= 74.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (65548) CONTROLTASK: P=  8.14 R= -2.47 Pt=  0.00 Rt=  0.00 A= 95.59 E= 74.48 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (65648) CONTROLTASK: P=  8.12 R= -2.47 Pt=  0.00 Rt=  0.00 A= 95.48 E= 74.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (65748) CONTROLTASK: P=  8.15 R= -2.48 Pt=  0.00 Rt=  0.00 A= 95.46 E= 74.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (65848) CONTROLTASK: P=  8.14 R= -2.52 Pt=  0.00 Rt=  0.00 A= 95.60 E= 74.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (65948) CONTROLTASK: P=  8.14 R= -2.51 Pt=  0.00 Rt=  0.00 A= 95.62 E= 74.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (66048) CONTROLTASK: P=  8.14 R= -2.50 Pt=  0.00 Rt=  0.00 A= 95.57 E= 74.50 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (66148) CONTROLTASK: P=  8.13 R= -2.55 Pt=  0.00 Rt=  0.00 A= 95.46 E= 74.56 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (66248) CONTROLTASK: P=  8.13 R= -2.62 Pt=  0.00 Rt=  0.00 A= 95.73 E= 74.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (66348) CONTROLTASK: P=  8.11 R= -2.58 Pt=  0.00 Rt=  0.00 A= 95.60 E= 74.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (66448) CONTROLTASK: P=  8.14 R= -2.58 Pt=  0.00 Rt=  0.00 A= 95.63 E= 74.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (66548) CONTROLTASK: P=  8.10 R= -2.52 Pt=  0.00 Rt=  0.00 A= 95.64 E= 74.48 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (66648) CONTROLTASK: P=  8.11 R= -2.51 Pt=  0.00 Rt=  0.00 A= 95.48 E= 74.55 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (66748) CONTROLTASK: P=  8.16 R= -2.49 Pt=  0.00 Rt=  0.00 A= 95.38 E= 74.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (66848) CONTROLTASK: P=  8.18 R= -2.60 Pt=  0.00 Rt=  0.00 A= 95.58 E= 74.31 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (66948) CONTROLTASK: P=  8.21 R= -2.67 Pt=  0.00 Rt=  0.00 A= 95.83 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (67048) CONTROLTASK: P=  8.18 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.08 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (67148) CONTROLTASK: P=  8.15 R= -2.76 Pt=  0.00 Rt=  0.00 A= 95.94 E= 74.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (67248) CONTROLTASK: P=  8.13 R= -2.67 Pt=  0.00 Rt=  0.00 A= 95.77 E= 74.44 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (67348) CONTROLTASK: P=  8.13 R= -2.67 Pt=  0.00 Rt=  0.00 A= 95.79 E= 74.41 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (67448) CONTROLTASK: P=  8.15 R= -2.74 Pt=  0.00 Rt=  0.00 A= 96.04 E= 74.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (67548) CONTROLTASK: P=  8.09 R= -2.70 Pt=  0.00 Rt=  0.00 A= 95.93 E= 74.58 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (67648) CONTROLTASK: P=  8.08 R= -2.68 Pt=  0.00 Rt=  0.00 A= 95.77 E= 74.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (67748) CONTROLTASK: P=  8.06 R= -2.74 Pt=  0.00 Rt=  0.00 A= 96.05 E= 74.38 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (67848) CONTROLTASK: P=  8.10 R= -2.76 Pt=  0.00 Rt=  0.00 A= 95.92 E= 74.40 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (67948) CONTROLTASK: P=  8.06 R= -2.65 Pt=  0.00 Rt=  0.00 A= 95.70 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (68048) CONTROLTASK: P=  8.05 R= -2.57 Pt=  0.00 Rt=  0.00 A= 95.66 E= 74.53 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (68148) CONTROLTASK: P=  8.08 R= -2.64 Pt=  0.00 Rt=  0.00 A= 95.83 E= 74.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (68248) CONTROLTASK: P=  8.09 R= -2.64 Pt=  0.00 Rt=  0.00 A= 95.91 E= 74.47 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (68348) CONTROLTASK: P=  8.06 R= -2.72 Pt=  0.00 Rt=  0.00 A= 96.01 E= 74.39 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (68448) CONTROLTASK: P=  8.11 R= -2.67 Pt=  0.00 Rt=  0.00 A= 95.75 E= 74.37 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (68548) CONTROLTASK: P=  8.11 R= -2.70 Pt=  0.00 Rt=  0.00 A= 96.16 E= 74.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (68648) CONTROLTASK: P=  8.08 R= -2.76 Pt=  0.00 Rt=  0.00 A= 95.98 E= 74.35 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (68748) CONTROLTASK: P=  8.03 R= -2.65 Pt=  0.00 Rt=  0.00 A= 95.73 E= 74.37 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (68848) CONTROLTASK: P=  8.07 R= -2.69 Pt=  0.00 Rt=  0.00 A= 96.03 E= 74.36 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (68948) CONTROLTASK: P=  8.06 R= -2.60 Pt=  0.00 Rt=  0.00 A= 95.52 E= 74.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (69048) CONTROLTASK: P=  8.07 R= -2.66 Pt=  0.00 Rt=  0.00 A= 96.00 E= 74.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (69148) CONTROLTASK: P=  8.06 R= -2.64 Pt=  0.00 Rt=  0.00 A= 95.80 E= 74.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (69248) CONTROLTASK: P=  7.95 R= -2.70 Pt=  0.00 Rt=  0.00 A= 95.94 E= 74.52 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (69348) CONTROLTASK: P=  8.03 R= -2.71 Pt=  0.00 Rt=  0.00 A= 95.87 E= 74.43 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (69448) CONTROLTASK: P=  8.08 R= -2.65 Pt=  0.00 Rt=  0.00 A= 96.02 E= 74.11 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (69548) CONTROLTASK: P=  8.08 R= -2.68 Pt=  0.00 Rt=  0.00 A= 96.10 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (69648) CONTROLTASK: P=  8.10 R= -2.78 Pt=  0.00 Rt=  0.00 A= 95.98 E= 74.32 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (69748) CONTROLTASK: P=  8.06 R= -2.78 Pt=  0.00 Rt=  0.00 A= 96.21 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (69848) CONTROLTASK: P=  8.13 R= -2.80 Pt=  0.00 Rt=  0.00 A= 96.12 E= 74.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (69948) CONTROLTASK: P=  7.98 R= -2.71 Pt=  0.00 Rt=  0.00 A= 95.95 E= 74.60 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (70048) CONTROLTASK: P=  8.00 R= -2.78 Pt=  0.00 Rt=  0.00 A= 96.24 E= 74.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (70148) CONTROLTASK: P=  8.03 R= -2.64 Pt=  0.00 Rt=  0.00 A= 95.81 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (70248) CONTROLTASK: P=  8.03 R= -2.77 Pt=  0.00 Rt=  0.00 A= 95.98 E= 74.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (70348) CONTROLTASK: P=  7.98 R= -2.67 Pt=  0.00 Rt=  0.00 A= 95.74 E= 74.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (70448) CONTROLTASK: P=  8.02 R= -2.72 Pt=  0.00 Rt=  0.00 A= 95.81 E= 74.30 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (70548) CONTROLTASK: P=  8.12 R= -2.79 Pt=  0.00 Rt=  0.00 A= 95.98 E= 73.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (70648) CONTROLTASK: P=  8.08 R= -2.83 Pt=  0.00 Rt=  0.00 A= 96.29 E= 74.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (70748) CONTROLTASK: P=  7.93 R= -2.82 Pt=  0.00 Rt=  0.00 A= 95.86 E= 74.34 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (70848) CONTROLTASK: P=  7.91 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.05 E= 74.46 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (70948) CONTROLTASK: P=  8.02 R= -3.03 Pt=  0.00 Rt=  0.00 A= 96.42 E= 74.28 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (71048) CONTROLTASK: P=  8.04 R= -2.97 Pt=  0.00 Rt=  0.00 A= 96.26 E= 74.29 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (71148) CONTROLTASK: P=  8.03 R= -2.98 Pt=  0.00 Rt=  0.00 A= 96.46 E= 74.20 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (71248) CONTROLTASK: P=  8.05 R= -2.93 Pt=  0.00 Rt=  0.00 A= 96.48 E= 74.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (71348) CONTROLTASK: P=  8.04 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.18 E= 74.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (71448) CONTROLTASK: P=  8.01 R= -2.84 Pt=  0.00 Rt=  0.00 A= 96.25 E= 74.22 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (71548) CONTROLTASK: P=  8.03 R= -2.81 Pt=  0.00 Rt=  0.00 A= 96.17 E= 74.19 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (71648) CONTROLTASK: P=  8.01 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.23 E= 74.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (71748) CONTROLTASK: P=  8.00 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.16 E= 74.27 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (71848) CONTROLTASK: P=  7.98 R= -2.86 Pt=  0.00 Rt=  0.00 A= 96.27 E= 74.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (71948) CONTROLTASK: P=  7.97 R= -2.95 Pt=  0.00 Rt=  0.00 A= 96.32 E= 74.24 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (72048) CONTROLTASK: P=  7.99 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.20 E= 74.13 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (72148) CONTROLTASK: P=  8.01 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.07 E= 74.23 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (72248) CONTROLTASK: P=  8.02 R= -2.84 Pt=  0.00 Rt=  0.00 A= 96.17 E= 74.16 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (72348) CONTROLTASK: P=  8.01 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.18 E= 74.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (72448) CONTROLTASK: P=  8.02 R= -2.81 Pt=  0.00 Rt=  0.00 A= 96.14 E= 74.10 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (72548) CONTROLTASK: P=  8.05 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.08 E= 74.11 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (72648) CONTROLTASK: P=  8.04 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.18 E= 73.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (72748) CONTROLTASK: P=  8.03 R= -2.81 Pt=  0.00 Rt=  0.00 A= 96.21 E= 74.09 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (72848) CONTROLTASK: P=  8.02 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.10 E= 74.17 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (72948) CONTROLTASK: P=  8.01 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.38 E= 74.04 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (73048) CONTROLTASK: P=  8.00 R= -2.97 Pt=  0.00 Rt=  0.00 A= 96.42 E= 74.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (73148) CONTROLTASK: P=  8.01 R= -2.94 Pt=  0.00 Rt=  0.00 A= 96.34 E= 74.06 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (73248) CONTROLTASK: P=  8.04 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.36 E= 74.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (73348) CONTROLTASK: P=  8.03 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.18 E= 74.00 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (73448) CONTROLTASK: P=  7.98 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.20 E= 74.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (73548) CONTROLTASK: P=  8.08 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.24 E= 74.07 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (73648) CONTROLTASK: P=  8.01 R= -2.96 Pt=  0.00 Rt=  0.00 A= 96.27 E= 73.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (73748) CONTROLTASK: P=  7.93 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.26 E= 74.25 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (73848) CONTROLTASK: P=  8.09 R= -3.07 Pt=  0.00 Rt=  0.00 A= 96.70 E= 73.61 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (73948) CONTROLTASK: P=  8.06 R= -2.92 Pt=  0.00 Rt=  0.00 A= 96.33 E= 74.18 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (74048) CONTROLTASK: P=  8.07 R= -3.01 Pt=  0.00 Rt=  0.00 A= 96.38 E= 73.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (74148) CONTROLTASK: P=  8.05 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.28 E= 74.03 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (74248) CONTROLTASK: P=  8.09 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.23 E= 73.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (74348) CONTROLTASK: P=  8.02 R= -2.83 Pt=  0.00 Rt=  0.00 A= 96.19 E= 73.98 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (74448) CONTROLTASK: P=  8.05 R= -2.83 Pt=  0.00 Rt=  0.00 A= 96.37 E= 73.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:62 m:10) Stk:1928W/1928B[0m
+[0;32mI (74548) CONTROLTASK: P=  8.03 R= -2.83 Pt=  0.00 Rt=  0.00 A= 96.22 E= 73.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (74648) CONTROLTASK: P=  8.04 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.30 E= 73.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (74748) CONTROLTASK: P=  8.05 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.25 E= 73.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:54 m:10) Stk:1928W/1928B[0m
+[0;32mI (74848) CONTROLTASK: P=  8.01 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.28 E= 74.02 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (74948) CONTROLTASK: P=  8.02 R= -2.82 Pt=  0.00 Rt=  0.00 A= 96.20 E= 73.94 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (75048) CONTROLTASK: P=  7.99 R= -2.86 Pt=  0.00 Rt=  0.00 A= 96.37 E= 73.96 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:46 m:10) Stk:1928W/1928B[0m
+[0;32mI (75148) CONTROLTASK: P=  7.99 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.27 E= 73.97 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (75248) CONTROLTASK: P=  8.00 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.25 E= 73.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (75348) CONTROLTASK: P=  7.98 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.24 E= 73.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:38 m:10) Stk:1928W/1928B[0m
+[0;32mI (75448) CONTROLTASK: P=  7.99 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.34 E= 73.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (75548) CONTROLTASK: P=  7.98 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.24 E= 73.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (75648) CONTROLTASK: P=  8.00 R= -2.82 Pt=  0.00 Rt=  0.00 A= 96.09 E= 73.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:30 m:10) Stk:1928W/1928B[0m
+[0;32mI (75748) CONTROLTASK: P=  7.99 R= -2.75 Pt=  0.00 Rt=  0.00 A= 96.16 E= 73.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (75848) CONTROLTASK: P=  7.99 R= -2.72 Pt=  0.00 Rt=  0.00 A= 96.12 E= 73.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (75948) CONTROLTASK: P=  7.97 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.28 E= 73.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:22 m:10) Stk:1928W/1928B[0m
+[0;32mI (76048) CONTROLTASK: P=  7.99 R= -2.81 Pt=  0.00 Rt=  0.00 A= 96.20 E= 73.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (76148) CONTROLTASK: P=  7.97 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.30 E= 73.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (76248) CONTROLTASK: P=  7.99 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.28 E= 73.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:14 m:10) Stk:1928W/1928B[0m
+[0;32mI (76348) CONTROLTASK: P=  7.98 R= -2.94 Pt=  0.00 Rt=  0.00 A= 96.45 E= 73.87 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (76448) CONTROLTASK: P=  8.00 R= -2.97 Pt=  0.00 Rt=  0.00 A= 96.40 E= 73.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (76548) CONTROLTASK: P=  8.01 R= -2.98 Pt=  0.00 Rt=  0.00 A= 96.62 E= 73.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:6 m:10) Stk:1928W/1928B[0m
+[0;32mI (76648) CONTROLTASK: P=  8.00 R= -2.96 Pt=  0.00 Rt=  0.00 A= 96.34 E= 73.88 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (76748) CONTROLTASK: P=  7.98 R= -2.98 Pt=  0.00 Rt=  0.00 A= 96.45 E= 73.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (76848) CONTROLTASK: P=  7.98 R= -2.92 Pt=  0.00 Rt=  0.00 A= 96.44 E= 73.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:60 m:10) Stk:1928W/1928B[0m
+[0;32mI (76948) CONTROLTASK: P=  7.98 R= -2.92 Pt=  0.00 Rt=  0.00 A= 96.35 E= 73.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (77048) CONTROLTASK: P=  7.96 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.31 E= 73.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (77148) CONTROLTASK: P=  7.95 R= -2.93 Pt=  0.00 Rt=  0.00 A= 96.46 E= 73.85 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:52 m:10) Stk:1928W/1928B[0m
+[0;32mI (77248) CONTROLTASK: P=  7.96 R= -2.98 Pt=  0.00 Rt=  0.00 A= 96.53 E= 73.75 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (77348) CONTROLTASK: P=  7.94 R= -2.94 Pt=  0.00 Rt=  0.00 A= 96.35 E= 73.92 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (77448) CONTROLTASK: P=  7.94 R= -2.98 Pt=  0.00 Rt=  0.00 A= 96.54 E= 73.90 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:44 m:10) Stk:1928W/1928B[0m
+[0;32mI (77548) CONTROLTASK: P=  7.93 R= -3.02 Pt=  0.00 Rt=  0.00 A= 96.53 E= 73.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (77648) CONTROLTASK: P=  7.90 R= -3.00 Pt=  0.00 Rt=  0.00 A= 96.54 E= 73.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (77748) CONTROLTASK: P=  7.91 R= -3.01 Pt=  0.00 Rt=  0.00 A= 96.57 E= 73.89 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:36 m:10) Stk:1928W/1928B[0m
+[0;32mI (77848) CONTROLTASK: P=  7.91 R= -2.98 Pt=  0.00 Rt=  0.00 A= 96.51 E= 73.84 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (77948) CONTROLTASK: P=  7.93 R= -2.96 Pt=  0.00 Rt=  0.00 A= 96.58 E= 73.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (78048) CONTROLTASK: P=  7.95 R= -2.94 Pt=  0.00 Rt=  0.00 A= 96.47 E= 73.82 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:28 m:10) Stk:1928W/1928B[0m
+[0;32mI (78148) CONTROLTASK: P=  7.93 R= -2.93 Pt=  0.00 Rt=  0.00 A= 96.34 E= 73.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (78248) CONTROLTASK: P=  7.92 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.42 E= 73.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (78348) CONTROLTASK: P=  7.93 R= -2.94 Pt=  0.00 Rt=  0.00 A= 96.58 E= 73.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:20 m:10) Stk:1928W/1928B[0m
+[0;32mI (78448) CONTROLTASK: P=  7.92 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.42 E= 73.83 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:58 m:10) Stk:1928W/1928B[0m
+[0;32mI (78548) CONTROLTASK: P=  7.93 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.48 E= 73.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (78648) CONTROLTASK: P=  7.94 R= -2.95 Pt=  0.00 Rt=  0.00 A= 96.49 E= 73.79 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:12 m:10) Stk:1928W/1928B[0m
+[0;32mI (78748) CONTROLTASK: P=  7.96 R= -2.99 Pt=  0.00 Rt=  0.00 A= 96.57 E= 73.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:50 m:10) Stk:1928W/1928B[0m
+[0;32mI (78848) CONTROLTASK: P=  7.97 R= -2.95 Pt=  0.00 Rt=  0.00 A= 96.53 E= 73.65 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (78948) CONTROLTASK: P=  7.95 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.52 E= 73.76 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:4 m:10) Stk:1928W/1928B[0m
+[0;32mI (79048) CONTROLTASK: P=  7.94 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.28 E= 73.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:42 m:10) Stk:1928W/1928B[0m
+[0;32mI (79148) CONTROLTASK: P=  7.94 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.56 E= 73.64 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (79248) CONTROLTASK: P=  7.93 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.42 E= 73.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (79348) CONTROLTASK: P=  7.94 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.44 E= 73.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:34 m:10) Stk:1928W/1928B[0m
+[0;32mI (79448) CONTROLTASK: P=  7.95 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.25 E= 73.69 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (79548) CONTROLTASK: P=  7.94 R= -2.90 Pt=  0.00 Rt=  0.00 A= 96.47 E= 73.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (79648) CONTROLTASK: P=  7.93 R= -2.88 Pt=  0.00 Rt=  0.00 A= 96.44 E= 73.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:26 m:10) Stk:1928W/1928B[0m
+[0;32mI (79748) CONTROLTASK: P=  7.91 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.47 E= 73.70 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (79848) CONTROLTASK: P=  7.88 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.47 E= 73.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (79948) CONTROLTASK: P=  7.88 R= -2.85 Pt=  0.00 Rt=  0.00 A= 96.45 E= 73.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:18 m:10) Stk:1928W/1928B[0m
+[0;32mI (80048) CONTROLTASK: P=  7.88 R= -2.92 Pt=  0.00 Rt=  0.00 A= 96.48 E= 73.80 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (80148) CONTROLTASK: P=  7.88 R= -2.96 Pt=  0.00 Rt=  0.00 A= 96.53 E= 73.72 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (80248) CONTROLTASK: P=  7.89 R= -2.89 Pt=  0.00 Rt=  0.00 A= 96.53 E= 73.74 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:10 m:10) Stk:1928W/1928B[0m
+[0;32mI (80348) CONTROLTASK: P=  7.89 R= -2.91 Pt=  0.00 Rt=  0.00 A= 96.47 E= 73.77 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m
+[0;32mI (80448) CONTROLTASK: P=  7.89 R= -2.94 Pt=  0.00 Rt=  0.00 A= 96.55 E= 73.68 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:24 m:10) Stk:1928W/1928B[0m
+[0;32mI (80548) CONTROLTASK: P=  7.86 R= -2.87 Pt=  0.00 Rt=  0.00 A= 96.34 E= 73.73 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:2 m:10) Stk:1928W/1928B[0m
+[0;32mI (80648) CONTROLTASK: P=  7.85 R= -2.81 Pt=  0.00 Rt=  0.00 A= 96.25 E= 73.67 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:40 m:10) Stk:1928W/1928B[0m
+[0;32mI (80748) CONTROLTASK: P=  7.77 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.35 E= 73.81 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:16 m:10) Stk:1928W/1928B[0m
+[0;32mI (80848) CONTROLTASK: P=  7.73 R= -2.83 Pt=  0.00 Rt=  0.00 A= 96.16 E= 73.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:56 m:10) Stk:1928W/1928B[0m
+[0;32mI (80948) CONTROLTASK: P=  7.70 R= -2.79 Pt=  0.00 Rt=  0.00 A= 96.43 E= 73.95 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:32 m:10) Stk:1928W/1928B[0m
+[0;32mI (81048) CONTROLTASK: P=  7.70 R= -2.82 Pt=  0.00 Rt=  0.00 A= 96.38 E= 73.93 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:8 m:10) Stk:1928W/1928B[0m
+[0;32mI (81148) CONTROLTASK: P=  7.72 R= -2.76 Pt=  0.00 Rt=  0.00 A= 96.35 E= 73.86 Atr= 90.0 Etr= 90.0 FS(i:0 m:0) Age(i:48 m:10) Stk:1928W/1928B[0m

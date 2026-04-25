@@ -1,0 +1,4 @@
+# Increase main task stack — float printf on ESP32
+# uses ~2 KB alone; default 3584 overflows.
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+CONFIG_FREERTOS_HZ=500

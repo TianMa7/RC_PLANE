@@ -1,0 +1,29 @@
+dependencies:
+  espressif/servo:
+    component_hash: 309c787e48224255fad458cfd9ab86ea53f0fdad1c5e4f6f0c50309990b17108
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.1.0
+  idf:
+    source:
+      type: idf
+    version: 5.5.2
+  zorxx/ibus:
+    component_hash: 82c5f7539046c1e321b0fea7536265f9b52ebc855454a157082ba4b161739ed7
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.0
+direct_dependencies:
+- espressif/servo
+- idf
+- zorxx/ibus
+manifest_hash: fa6ef3ab6fb50697baef195407ecbe1c48ab56d7caac76d66d742b6181d4ad9b
+target: esp32c3
+version: 2.0.0

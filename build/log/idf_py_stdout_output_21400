@@ -1,0 +1,80 @@
+Command: ninja flash
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\esp-idf\esptool_py && C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/tianm/CLionProjects/RC_PLANE/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5270 bytes. 0x2d90 bytes (36%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/controlTasks.cpp.obj
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp: In static member function 'static void CONTROLTASKS::logTask(void*)':
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:280:40: warning: unused variable 'ibus_age' [-Wunused-variable]
+  280 |                         const uint32_t ibus_age = now_ms - snapshot.last_ibus_timestamp_ms;
+      |                                        ^~~~~~~~
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:281:40: warning: unused variable 'imu_age' [-Wunused-variable]
+  281 |                         const uint32_t imu_age = now_ms - snapshot.last_imu_timestamp_ms;
+      |                                        ^~~~~~~
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:264:32: warning: unused variable 'free_bytes' [-Wunused-variable]
+  264 |                 const uint32_t free_bytes = static_cast<uint32_t>(free_words) *
+      |                                ^~~~~~~~~~
+In file included from C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.h:27,
+                 from C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:1:
+C:/Users/tianm/CLionProjects/RC_PLANE/main/flightCfg.h: At global scope:
+C:/Users/tianm/CLionProjects/RC_PLANE/main/flightCfg.h:12:20: warning: 'TAG_REMOTE' defined but not used [-Wunused-variable]
+   12 | static const char *TAG_REMOTE = "IBUS";
+      |                    ^~~~~~~~~~
+[5/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/RC_PLANE.cpp.obj
+In file included from C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.h:27,
+                 from C:/Users/tianm/CLionProjects/RC_PLANE/main/RC_PLANE.cpp:19:
+C:/Users/tianm/CLionProjects/RC_PLANE/main/flightCfg.h:12:20: warning: 'TAG_REMOTE' defined but not used [-Wunused-variable]
+   12 | static const char *TAG_REMOTE = "IBUS";
+      |                    ^~~~~~~~~~
+[6/11] Linking C static library esp-idf\main\libmain.a
+[7/11] Generating esp-idf/esp_system/ld/sections.ld
+[8/11] Linking CXX executable RC_PLANE.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/tianm/CLionProjects/RC_PLANE/build/RC_PLANE.bin
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\CLionProjects\RC_PLANE\build\esp-idf\esptool_py && C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/tianm/CLionProjects/RC_PLANE/build/partition_table/partition-table.bin C:/Users/tianm/CLionProjects/RC_PLANE/build/RC_PLANE.bin"
+RC_PLANE.bin binary size 0x396d0 bytes. Smallest app partition is 0x100000 bytes. 0xc6930 bytes (78%) free.
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\.espressif\v5.5.2\esp-idf\components\esptool_py && "C:\Program Files\JetBrains\CLion 2025.3\bin\cmake\win\x64\bin\cmake.exe" -D IDF_PATH=C:/Users/tianm/.espressif/v5.5.2/esp-idf -D SERIAL_TOOL=C:/Users/tianm/.espressif/python_env/idf5.5_py3.13_env/Scripts/python.exe;;C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/tianm/CLionProjects/RC_PLANE/build -P C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c3 -p COM3 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 RC_PLANE.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.dev1
+Serial port COM3
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE, Embedded Flash 4MB (XMC)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 70:af:09:15:19:c0
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00049fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21104 bytes to 13259...
+Writing at 0x00000000... (100 %)
+Wrote 21104 bytes (13259 compressed) at 0x00000000 in 0.2 seconds (effective 1049.5 kbit/s)...
+Hash of data verified.
+Compressed 235216 bytes to 122281...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001b6a4... (25 %)
+Writing at 0x000225cc... (37 %)
+Writing at 0x00029a42... (50 %)
+Writing at 0x00031846... (62 %)
+Writing at 0x00038814... (75 %)
+Writing at 0x0003ed9f... (87 %)
+Writing at 0x00045b51... (100 %)
+Wrote 235216 bytes (122281 compressed) at 0x00010000 in 0.9 seconds (effective 2196.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 988.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

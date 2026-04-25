@@ -1,0 +1,108 @@
+Command: C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\tianm\CLionProjects\RC_PLANE\build\RC_PLANE.elf C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\bootloader.elf --force-color -m 'C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools\idf.py' '-B'
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382124
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c4
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 15 2026 19:37:32[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bedch ( 48860) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001bf04 vaddr=3fc8d800 size=01458h (  5208) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001d364 vaddr=40380000 size=02cb4h ( 11444) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ec34h (126004) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=0003ec5c vaddr=40382cb4 size=0a9c4h ( 43460) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=00049628 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (152) cpu_start: Unicore app[0m
+[0;32mI (160) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (160) cpu_start: Pro cpu start user code[0m
+[0;32mI (160) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (162) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     RC_PLANE[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     Apr 15 2026 19:36:44[0m
+[0;32mI (178) app_init: ELF file SHA256:  03ad899e0...[0m
+[0;32mI (183) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (191) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (195) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (199) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 3FC8FD70 len 00030290 (192 KiB): RAM[0m
+[0;32mI (210) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (222) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (266) CONTROLTASK: Starting RC Plane Application[0m
+[0;32mI (270) CONTROLTASK: I2C bus OK[0m
+[0;32mI (322) LSM6DS3: WHO_AM_I OK: 0x69[0m
+[0;32mI (322) LSM6DS3: accel configured (416 Hz, +/-4 g, BW~100 Hz)[0m
+[0;32mI (322) LSM6DS3: gyro configured (416 Hz, 500 dps)[0m
+[0;32mI (324) LSM6DS3: gyro LPF1 enabled (CTRL4_C=0x02)[0m
+[0;32mI (328) LSM6DS3: init complete[0m
+[0;32mI (330) CONTROLTASK: LSM6DS3 OK[0m
+[0;32mI (334) CONTROLTASK: Servo OK[0m
+[0;32mI (336) CONTROLTASK: IBUS OK[0m
+[0;32mI (338) CONTROLTASK: Mahony gains: Kp=1.667 Ki=0.017 (loop 100.0 Hz)[0m
+[0;32mI (346) CONTROLTASK: Pcur=  0.00 Rcur=  0.00 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (352) main_task: Returned from app_main()[0m
+[0;32mI (1346) CONTROLTASK: Pcur= 17.16 Rcur= 36.30 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (2346) CONTROLTASK: Pcur= 19.41 Rcur=132.69 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (3346) CONTROLTASK: Pcur=  0.58 Rcur=172.12 Ptgt=-30.00 Rtgt=-30.00[0m
+[0;32mI (4346) CONTROLTASK: Pcur= -3.34 Rcur=179.92 Ptgt=-30.00 Rtgt=-30.00[0m
+[0;32mI (5346) CONTROLTASK: Pcur= -4.00 Rcur=-178.68 Ptgt=-30.00 Rtgt=-30.00[0m
+[0;32mI (6346) CONTROLTASK: Pcur= -4.06 Rcur=-178.28 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7346) CONTROLTASK: Pcur= -4.06 Rcur=-178.37 Ptgt=-30.00 Rtgt=-29.34[0m
+[0;32mI (8346) CONTROLTASK: Pcur= -3.99 Rcur=-178.37 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (9346) CONTROLTASK: Pcur= -3.95 Rcur=-178.37 Ptgt=-13.02 Rtgt=-18.72[0m
+[0;32mI (10346) CONTROLTASK: Pcur= -3.92 Rcur=-178.41 Ptgt=-30.00 Rtgt=-29.04[0m
+[0;32mI (11346) CONTROLTASK: Pcur= -3.88 Rcur=-178.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12346) CONTROLTASK: Pcur= -3.82 Rcur=-178.46 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13346) CONTROLTASK: Pcur= -3.79 Rcur=-178.37 Ptgt=  0.00 Rtgt=-29.88[0m
+[0;32mI (14346) CONTROLTASK: Pcur= -3.74 Rcur=-178.48 Ptgt=  0.00 Rtgt= -4.92[0m
+[0;32mI (15346) CONTROLTASK: Pcur= -3.68 Rcur=-178.40 Ptgt=  0.00 Rtgt=-29.88[0m
+[0;32mI (16346) CONTROLTASK: Pcur= -3.64 Rcur=-178.53 Ptgt=  0.00 Rtgt=-29.88[0m
+[0;32mI (17346) CONTROLTASK: Pcur= -3.58 Rcur=-178.57 Ptgt=  0.00 Rtgt=-29.88[0m
+[0;32mI (18346) CONTROLTASK: Pcur= -3.58 Rcur=-178.61 Ptgt=  0.00 Rtgt=-29.88[0m
+[0;32mI (19346) CONTROLTASK: Pcur= -3.53 Rcur=-178.65 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (20346) CONTROLTASK: Pcur= -3.53 Rcur=-178.59 Ptgt=-12.36 Rtgt= -3.24[0m
+[0;32mI (21346) CONTROLTASK: Pcur= -3.49 Rcur=-178.67 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22346) CONTROLTASK: Pcur= -3.45 Rcur=-178.69 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (23346) CONTROLTASK: Pcur= -3.39 Rcur=-178.61 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24346) CONTROLTASK: Pcur= -3.39 Rcur=-178.65 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25346) CONTROLTASK: Pcur= -3.33 Rcur=-178.77 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26346) CONTROLTASK: Pcur= -3.82 Rcur=-160.23 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27346) CONTROLTASK: Pcur= -3.78 Rcur=-167.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (28346) CONTROLTASK: Pcur= -3.50 Rcur=-176.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29346) CONTROLTASK: Pcur= -3.38 Rcur=-178.76 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30346) CONTROLTASK: Pcur= -3.18 Rcur=-178.75 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31346) CONTROLTASK: Pcur= -3.12 Rcur=-178.86 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32346) CONTROLTASK: Pcur= -3.11 Rcur=-178.86 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33346) CONTROLTASK: Pcur= -3.10 Rcur=-178.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34346) CONTROLTASK: Pcur= -3.03 Rcur=-178.91 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35346) CONTROLTASK: Pcur= -3.01 Rcur=-178.91 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36346) CONTROLTASK: Pcur= -2.98 Rcur=-178.78 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (37346) CONTROLTASK: Pcur= -2.94 Rcur=-178.85 Ptgt=  0.00 Rtgt=  0.00[0m

@@ -1,0 +1,47 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\esp-idf\esptool_py && C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/tianm/CLionProjects/RC_PLANE/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5270 bytes. 0x2d90 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/controlTasks.cpp.obj
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp: In static member function 'static void CONTROLTASKS::logTask(void*)':
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:276:40: warning: unused variable 'ibus_age' [-Wunused-variable]
+  276 |                         const uint32_t ibus_age = now_ms - snapshot.last_ibus_timestamp_ms;
+      |                                        ^~~~~~~~
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:277:40: warning: unused variable 'imu_age' [-Wunused-variable]
+  277 |                         const uint32_t imu_age = now_ms - snapshot.last_imu_timestamp_ms;
+      |                                        ^~~~~~~
+C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:260:32: warning: unused variable 'free_bytes' [-Wunused-variable]
+  260 |                 const uint32_t free_bytes = static_cast<uint32_t>(free_words) *
+      |                                ^~~~~~~~~~
+In file included from C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.h:27,
+                 from C:/Users/tianm/CLionProjects/RC_PLANE/main/controlTasks.cpp:1:
+C:/Users/tianm/CLionProjects/RC_PLANE/main/flightCfg.h: At global scope:
+C:/Users/tianm/CLionProjects/RC_PLANE/main/flightCfg.h:12:20: warning: 'TAG_REMOTE' defined but not used [-Wunused-variable]
+   12 | static const char *TAG_REMOTE = "IBUS";
+      |                    ^~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable RC_PLANE.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/tianm/CLionProjects/RC_PLANE/build/RC_PLANE.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\CLionProjects\RC_PLANE\build\esp-idf\esptool_py && C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/tianm/CLionProjects/RC_PLANE/build/partition_table/partition-table.bin C:/Users/tianm/CLionProjects/RC_PLANE/build/RC_PLANE.bin"
+RC_PLANE.bin binary size 0x39770 bytes. Smallest app partition is 0x100000 bytes. 0xc6890 bytes (78%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\.espressif\v5.5.2\esp-idf\components\esptool_py && "C:\Program Files\JetBrains\CLion 2025.3\bin\cmake\win\x64\bin\cmake.exe" -D IDF_PATH=C:/Users/tianm/.espressif/v5.5.2/esp-idf -D SERIAL_TOOL=C:/Users/tianm/.espressif/python_env/idf5.5_py3.13_env/Scripts/python.exe;;C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/tianm/CLionProjects/RC_PLANE/build -P C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c3 -p COM3 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 RC_PLANE.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.dev1
+Serial port COM3
+
+A fatal error occurred: Could not open COM3, the port is busy or doesn't exist.
+(could not open port 'COM3': PermissionError(13, 'Access is denied.', None, 5))
+
+Hint: Check if the port is not used by another task
+
+FAILED: CMakeFiles/flash C:/Users/tianm/CLionProjects/RC_PLANE/build/CMakeFiles/flash 
+C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\tianm\.espressif\v5.5.2\esp-idf\components\esptool_py && "C:\Program Files\JetBrains\CLion 2025.3\bin\cmake\win\x64\bin\cmake.exe" -D IDF_PATH=C:/Users/tianm/.espressif/v5.5.2/esp-idf -D SERIAL_TOOL=C:/Users/tianm/.espressif/python_env/idf5.5_py3.13_env/Scripts/python.exe;;C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/tianm/CLionProjects/RC_PLANE/build -P C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

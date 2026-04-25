@@ -1,0 +1,1739 @@
+Command: C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\tianm\CLionProjects\RC_PLANE\build\RC_PLANE.elf C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\bootloader.elf --force-color -m 'C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools\idf.py' '-B'
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420056ac
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c4
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 15 2026 19:37:32[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bf9ch ( 49052) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001bfc4 vaddr=3fc8d800 size=01458h (  5208) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001d424 vaddr=40380000 size=02bf4h ( 11252) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ed54h (126292) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=0003ed7c vaddr=40382bf4 size=0aa84h ( 43652) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=00049808 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (152) cpu_start: Unicore app[0m
+[0;32mI (160) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (160) cpu_start: Pro cpu start user code[0m
+[0;32mI (161) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (162) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     RC_PLANE[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (174) app_init: Compile time:     Apr 15 2026 19:36:44[0m
+[0;32mI (179) app_init: ELF file SHA256:  75130cffb...[0m
+[0;32mI (183) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (191) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (195) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (199) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 3FC8FD70 len 00030290 (192 KiB): RAM[0m
+[0;32mI (210) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (222) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (232) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (266) CONTROLTASK: Starting RC Plane Application[0m
+[0;32mI (270) CONTROLTASK: I2C bus OK[0m
+[0;32mI (322) LSM6DS3: WHO_AM_I OK: 0x69[0m
+[0;32mI (322) LSM6DS3: accel configured (416 Hz, +/-4 g, BW~100 Hz)[0m
+[0;32mI (322) LSM6DS3: gyro configured (416 Hz, 500 dps)[0m
+[0;32mI (324) LSM6DS3: gyro LPF1 enabled (CTRL4_C=0x02)[0m
+[0;32mI (328) LSM6DS3: init complete[0m
+[0;32mI (330) CONTROLTASK: LSM6DS3 OK[0m
+[0;32mI (334) CONTROLTASK: Servo OK[0m
+[0;32mI (336) CONTROLTASK: IBUS OK[0m
+[0;32mI (338) CONTROLTASK: Mahony gains: Kp=1.667 Ki=0.017 (loop 100.0 Hz)[0m
+[0;32mI (346) CONTROLTASK: Pcur=  0.00 Rcur=  0.00 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (352) CONTROLTASK: AilCmd= 90.00 EleCmd= 90.00 AilTrim= 90.00 EleTrim= 90.00[0m
+[0;32mI (358) CONTROLTASK: FS ibus=1 imu=1 age(ms) ibus=86 imu=86[0m
+[0;32mI (364) CONTROLTASK: logTask stack watermark: 3820 words (~3820 bytes) free[0m
+[0;32mI (370) main_task: Returned from app_main()[0m
+[1;31mE (406) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (406) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (416) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (416) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (426) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (426) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (436) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (438) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (446) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (450) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (458) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (462) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (470) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (476) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (482) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (488) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (494) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (500) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (506) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (512) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (520) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (524) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (532) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (536) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (544) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (550) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (556) CONTROLTASK: Pcur=  2.22 Rcur=  8.46 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (556) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (568) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (574) CONTROLTASK: AilCmd= -8.46 EleCmd= -2.22 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (574) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (586) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (594) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (600) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (606) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=12[0m
+[1;31mE (606) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (616) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (624) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (624) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (636) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (644) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (648) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (656) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (660) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (668) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (672) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (680) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (686) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (692) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (698) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (704) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (710) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (716) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (722) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (730) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (734) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (742) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (746) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (754) CONTROLTASK: Pcur=  3.80 Rcur= 11.10 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (754) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (766) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (772) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (778) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (784) CONTROLTASK: AilCmd=-11.10 EleCmd= -3.80 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (784) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (796) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (804) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=50 imu=14[0m
+[1;31mE (804) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (814) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (820) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (822) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (834) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (840) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (846) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (852) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (858) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (866) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (870) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (878) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (882) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (890) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (896) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (902) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (908) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (914) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (920) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (926) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (932) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (938) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (944) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (952) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (964) CONTROLTASK: Pcur=  5.86 Rcur= 14.71 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (964) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (976) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (982) CONTROLTASK: AilCmd=-14.71 EleCmd= -5.86 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (982) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (994) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1000) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=14[0m
+[1;31mE (1002) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1012) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1020) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1024) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1032) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (1032) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1044) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1050) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1064) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1068) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1076) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1082) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1088) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1094) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1100) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1106) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1114) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1118) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1126) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1132) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1138) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1144) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1150) CONTROLTASK: Pcur=  8.04 Rcur= 18.71 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (1152) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1162) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1170) CONTROLTASK: AilCmd=-18.71 EleCmd= -8.04 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (1170) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1182) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1188) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=12[0m
+[1;31mE (1190) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1200) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1208) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1212) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1218) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (1220) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1232) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1238) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1244) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1252) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1256) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1264) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1270) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1276) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1282) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1288) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1294) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1302) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1306) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1314) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1320) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1326) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1332) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1338) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1344) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1350) CONTROLTASK: Pcur= 10.87 Rcur= 24.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (1352) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1362) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1370) CONTROLTASK: AilCmd=-24.06 EleCmd=-10.87 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (1370) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1382) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1390) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=12[0m
+[1;31mE (1390) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1400) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1406) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (1408) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1420) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1426) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1432) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1440) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1444) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1452) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1458) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1464) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1470) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1476) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1482) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1490) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1494) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1502) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1508) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1514) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1520) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1526) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1532) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1540) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1544) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1552) CONTROLTASK: Pcur= 14.11 Rcur= 30.84 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (1552) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1564) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1570) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1576) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1582) CONTROLTASK: AilCmd=-25.00 EleCmd=-14.11 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (1582) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1596) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1602) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=14[0m
+[1;31mE (1602) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1614) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1620) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (1620) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1632) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1640) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1644) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1652) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1658) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1664) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1670) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1676) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1682) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1690) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1694) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1702) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1708) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1714) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1720) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1726) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1732) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1740) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1744) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1752) CONTROLTASK: Pcur= 17.67 Rcur= 39.45 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (1752) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1764) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1770) CONTROLTASK: AilCmd=-25.00 EleCmd=-17.67 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (1770) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1782) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1790) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=0 imu=14[0m
+[1;31mE (1790) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1800) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1808) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (1808) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1820) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1828) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1832) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1840) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1846) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1852) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1858) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1864) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1870) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1878) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1882) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1890) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1896) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1902) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1908) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1914) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1920) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1928) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1932) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1940) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1952) CONTROLTASK: Pcur= 21.25 Rcur= 50.04 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (1952) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1964) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1970) CONTROLTASK: AilCmd=-25.00 EleCmd=-20.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (1972) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (1984) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (1990) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=12[0m
+[1;31mE (1990) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2002) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2008) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2014) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2020) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (2020) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2032) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2040) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2046) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2052) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2058) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2070) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2078) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2082) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2090) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2096) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2102) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2108) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2116) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2120) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2128) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2132) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2140) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2146) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2152) CONTROLTASK: Pcur= 24.37 Rcur= 62.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (2152) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2164) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2170) CONTROLTASK: AilCmd=-25.00 EleCmd=-20.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (2172) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2184) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2190) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2196) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2202) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=12[0m
+[1;31mE (2204) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2214) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2220) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (2222) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2234) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2240) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2246) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2254) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2258) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2266) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2270) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2278) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2284) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2290) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2296) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2302) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2308) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2316) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2320) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2328) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2334) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2340) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2346) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2352) CONTROLTASK: Pcur= 26.31 Rcur= 77.57 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (2352) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2364) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2372) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2376) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2384) CONTROLTASK: AilCmd=-25.00 EleCmd=-20.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (2384) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2396) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2402) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=12[0m
+[1;31mE (2404) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2414) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2420) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (2422) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2434) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2440) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2446) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2454) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2458) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2466) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2472) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2478) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2484) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2490) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2496) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2504) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2508) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2516) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2522) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2528) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2534) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2540) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2546) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2554) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2558) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2566) CONTROLTASK: Pcur= 26.44 Rcur= 94.48 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (2566) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2578) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2584) CONTROLTASK: AilCmd=-25.00 EleCmd=-20.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (2584) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2596) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2604) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=14[0m
+[1;31mE (2604) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2614) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2622) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2628) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2634) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (2634) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2646) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2654) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2658) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2666) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2672) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2678) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2684) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2692) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2696) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2704) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2708) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2716) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2722) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2728) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2734) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2742) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2746) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2752) CONTROLTASK: Pcur= 24.91 Rcur=108.74 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (2754) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2766) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2772) CONTROLTASK: AilCmd=-25.00 EleCmd=-20.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (2772) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2784) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2792) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=12[0m
+[1;31mE (2792) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2802) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2810) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2814) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2822) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (2822) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2834) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2842) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2846) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2854) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2860) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2866) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2872) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2878) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2884) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2892) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2896) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2904) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2910) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2916) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2922) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2928) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2934) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2942) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2954) CONTROLTASK: Pcur= 21.87 Rcur=122.55 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (2954) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2966) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (2972) CONTROLTASK: AilCmd=-25.00 EleCmd=-20.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (2972) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2984) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2992) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (2998) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3004) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=26 imu=14[0m
+[1;31mE (3004) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3022) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (3022) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3034) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3042) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3048) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3054) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3060) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3072) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3080) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3084) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3092) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3098) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3104) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3110) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3116) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3122) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3130) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3134) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3142) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3148) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3154) CONTROLTASK: Pcur= 18.12 Rcur=134.26 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (3154) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3166) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3172) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3178) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3184) CONTROLTASK: AilCmd=-25.00 EleCmd=-18.12 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (3186) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3198) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3204) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=14[0m
+[1;31mE (3204) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3216) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3222) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (3222) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3234) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3242) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3248) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3254) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3260) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3268) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3272) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3280) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3284) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3292) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3298) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3304) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3310) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3318) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3322) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3330) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3334) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3342) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3348) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3354) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3360) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3366) CONTROLTASK: Pcur= 14.06 Rcur=144.53 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (3368) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3378) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3386) CONTROLTASK: AilCmd=-25.00 EleCmd=-14.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (3386) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3398) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3404) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=12[0m
+[1;31mE (3406) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3416) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3424) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3428) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3434) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (3436) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3448) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3454) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3460) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3468) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3472) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3480) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3486) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3492) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3498) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3504) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3510) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3518) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3522) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3530) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3536) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3542) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3548) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3554) CONTROLTASK: Pcur= 10.81 Rcur=151.63 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (3554) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3566) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3572) CONTROLTASK: AilCmd=-25.00 EleCmd=-10.81 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (3574) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3586) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3592) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=12[0m
+[1;31mE (3594) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3604) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3610) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3616) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3622) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (3624) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3636) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3642) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3648) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3656) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3660) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3668) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3674) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3680) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3686) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3692) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3698) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3706) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3710) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3718) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3724) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3730) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3736) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3742) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3748) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3754) CONTROLTASK: Pcur=  7.82 Rcur=157.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (3756) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3766) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3774) CONTROLTASK: AilCmd=-25.00 EleCmd= -7.82 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (3774) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3786) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3794) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3798) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3806) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=12[0m
+[1;31mE (3806) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3816) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3824) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (3824) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3836) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3842) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3848) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3856) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3860) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3868) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3874) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3880) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3886) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3892) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3898) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3906) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3910) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3918) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3924) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3930) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3936) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3942) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3948) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3954) CONTROLTASK: Pcur=  5.35 Rcur=162.81 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (3956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3966) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3974) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (3980) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (3986) CONTROLTASK: AilCmd=-25.00 EleCmd= -5.35 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (3986) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4000) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4006) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=12[0m
+[1;31mE (4006) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4024) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (4024) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4036) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4044) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4048) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4062) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4068) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4074) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4080) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4086) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4094) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4098) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4106) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4112) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4118) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4124) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4130) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4136) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4144) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4148) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4156) CONTROLTASK: Pcur=  3.33 Rcur=166.68 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (4156) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4168) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4174) CONTROLTASK: AilCmd=-25.00 EleCmd= -3.33 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (4174) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4186) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4194) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=0 imu=14[0m
+[1;31mE (4194) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4204) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4212) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (4212) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4224) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4232) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4236) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4244) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4248) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4256) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4262) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4268) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4274) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4282) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4286) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4294) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4298) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4306) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4312) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4318) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4324) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4332) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4336) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4344) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4348) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4356) CONTROLTASK: Pcur=  1.72 Rcur=169.76 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (4356) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4368) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4374) CONTROLTASK: AilCmd=-25.00 EleCmd= -1.72 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (4374) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4388) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4394) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=0 imu=14[0m
+[1;31mE (4394) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4404) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4412) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4418) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4424) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (4424) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4436) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4444) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4450) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4456) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4462) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4470) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4474) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4482) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4486) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4494) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4500) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4506) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4512) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4518) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4524) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4532) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4536) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4544) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4550) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4556) CONTROLTASK: Pcur=  0.44 Rcur=172.20 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (4556) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4568) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4574) CONTROLTASK: AilCmd=-25.00 EleCmd= -0.44 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (4576) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4588) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4594) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4600) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4606) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=14[0m
+[1;31mE (4608) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4618) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4624) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (4624) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4636) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4644) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4650) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4656) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4662) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4670) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4676) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4682) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4688) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4694) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4700) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4706) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4712) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4720) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4726) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4732) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4738) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4744) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4750) CONTROLTASK: Pcur= -1.04 Rcur=175.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (4750) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4762) CONTROLTASK: AilCmd=-25.00 EleCmd=  1.04 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (4762) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4776) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4782) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=6[0m
+[1;31mE (4782) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4794) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (4794) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4806) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4814) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4820) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4826) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4832) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4838) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4844) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4850) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4856) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4864) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4870) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4876) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4882) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4888) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4894) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4900) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4906) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4914) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4920) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4926) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4932) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4938) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4944) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4950) CONTROLTASK: Pcur= -2.25 Rcur=177.58 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (4950) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (4964) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4968) CONTROLTASK: AilCmd=-25.00 EleCmd=  2.25 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (4970) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4982) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=56 imu=6[0m
+[1;31mE (4982) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (4994) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (4994) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5008) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5014) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5020) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5026) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5032) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5038) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5044) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5050) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5058) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5064) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5070) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5076) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5082) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5088) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5094) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5100) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5108) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5114) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5120) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5126) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5132) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5138) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5146) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (5150) CONTROLTASK: Pcur= -2.98 Rcur=179.14 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (5152) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (5162) CONTROLTASK: AilCmd=-25.00 EleCmd=  2.98 AilTrim=  0.00 EleTrim=  0.00[0m
+[1;31mE (5164) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (5176) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=6[0m
+[1;31mE (5176) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (5188) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (5188) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5202) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5208) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5214) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5220) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5226) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5232) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5238) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5244) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5252) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5258) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5264) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5270) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5276) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5282) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5288) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5294) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5302) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5308) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (5314) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (5346) CONTROLTASK: Pcur= -3.70 Rcur=-179.21 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (5348) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.70 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (5350) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=2[0m
+[0;32mI (5354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (5546) CONTROLTASK: Pcur= -3.91 Rcur=-178.58 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (5546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.91 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (5548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=10[0m
+[0;32mI (5554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (5746) CONTROLTASK: Pcur= -3.94 Rcur=-178.53 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (5746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.94 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (5748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (5754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (5946) CONTROLTASK: Pcur= -3.98 Rcur=-178.44 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (5946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.98 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (5948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (5954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (6146) CONTROLTASK: Pcur= -3.99 Rcur=-178.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.99 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (6148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=10[0m
+[0;32mI (6154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (6346) CONTROLTASK: Pcur= -4.01 Rcur=-178.41 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6346) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.01 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (6348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (6354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (6546) CONTROLTASK: Pcur= -3.99 Rcur=-178.37 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.99 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (6548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (6554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (6746) CONTROLTASK: Pcur= -3.99 Rcur=-178.30 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.99 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (6748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (6754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (6946) CONTROLTASK: Pcur= -4.01 Rcur=-178.28 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6946) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.01 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (6948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=20 imu=10[0m
+[0;32mI (6954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (7146) CONTROLTASK: Pcur= -4.03 Rcur=-178.14 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7146) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.03 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (7148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (7154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (7346) CONTROLTASK: Pcur= -4.03 Rcur=-178.22 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7346) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.03 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (7348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=50 imu=10[0m
+[0;32mI (7354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (7546) CONTROLTASK: Pcur= -4.00 Rcur=-178.31 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7546) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (7548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=4 imu=10[0m
+[0;32mI (7554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (7746) CONTROLTASK: Pcur= -4.00 Rcur=-178.29 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7746) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (7748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=20 imu=10[0m
+[0;32mI (7754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (7946) CONTROLTASK: Pcur= -4.00 Rcur=-178.31 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7946) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (7948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=34 imu=10[0m
+[0;32mI (7954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (8146) CONTROLTASK: Pcur= -3.98 Rcur=-178.30 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (8146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.98 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (8148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=50 imu=10[0m
+[0;32mI (8154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (8346) CONTROLTASK: Pcur= -3.97 Rcur=-178.21 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (8346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.97 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (8348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=4 imu=10[0m
+[0;32mI (8354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (8546) CONTROLTASK: Pcur= -3.95 Rcur=-178.20 Ptgt=  0.00 Rtgt= -5.70[0m
+[0;32mI (8546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.95 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (8548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=18 imu=10[0m
+[0;32mI (8554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (8746) CONTROLTASK: Pcur= -3.97 Rcur=-178.26 Ptgt=  0.00 Rtgt=-17.64[0m
+[0;32mI (8746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.97 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (8748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=34 imu=10[0m
+[0;32mI (8754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (8946) CONTROLTASK: Pcur= -3.96 Rcur=-178.25 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (8946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.96 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (8948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=48 imu=10[0m
+[0;32mI (8954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (9146) CONTROLTASK: Pcur= -3.95 Rcur=-178.29 Ptgt=  0.00 Rtgt=-24.18[0m
+[0;32mI (9146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.95 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (9148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=2 imu=10[0m
+[0;32mI (9154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (9276) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9286) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9296) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9306) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9316) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9326) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9336) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (9346) CONTROLTASK: Pcur= -3.92 Rcur=-178.20 Ptgt= -4.68 Rtgt=-29.82[0m
+[1;31mE (9346) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (9348) CONTROLTASK: AilCmd= 25.00 EleCmd= -0.76 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (9356) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=18 imu=10[0m
+[1;31mE (9356) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (9366) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (9368) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9380) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (9386) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (9546) CONTROLTASK: Pcur= -3.93 Rcur=-178.29 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (9546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.93 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (9548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=32 imu=10[0m
+[0;32mI (9554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (9746) CONTROLTASK: Pcur= -3.92 Rcur=-178.26 Ptgt=  0.00 Rtgt=-24.24[0m
+[0;32mI (9746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.92 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (9748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=48 imu=10[0m
+[0;32mI (9754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (9946) CONTROLTASK: Pcur= -3.92 Rcur=-178.31 Ptgt=  0.00 Rtgt= -3.24[0m
+[0;32mI (9946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.92 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (9948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=2 imu=10[0m
+[0;32mI (9954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (10146) CONTROLTASK: Pcur= -3.90 Rcur=-178.29 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (10146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.90 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (10148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=16 imu=10[0m
+[0;32mI (10154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (10346) CONTROLTASK: Pcur= -3.90 Rcur=-178.30 Ptgt=  0.00 Rtgt=-29.70[0m
+[0;32mI (10346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.90 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (10348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=32 imu=10[0m
+[0;32mI (10354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (10546) CONTROLTASK: Pcur= -3.87 Rcur=-178.32 Ptgt=  0.00 Rtgt= -9.24[0m
+[0;32mI (10546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.87 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (10548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=48 imu=10[0m
+[0;32mI (10554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (10746) CONTROLTASK: Pcur= -3.87 Rcur=-178.34 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (10746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.87 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (10748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=0 imu=10[0m
+[0;32mI (10754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (10816) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10826) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10836) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10846) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10856) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10866) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10876) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10886) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10896) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10906) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10916) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10926) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10936) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (10946) CONTROLTASK: Pcur= -3.86 Rcur=-178.34 Ptgt=-20.70 Rtgt=  0.00[0m
+[1;31mE (10946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (10948) CONTROLTASK: AilCmd= 25.00 EleCmd=-16.84 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (10956) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=16 imu=10[0m
+[1;31mE (10956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (10968) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (10968) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10982) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10988) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (10996) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11006) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11026) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11036) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11046) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11076) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11086) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11096) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (11106) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (11146) CONTROLTASK: Pcur= -3.85 Rcur=-178.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (11146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.85 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (11148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=32 imu=10[0m
+[0;32mI (11154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (11346) CONTROLTASK: Pcur= -3.85 Rcur=-178.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (11346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.85 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (11348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=46 imu=10[0m
+[0;32mI (11354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (11546) CONTROLTASK: Pcur= -3.85 Rcur=-178.45 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (11546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.85 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (11548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=62 imu=10[0m
+[0;32mI (11554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (11746) CONTROLTASK: Pcur= -3.83 Rcur=-178.42 Ptgt=  0.00 Rtgt= -8.10[0m
+[0;32mI (11746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.83 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (11748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=16 imu=10[0m
+[0;32mI (11754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (11946) CONTROLTASK: Pcur= -3.82 Rcur=-178.35 Ptgt=  0.00 Rtgt=-18.00[0m
+[0;32mI (11946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.82 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (11948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=30 imu=10[0m
+[0;32mI (11954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (12146) CONTROLTASK: Pcur= -3.82 Rcur=-178.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.82 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (12148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=46 imu=10[0m
+[0;32mI (12154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (12346) CONTROLTASK: Pcur= -3.80 Rcur=-178.33 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.80 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (12348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=60 imu=10[0m
+[0;32mI (12354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (12546) CONTROLTASK: Pcur= -3.80 Rcur=-178.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.80 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (12548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=10[0m
+[0;32mI (12554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (12746) CONTROLTASK: Pcur= -3.80 Rcur=-178.32 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.80 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (12748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=30 imu=10[0m
+[0;32mI (12754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (12946) CONTROLTASK: Pcur= -3.78 Rcur=-178.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.78 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (12948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=44 imu=10[0m
+[0;32mI (12954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (13146) CONTROLTASK: Pcur= -3.78 Rcur=-178.38 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.78 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (13148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=60 imu=10[0m
+[0;32mI (13154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (13346) CONTROLTASK: Pcur= -3.79 Rcur=-178.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.79 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (13348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=10[0m
+[0;32mI (13354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (13546) CONTROLTASK: Pcur= -3.75 Rcur=-178.42 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.75 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (13548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=28 imu=10[0m
+[0;32mI (13554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (13746) CONTROLTASK: Pcur= -3.76 Rcur=-178.43 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.76 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (13748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=44 imu=10[0m
+[0;32mI (13754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (13946) CONTROLTASK: Pcur= -3.76 Rcur=-178.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.76 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (13948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=60 imu=10[0m
+[0;32mI (13954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (14146) CONTROLTASK: Pcur= -3.75 Rcur=-178.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (14146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.75 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (14148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=10[0m
+[0;32mI (14154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (14346) CONTROLTASK: Pcur= -3.73 Rcur=-178.42 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (14346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.73 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (14348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=28 imu=10[0m
+[0;32mI (14354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (14546) CONTROLTASK: Pcur= -3.71 Rcur=-178.37 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (14546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.71 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (14548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=44 imu=10[0m
+[0;32mI (14554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (14746) CONTROLTASK: Pcur= -3.74 Rcur=-178.43 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (14746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.74 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (14748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=58 imu=10[0m
+[0;32mI (14754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (14946) CONTROLTASK: Pcur= -3.73 Rcur=-178.43 Ptgt=  0.00 Rtgt=-30.00[0m
+[0;32mI (14946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.73 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (14948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=10[0m
+[0;32mI (14954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (15146) CONTROLTASK: Pcur= -3.72 Rcur=-178.46 Ptgt=  0.00 Rtgt=-18.06[0m
+[0;32mI (15146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.72 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (15148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=28 imu=10[0m
+[0;32mI (15154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (15346) CONTROLTASK: Pcur= -3.69 Rcur=-178.45 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (15346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.69 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (15348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=42 imu=10[0m
+[0;32mI (15354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (15546) CONTROLTASK: Pcur= -3.67 Rcur=-178.51 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (15546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.67 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (15548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=58 imu=10[0m
+[0;32mI (15554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (15746) CONTROLTASK: Pcur= -3.67 Rcur=-178.56 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (15746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.67 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (15748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=10[0m
+[0;32mI (15754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (15946) CONTROLTASK: Pcur= -3.69 Rcur=-178.59 Ptgt=  0.00 Rtgt= -6.12[0m
+[0;32mI (15946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.69 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (15948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=26 imu=10[0m
+[0;32mI (15954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (16146) CONTROLTASK: Pcur= -3.69 Rcur=-178.59 Ptgt=  0.00 Rtgt=-20.94[0m
+[0;32mI (16146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.69 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (16148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=42 imu=10[0m
+[0;32mI (16154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (16346) CONTROLTASK: Pcur= -3.67 Rcur=-178.56 Ptgt=  0.00 Rtgt=-19.92[0m
+[0;32mI (16346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.67 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (16348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=56 imu=10[0m
+[0;32mI (16354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (16546) CONTROLTASK: Pcur= -3.66 Rcur=-178.51 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (16546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.66 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (16548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=10 imu=10[0m
+[0;32mI (16554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (16746) CONTROLTASK: Pcur= -3.66 Rcur=-178.50 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (16746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.66 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (16748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=26 imu=10[0m
+[0;32mI (16754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (16946) CONTROLTASK: Pcur= -3.64 Rcur=-178.56 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (16946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.64 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (16948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=40 imu=10[0m
+[0;32mI (16954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (17146) CONTROLTASK: Pcur= -3.62 Rcur=-178.54 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (17146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.62 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (17148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=56 imu=10[0m
+[0;32mI (17154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (17346) CONTROLTASK: Pcur= -3.61 Rcur=-178.48 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (17346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.61 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (17348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=10 imu=10[0m
+[0;32mI (17354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (17546) CONTROLTASK: Pcur= -3.62 Rcur=-178.42 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (17546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.62 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (17548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=10[0m
+[0;32mI (17554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (17746) CONTROLTASK: Pcur= -3.59 Rcur=-178.43 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (17746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.59 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (17748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=40 imu=10[0m
+[0;32mI (17754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (17946) CONTROLTASK: Pcur= -3.56 Rcur=-178.43 Ptgt=  0.00 Rtgt=-29.70[0m
+[0;32mI (17946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.56 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (17948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=56 imu=10[0m
+[0;32mI (17954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (18146) CONTROLTASK: Pcur= -3.58 Rcur=-178.45 Ptgt=  0.00 Rtgt= -5.40[0m
+[0;32mI (18146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.58 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (18148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=8 imu=10[0m
+[0;32mI (18154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (18346) CONTROLTASK: Pcur= -3.56 Rcur=-178.46 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (18346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.56 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (18348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=10[0m
+[0;32mI (18354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (18546) CONTROLTASK: Pcur= -3.57 Rcur=-178.53 Ptgt=  0.00 Rtgt=-13.32[0m
+[0;32mI (18546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.57 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (18548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=40 imu=10[0m
+[0;32mI (18554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (18746) CONTROLTASK: Pcur= -3.54 Rcur=-178.49 Ptgt=  0.00 Rtgt=-18.48[0m
+[0;32mI (18746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.54 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (18748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=54 imu=10[0m
+[0;32mI (18754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (18946) CONTROLTASK: Pcur= -3.53 Rcur=-178.50 Ptgt=  0.00 Rtgt=-29.82[0m
+[0;32mI (18946) CONTROLTASK: AilCmd= 25.00 EleCmd=  6.53 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (18948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=8 imu=10[0m
+[0;32mI (18954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (19146) CONTROLTASK: Pcur= -3.52 Rcur=-178.52 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (19146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.52 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (19148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=10[0m
+[0;32mI (19154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (19346) CONTROLTASK: Pcur= -3.52 Rcur=-178.55 Ptgt= -3.06 Rtgt=-19.92[0m
+[0;32mI (19346) CONTROLTASK: AilCmd= 25.00 EleCmd=  0.46 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (19348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=10[0m
+[0;32mI (19354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (19546) CONTROLTASK: Pcur= -3.53 Rcur=-178.52 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (19546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.53 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (19548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=54 imu=10[0m
+[0;32mI (19554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (19746) CONTROLTASK: Pcur= -3.52 Rcur=-178.54 Ptgt=  0.00 Rtgt=-29.82[0m
+[0;32mI (19746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.52 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (19748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=8 imu=10[0m
+[0;32mI (19754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (19946) CONTROLTASK: Pcur= -3.54 Rcur=-178.55 Ptgt=  0.00 Rtgt=-29.82[0m
+[0;32mI (19946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.54 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (19948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=10[0m
+[0;32mI (19954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (20146) CONTROLTASK: Pcur= -3.53 Rcur=-178.60 Ptgt=  0.00 Rtgt=-21.60[0m
+[0;32mI (20146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.53 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (20148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=10[0m
+[0;32mI (20154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (20346) CONTROLTASK: Pcur= -3.53 Rcur=-178.59 Ptgt=  0.00 Rtgt=-30.00[0m
+[0;32mI (20346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.53 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (20348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (20354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (20546) CONTROLTASK: Pcur= -3.51 Rcur=-178.55 Ptgt=  0.00 Rtgt=-29.76[0m
+[0;32mI (20546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.51 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (20548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (20554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (20746) CONTROLTASK: Pcur= -3.49 Rcur=-178.54 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (20746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.49 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (20748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=10[0m
+[0;32mI (20754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (20946) CONTROLTASK: Pcur= -3.47 Rcur=-178.59 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (20946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.47 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (20948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (20954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (21146) CONTROLTASK: Pcur= -3.47 Rcur=-178.62 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.47 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (21148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (21154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (21346) CONTROLTASK: Pcur= -3.46 Rcur=-178.61 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.46 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (21348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (21354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (21546) CONTROLTASK: Pcur= -3.46 Rcur=-178.68 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.46 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (21548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=20 imu=10[0m
+[0;32mI (21554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (21746) CONTROLTASK: Pcur= -3.45 Rcur=-178.69 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.45 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (21748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (21754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (21946) CONTROLTASK: Pcur= -3.45 Rcur=-178.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.45 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (21948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (21954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (22146) CONTROLTASK: Pcur= -3.43 Rcur=-178.69 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.43 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (22148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=4 imu=10[0m
+[0;32mI (22154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (22346) CONTROLTASK: Pcur= -3.75 Rcur=-178.78 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.75 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (22348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=20 imu=10[0m
+[0;32mI (22354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (22546) CONTROLTASK: Pcur= -4.16 Rcur=-165.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22546) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.16 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (22548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (22554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (22746) CONTROLTASK: Pcur= -4.33 Rcur=-161.86 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22746) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.33 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (22748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=50 imu=10[0m
+[0;32mI (22754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (22936) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (22946) CONTROLTASK: Pcur= -5.60 Rcur=179.76 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (22946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (22948) CONTROLTASK: AilCmd=-25.00 EleCmd=  5.60 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (22956) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=4 imu=10[0m
+[1;31mE (22956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (22968) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (22968) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (22982) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (22988) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (22996) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23006) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23026) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23036) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23046) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23076) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23086) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23096) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23106) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23116) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23126) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23136) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23146) CONTROLTASK: Pcur= -3.99 Rcur=160.00 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (23146) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23148) CONTROLTASK: AilCmd=-25.00 EleCmd=  3.99 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (23156) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=18 imu=10[0m
+[1;31mE (23156) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23168) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (23168) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23182) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23188) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23196) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23206) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23216) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23226) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23236) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23246) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23256) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23266) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23276) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23286) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23296) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23306) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23316) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23326) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23336) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23346) CONTROLTASK: Pcur= -4.42 Rcur=166.21 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (23346) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23348) CONTROLTASK: AilCmd=-25.00 EleCmd=  4.42 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (23356) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=34 imu=10[0m
+[1;31mE (23356) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23368) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (23368) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23382) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23388) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23396) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23406) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23416) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23426) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23436) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23446) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23456) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23466) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23546) CONTROLTASK: Pcur= -6.58 Rcur=-177.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (23546) CONTROLTASK: AilCmd= 25.00 EleCmd=  6.58 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (23548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=50 imu=10[0m
+[0;32mI (23554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (23746) CONTROLTASK: Pcur= -5.69 Rcur=-176.60 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (23746) CONTROLTASK: AilCmd= 25.00 EleCmd=  5.69 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (23748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=4 imu=10[0m
+[0;32mI (23754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (23806) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23816) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23826) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23836) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23846) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23856) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23866) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23876) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23886) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23896) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23906) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23916) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23926) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23936) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23946) CONTROLTASK: Pcur= -3.58 Rcur=173.08 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (23946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23948) CONTROLTASK: AilCmd=-25.00 EleCmd=  3.58 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (23956) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=18 imu=10[0m
+[1;31mE (23956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (23968) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (23968) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23982) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23988) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (23996) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24006) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24026) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24036) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24046) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24076) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24086) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24096) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24106) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24116) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24126) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24136) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (24146) CONTROLTASK: Pcur= -5.47 Rcur=172.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (24146) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (24148) CONTROLTASK: AilCmd=-25.00 EleCmd=  5.47 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (24156) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=34 imu=10[0m
+[1;31mE (24156) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (24168) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (24168) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24182) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24188) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24196) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24206) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24216) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24226) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24236) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24246) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24256) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24266) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (24276) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (24346) CONTROLTASK: Pcur= -9.67 Rcur=-179.25 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24346) CONTROLTASK: AilCmd= 25.00 EleCmd=  9.67 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (24348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=48 imu=10[0m
+[0;32mI (24354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (24546) CONTROLTASK: Pcur=-13.01 Rcur=-179.11 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24546) CONTROLTASK: AilCmd= 25.00 EleCmd= 13.01 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (24548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=2 imu=10[0m
+[0;32mI (24554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (24746) CONTROLTASK: Pcur= -6.06 Rcur=-179.71 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24746) CONTROLTASK: AilCmd= 25.00 EleCmd=  6.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (24748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=18 imu=10[0m
+[0;32mI (24754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (24946) CONTROLTASK: Pcur= -3.40 Rcur=-178.69 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.40 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (24948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=32 imu=10[0m
+[0;32mI (24954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (25146) CONTROLTASK: Pcur=-11.44 Rcur=-178.71 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25146) CONTROLTASK: AilCmd= 25.00 EleCmd= 11.44 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (25148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=48 imu=10[0m
+[0;32mI (25154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (25346) CONTROLTASK: Pcur=-15.03 Rcur=-179.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25346) CONTROLTASK: AilCmd= 25.00 EleCmd= 15.03 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (25348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=2 imu=10[0m
+[0;32mI (25354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (25546) CONTROLTASK: Pcur= -2.93 Rcur=-178.29 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25546) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.93 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (25548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=16 imu=10[0m
+[0;32mI (25554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (25746) CONTROLTASK: Pcur= -5.72 Rcur=-178.98 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25746) CONTROLTASK: AilCmd= 25.00 EleCmd=  5.72 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (25748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=32 imu=10[0m
+[0;32mI (25754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (25946) CONTROLTASK: Pcur=-15.82 Rcur=-179.53 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25946) CONTROLTASK: AilCmd= 25.00 EleCmd= 15.82 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (25948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=46 imu=10[0m
+[0;32mI (25954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (26146) CONTROLTASK: Pcur= -9.14 Rcur=-179.43 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26146) CONTROLTASK: AilCmd= 25.00 EleCmd=  9.14 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (26148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=0 imu=0[0m
+[0;32mI (26154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (26346) CONTROLTASK: Pcur= -3.43 Rcur=-179.05 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.43 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (26348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=16 imu=10[0m
+[0;32mI (26354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (26546) CONTROLTASK: Pcur=-10.73 Rcur=-179.20 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26546) CONTROLTASK: AilCmd= 25.00 EleCmd= 10.73 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (26548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=30 imu=10[0m
+[0;32mI (26554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (26746) CONTROLTASK: Pcur=-14.16 Rcur=-179.96 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (26746) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (26748) CONTROLTASK: AilCmd= 25.00 EleCmd= 14.16 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (26754) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=46 imu=10[0m
+[1;31mE (26756) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (26768) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (26774) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (26776) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (26788) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (26796) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (26946) CONTROLTASK: Pcur= -6.38 Rcur=-179.31 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26946) CONTROLTASK: AilCmd= 25.00 EleCmd=  6.38 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (26950) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=62 imu=10[0m
+[0;32mI (26954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (27146) CONTROLTASK: Pcur= -3.86 Rcur=-179.04 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.86 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (27148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=10[0m
+[0;32mI (27154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (27346) CONTROLTASK: Pcur=-11.82 Rcur=-179.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27346) CONTROLTASK: AilCmd= 25.00 EleCmd= 11.82 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (27348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=30 imu=10[0m
+[0;32mI (27354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (27546) CONTROLTASK: Pcur=-15.60 Rcur=-179.22 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27546) CONTROLTASK: AilCmd= 25.00 EleCmd= 15.60 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (27548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=46 imu=10[0m
+[0;32mI (27554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (27746) CONTROLTASK: Pcur=-14.78 Rcur=-179.37 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27746) CONTROLTASK: AilCmd= 25.00 EleCmd= 14.78 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (27748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=60 imu=10[0m
+[0;32mI (27754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (27946) CONTROLTASK: Pcur= -7.77 Rcur=-179.25 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27946) CONTROLTASK: AilCmd= 25.00 EleCmd=  7.77 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (27948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=10[0m
+[0;32mI (27954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (28146) CONTROLTASK: Pcur= -3.10 Rcur=-178.95 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (28146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.10 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (28148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=30 imu=10[0m
+[0;32mI (28154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (28346) CONTROLTASK: Pcur= -3.22 Rcur=-179.14 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (28346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.22 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (28348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=44 imu=10[0m
+[0;32mI (28354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (28466) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28476) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28486) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28496) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28506) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28516) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28526) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28536) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28546) CONTROLTASK: Pcur= -2.92 Rcur=177.54 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (28546) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28548) CONTROLTASK: AilCmd=-25.00 EleCmd=  2.92 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (28556) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=60 imu=10[0m
+[1;31mE (28556) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28568) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (28568) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28580) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28588) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28596) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28606) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28616) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28626) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28636) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28646) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28656) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28666) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28676) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28686) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28696) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28706) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28716) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28726) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28736) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28746) CONTROLTASK: Pcur= -2.95 Rcur=162.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (28746) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28748) CONTROLTASK: AilCmd=-25.00 EleCmd=  2.95 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (28756) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=14 imu=10[0m
+[1;31mE (28756) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28768) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (28768) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28780) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28788) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28796) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28806) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28816) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28826) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28836) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28846) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28856) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28866) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28876) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28886) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28896) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28906) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28916) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28926) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28936) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28946) CONTROLTASK: Pcur= -3.03 Rcur=161.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (28946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28948) CONTROLTASK: AilCmd=-25.00 EleCmd=  3.03 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (28956) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=28 imu=10[0m
+[1;31mE (28956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (28968) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (28968) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28980) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28988) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (28996) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29006) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29026) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29036) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29046) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29076) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29086) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29096) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29106) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29116) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (29146) CONTROLTASK: Pcur= -4.52 Rcur=-178.63 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29146) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.52 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (29148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=44 imu=10[0m
+[0;32mI (29154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (29346) CONTROLTASK: Pcur= -4.27 Rcur=-172.43 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29346) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.27 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (29348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=58 imu=10[0m
+[0;32mI (29354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (29546) CONTROLTASK: Pcur= -4.43 Rcur=-163.19 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29546) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.43 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (29548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=10[0m
+[0;32mI (29554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (29746) CONTROLTASK: Pcur= -4.31 Rcur=-162.49 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29746) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.31 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (29748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=28 imu=10[0m
+[0;32mI (29754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (29906) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29916) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29926) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29936) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (29946) CONTROLTASK: Pcur= -4.64 Rcur=178.39 Ptgt=  0.00 Rtgt=  0.00[0m
+[1;31mE (29946) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (29948) CONTROLTASK: AilCmd=-25.00 EleCmd=  4.64 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (29954) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=42 imu=10[0m
+[1;31mE (29956) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29968) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (29974) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[1;31mE (29976) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29988) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (29996) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30006) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30016) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30026) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30036) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30046) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30056) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[1;31mE (30066) servo: iot_servo_write_angle(105): Angle can't to be negative[0m
+[0;32mI (30146) CONTROLTASK: Pcur= -4.61 Rcur=-174.45 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30146) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.61 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (30148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=58 imu=10[0m
+[0;32mI (30154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (30346) CONTROLTASK: Pcur= -4.14 Rcur=-164.78 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30346) CONTROLTASK: AilCmd= 25.00 EleCmd=  4.14 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (30348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=12 imu=10[0m
+[0;32mI (30354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (30546) CONTROLTASK: Pcur= -3.79 Rcur=-172.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.79 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (30548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=26 imu=10[0m
+[0;32mI (30554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (30746) CONTROLTASK: Pcur= -3.25 Rcur=-179.31 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.25 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (30748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=42 imu=10[0m
+[0;32mI (30754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (30946) CONTROLTASK: Pcur= -3.05 Rcur=-179.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.05 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (30948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=58 imu=10[0m
+[0;32mI (30954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (31146) CONTROLTASK: Pcur= -3.03 Rcur=-179.21 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.03 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (31148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=10 imu=10[0m
+[0;32mI (31154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (31346) CONTROLTASK: Pcur= -3.06 Rcur=-179.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (31348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=26 imu=10[0m
+[0;32mI (31354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (31546) CONTROLTASK: Pcur= -3.07 Rcur=-178.95 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (31548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=42 imu=10[0m
+[0;32mI (31554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (31746) CONTROLTASK: Pcur= -3.06 Rcur=-178.92 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (31748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=56 imu=10[0m
+[0;32mI (31754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (31946) CONTROLTASK: Pcur= -3.07 Rcur=-178.90 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (31948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=10 imu=10[0m
+[0;32mI (31954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (32146) CONTROLTASK: Pcur= -3.06 Rcur=-178.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (32148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=26 imu=10[0m
+[0;32mI (32154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (32346) CONTROLTASK: Pcur= -3.07 Rcur=-178.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (32348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=40 imu=10[0m
+[0;32mI (32354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (32546) CONTROLTASK: Pcur= -3.08 Rcur=-178.79 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.08 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (32548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=56 imu=10[0m
+[0;32mI (32554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (32746) CONTROLTASK: Pcur= -3.08 Rcur=-178.81 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.08 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (32748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=10 imu=10[0m
+[0;32mI (32754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (32946) CONTROLTASK: Pcur= -3.07 Rcur=-178.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (32948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=10[0m
+[0;32mI (32954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (33146) CONTROLTASK: Pcur= -3.06 Rcur=-178.82 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (33148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=40 imu=10[0m
+[0;32mI (33154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (33346) CONTROLTASK: Pcur= -3.05 Rcur=-178.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.05 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (33348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=54 imu=10[0m
+[0;32mI (33354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (33546) CONTROLTASK: Pcur= -3.06 Rcur=-178.86 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.06 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (33548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=8 imu=10[0m
+[0;32mI (33554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (33746) CONTROLTASK: Pcur= -3.07 Rcur=-178.78 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (33748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=24 imu=10[0m
+[0;32mI (33754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (33946) CONTROLTASK: Pcur= -3.07 Rcur=-178.79 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (33948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=10[0m
+[0;32mI (33954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (34146) CONTROLTASK: Pcur= -3.07 Rcur=-178.75 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.07 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (34148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=54 imu=10[0m
+[0;32mI (34154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (34346) CONTROLTASK: Pcur= -3.04 Rcur=-178.79 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34346) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.04 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (34348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=8 imu=10[0m
+[0;32mI (34354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (34546) CONTROLTASK: Pcur= -3.05 Rcur=-178.83 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.05 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (34548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=10[0m
+[0;32mI (34554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (34746) CONTROLTASK: Pcur= -3.04 Rcur=-178.84 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34746) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.04 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (34748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=10[0m
+[0;32mI (34754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (34946) CONTROLTASK: Pcur= -3.01 Rcur=-178.84 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34946) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.01 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (34948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=54 imu=10[0m
+[0;32mI (34954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (35146) CONTROLTASK: Pcur= -3.00 Rcur=-178.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35146) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (35148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (35154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (35346) CONTROLTASK: Pcur= -2.99 Rcur=-178.86 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35346) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.99 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (35348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=10[0m
+[0;32mI (35354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (35546) CONTROLTASK: Pcur= -3.00 Rcur=-178.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35546) CONTROLTASK: AilCmd= 25.00 EleCmd=  3.00 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (35548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=38 imu=10[0m
+[0;32mI (35554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (35746) CONTROLTASK: Pcur= -2.98 Rcur=-178.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35746) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.98 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (35748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (35754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (35946) CONTROLTASK: Pcur= -2.96 Rcur=-178.77 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35946) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.96 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (35948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (35954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (36146) CONTROLTASK: Pcur= -2.95 Rcur=-178.74 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36146) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.95 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (36148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=22 imu=10[0m
+[0;32mI (36154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (36346) CONTROLTASK: Pcur= -2.94 Rcur=-178.81 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36346) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.94 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (36348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (36354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (36546) CONTROLTASK: Pcur= -2.94 Rcur=-178.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36546) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.94 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (36548) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=52 imu=10[0m
+[0;32mI (36554) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (36746) CONTROLTASK: Pcur= -2.92 Rcur=-178.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36746) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.92 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (36748) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=6 imu=10[0m
+[0;32mI (36754) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (36946) CONTROLTASK: Pcur= -2.92 Rcur=-178.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36946) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.92 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (36948) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=20 imu=10[0m
+[0;32mI (36954) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (37146) CONTROLTASK: Pcur= -2.92 Rcur=-178.84 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (37146) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.92 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (37148) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=36 imu=10[0m
+[0;32mI (37154) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m
+[0;32mI (37346) CONTROLTASK: Pcur= -2.89 Rcur=-178.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (37346) CONTROLTASK: AilCmd= 25.00 EleCmd=  2.89 AilTrim=  0.00 EleTrim=  0.00[0m
+[0;32mI (37348) CONTROLTASK: FS ibus=0 imu=0 age(ms) ibus=50 imu=10[0m
+[0;32mI (37354) CONTROLTASK: logTask stack watermark: 1960 words (~1960 bytes) free[0m

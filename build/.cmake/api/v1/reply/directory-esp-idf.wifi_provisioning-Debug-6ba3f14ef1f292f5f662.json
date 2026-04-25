@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/wifi_provisioning",
+		"source" : "C:/Users/tianm/.espressif/v5.5.2/esp-idf/components/wifi_provisioning"
+	}
+}

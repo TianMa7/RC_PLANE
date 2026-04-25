@@ -1,0 +1,263 @@
+Command: C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\tianm\CLionProjects\RC_PLANE\build\RC_PLANE.elf C:\Users\tianm\CLionProjects\RC_PLANE\build\bootloader\bootloader.elf --force-color -m 'C:\Users\tianm\.espressif\python_env\idf5.5_py3.13_env\Scripts\python.exe' 'C:\Users\tianm\.espressif\v5.5.2\esp-idf\tools\idf.py' '-B'
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-api1-20210207[0m
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382124
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c4
+load:0x403cbf10,len:0xc84
+load:0x403ce710,len:0x2fd0
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 15 2026 19:37:32[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bee4h ( 48868) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001bf0c vaddr=3fc8d800 size=01458h (  5208) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=0001d36c vaddr=40380000 size=02cach ( 11436) load[0m
+[0;32mI (101) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ec24h (125988) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=0003ec4c vaddr=40382cac size=0a9cch ( 43468) load[0m
+[0;32mI (134) esp_image: segment 5: paddr=00049620 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (152) cpu_start: Unicore app[0m
+[0;32mI (160) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (160) cpu_start: Pro cpu start user code[0m
+[0;32mI (160) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (162) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     RC_PLANE[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     Apr 15 2026 19:36:44[0m
+[0;32mI (178) app_init: ELF file SHA256:  3525f3925...[0m
+[0;32mI (183) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (191) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (195) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (199) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 3FC8FD70 len 00030290 (192 KiB): RAM[0m
+[0;32mI (210) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (216) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (222) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (229) spi_flash: detected chip: generic[0m
+[0;32mI (231) spi_flash: flash io: dio[0m
+[0;33mW (234) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (247) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (253) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (260) main_task: Started on CPU0[0m
+[0;32mI (262) main_task: Calling app_main()[0m
+[0;32mI (266) CONTROLTASK: Starting RC Plane Application[0m
+[0;32mI (270) CONTROLTASK: I2C bus OK[0m
+[0;32mI (324) LSM6DS3: WHO_AM_I OK: 0x69[0m
+[0;32mI (324) LSM6DS3: accel configured (416 Hz, +/-4 g, BW~100 Hz)[0m
+[0;32mI (324) LSM6DS3: gyro configured (416 Hz, 500 dps)[0m
+[0;32mI (326) LSM6DS3: gyro LPF1 enabled (CTRL4_C=0x02)[0m
+[0;32mI (330) LSM6DS3: init complete[0m
+[0;32mI (332) CONTROLTASK: LSM6DS3 OK[0m
+[0;32mI (336) CONTROLTASK: Servo OK[0m
+[0;32mI (338) CONTROLTASK: IBUS OK[0m
+[0;32mI (340) CONTROLTASK: Mahony gains: Kp=1.667 Ki=0.017 (loop 100.0 Hz)[0m
+[0;32mI (348) CONTROLTASK: Pcur=  0.00 Rcur=  0.00 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (354) main_task: Returned from app_main()[0m
+[0;32mI (1348) CONTROLTASK: Pcur= -6.88 Rcur=  5.62 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (2348) CONTROLTASK: Pcur= -7.97 Rcur=  5.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (3348) CONTROLTASK: Pcur= -8.61 Rcur=  5.38 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (4348) CONTROLTASK: Pcur= -9.16 Rcur=  5.24 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (5348) CONTROLTASK: Pcur=-47.78 Rcur= 18.82 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6348) CONTROLTASK: Pcur=  3.07 Rcur= 15.46 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7348) CONTROLTASK: Pcur= 35.51 Rcur= 13.52 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (8348) CONTROLTASK: Pcur= -4.79 Rcur= 25.72 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (9348) CONTROLTASK: Pcur= -4.69 Rcur= 10.47 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (10348) CONTROLTASK: Pcur= -6.74 Rcur=  0.30 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (11348) CONTROLTASK: Pcur=-12.32 Rcur=  4.11 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12348) CONTROLTASK: Pcur= -9.69 Rcur=-13.42 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13348) CONTROLTASK: Pcur= -8.04 Rcur=-15.51 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (14348) CONTROLTASK: Pcur=-14.94 Rcur=  9.44 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (15348) CONTROLTASK: Pcur=-12.71 Rcur=  7.78 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (16348) CONTROLTASK: Pcur= -6.11 Rcur=  3.34 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (17348) CONTROLTASK: Pcur= -5.45 Rcur=  2.82 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (18348) CONTROLTASK: Pcur= -5.45 Rcur=  3.07 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (19348) CONTROLTASK: Pcur= -5.37 Rcur=  3.03 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (20348) CONTROLTASK: Pcur= -5.33 Rcur=  3.03 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21348) CONTROLTASK: Pcur= -5.37 Rcur=  2.98 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22348) CONTROLTASK: Pcur= -5.30 Rcur=  2.89 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (23348) CONTROLTASK: Pcur= -5.17 Rcur=  2.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24348) CONTROLTASK: Pcur= -5.19 Rcur=  2.96 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25348) CONTROLTASK: Pcur= -5.17 Rcur=  2.93 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26348) CONTROLTASK: Pcur= -5.14 Rcur=  2.82 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27348) CONTROLTASK: Pcur= -5.13 Rcur=  2.99 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (28348) CONTROLTASK: Pcur= -5.06 Rcur=  2.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29348) CONTROLTASK: Pcur= -5.05 Rcur=  2.90 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30348) CONTROLTASK: Pcur= -4.97 Rcur=  2.91 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31348) CONTROLTASK: Pcur= -5.03 Rcur=  2.85 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32348) CONTROLTASK: Pcur= -4.97 Rcur=  2.92 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33348) CONTROLTASK: Pcur= -4.93 Rcur=  2.92 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34348) CONTROLTASK: Pcur= -4.85 Rcur=  2.87 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35348) CONTROLTASK: Pcur= -4.87 Rcur=  3.01 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36348) CONTROLTASK: Pcur= -4.87 Rcur=  2.74 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (37348) CONTROLTASK: Pcur=-38.59 Rcur=  8.80 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (38348) CONTROLTASK: Pcur=  5.27 Rcur=  9.35 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (39348) CONTROLTASK: Pcur=-37.13 Rcur= 14.18 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (40348) CONTROLTASK: Pcur=-26.72 Rcur= 20.52 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (41348) CONTROLTASK: Pcur=  7.68 Rcur= 18.59 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (42348) CONTROLTASK: Pcur= -4.49 Rcur= 17.09 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (43348) CONTROLTASK: Pcur= -6.13 Rcur=  7.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (44348) CONTROLTASK: Pcur=-10.67 Rcur= 11.34 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (45348) CONTROLTASK: Pcur=-18.07 Rcur= 29.29 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (46348) CONTROLTASK: Pcur=-29.67 Rcur= 49.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (47348) CONTROLTASK: Pcur=-33.28 Rcur= 53.72 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (48348) CONTROLTASK: Pcur=-23.48 Rcur= 47.99 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (49348) CONTROLTASK: Pcur=-27.45 Rcur= 54.17 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (50348) CONTROLTASK: Pcur=  6.97 Rcur=  5.54 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (51348) CONTROLTASK: Pcur= -0.92 Rcur=  0.99 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (52348) CONTROLTASK: Pcur= -4.08 Rcur=  0.10 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (53348) CONTROLTASK: Pcur= -4.25 Rcur=  0.18 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (54348) CONTROLTASK: Pcur= -4.42 Rcur=  0.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (55348) CONTROLTASK: Pcur= -3.30 Rcur=  1.64 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (56348) CONTROLTASK: Pcur= -5.63 Rcur= -2.19 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (57348) CONTROLTASK: Pcur= -1.78 Rcur=  1.99 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (58348) CONTROLTASK: Pcur= -9.77 Rcur= 10.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (59348) CONTROLTASK: Pcur=-19.47 Rcur= 31.69 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (60348) CONTROLTASK: Pcur=-32.69 Rcur= 44.89 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (61348) CONTROLTASK: Pcur=-33.22 Rcur= 59.26 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (62348) CONTROLTASK: Pcur=-25.52 Rcur= 49.63 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (63348) CONTROLTASK: Pcur=-34.90 Rcur= 60.32 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (64348) CONTROLTASK: Pcur=-18.94 Rcur= 27.31 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (65348) CONTROLTASK: Pcur=-21.95 Rcur= 11.25 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (66348) CONTROLTASK: Pcur= -7.56 Rcur= -5.59 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (67348) CONTROLTASK: Pcur=-13.05 Rcur= -0.97 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (68348) CONTROLTASK: Pcur=-11.38 Rcur= -2.49 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (69348) CONTROLTASK: Pcur=-10.94 Rcur= -3.23 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (70348) CONTROLTASK: Pcur= -7.75 Rcur= -2.24 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (71348) CONTROLTASK: Pcur=-10.63 Rcur=  3.50 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (72348) CONTROLTASK: Pcur=-13.58 Rcur= 10.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (73348) CONTROLTASK: Pcur= -8.55 Rcur= -0.72 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (74348) CONTROLTASK: Pcur= -2.49 Rcur=  6.50 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (75348) CONTROLTASK: Pcur= -1.47 Rcur= 15.94 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (76348) CONTROLTASK: Pcur= -6.92 Rcur=  3.04 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (77348) CONTROLTASK: Pcur= -1.17 Rcur=  3.64 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (78348) CONTROLTASK: Pcur= -1.23 Rcur=  3.26 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (79348) CONTROLTASK: Pcur= -1.27 Rcur=  3.26 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (80348) CONTROLTASK: Pcur= -1.19 Rcur=  3.25 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (81348) CONTROLTASK: Pcur= -1.21 Rcur=  3.28 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (82348) CONTROLTASK: Pcur= -1.16 Rcur=  3.21 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (83348) CONTROLTASK: Pcur= -1.13 Rcur=  3.11 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (84348) CONTROLTASK: Pcur= -1.11 Rcur=  3.22 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (85348) CONTROLTASK: Pcur= -1.03 Rcur=  3.30 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (86348) CONTROLTASK: Pcur= -1.04 Rcur=  3.24 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (87348) CONTROLTASK: Pcur= -0.94 Rcur=  3.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (88348) CONTROLTASK: Pcur= -1.00 Rcur=  3.10 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (89348) CONTROLTASK: Pcur= -0.97 Rcur=  3.22 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (90348) CONTROLTASK: Pcur= -0.94 Rcur=  3.25 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (91348) CONTROLTASK: Pcur= -0.96 Rcur=  3.45 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (92348) CONTROLTASK: Pcur= -3.55 Rcur=  1.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (93348) CONTROLTASK: Pcur= -3.63 Rcur=  1.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (94348) CONTROLTASK: Pcur= -2.99 Rcur= -0.21 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (95348) CONTROLTASK: Pcur= -1.27 Rcur=  2.92 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (96348) CONTROLTASK: Pcur= -3.74 Rcur=  1.43 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (97348) CONTROLTASK: Pcur= -2.42 Rcur=  2.11 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (98348) CONTROLTASK: Pcur= -1.47 Rcur=  2.59 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (99348) CONTROLTASK: Pcur= -1.42 Rcur=  2.64 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (100348) CONTROLTASK: Pcur= -1.37 Rcur=  2.71 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (101348) CONTROLTASK: Pcur= -1.36 Rcur=  2.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (102348) CONTROLTASK: Pcur= -1.32 Rcur=  2.63 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (103348) CONTROLTASK: Pcur= -1.31 Rcur=  2.71 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (104348) CONTROLTASK: Pcur= -1.31 Rcur=  2.65 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (105348) CONTROLTASK: Pcur= -1.30 Rcur=  2.67 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (106348) CONTROLTASK: Pcur= -1.24 Rcur=  2.72 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (107348) CONTROLTASK: Pcur= -1.25 Rcur=  2.84 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (108348) CONTROLTASK: Pcur= -1.24 Rcur=  2.64 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (109348) CONTROLTASK: Pcur= -1.23 Rcur=  2.65 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (110348) CONTROLTASK: Pcur= -1.23 Rcur=  2.68 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (111348) CONTROLTASK: Pcur= -1.17 Rcur=  2.62 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (112348) CONTROLTASK: Pcur= -1.17 Rcur=  2.70 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (113348) CONTROLTASK: Pcur= -1.13 Rcur=  2.73 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (114348) CONTROLTASK: Pcur= -1.13 Rcur=  2.76 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (115348) CONTROLTASK: Pcur= -1.14 Rcur=  2.70 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (116348) CONTROLTASK: Pcur= -1.15 Rcur=  2.73 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (117348) CONTROLTASK: Pcur= -1.14 Rcur=  2.78 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (118348) CONTROLTASK: Pcur= -1.09 Rcur=  2.72 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (119348) CONTROLTASK: Pcur= -1.10 Rcur=  2.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (120348) CONTROLTASK: Pcur= -1.06 Rcur=  2.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (121348) CONTROLTASK: Pcur= -1.07 Rcur=  2.63 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (122348) CONTROLTASK: Pcur= -1.03 Rcur=  2.58 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (123348) CONTROLTASK: Pcur= -1.00 Rcur=  2.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (124348) CONTROLTASK: Pcur= -2.65 Rcur=  1.70 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (125348) CONTROLTASK: Pcur= -1.90 Rcur= -1.89 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (126348) CONTROLTASK: Pcur= -2.15 Rcur= -1.20 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (127348) CONTROLTASK: Pcur= -2.42 Rcur= -0.60 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (128348) CONTROLTASK: Pcur= -1.69 Rcur=  2.18 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (129348) CONTROLTASK: Pcur= -1.61 Rcur=  2.14 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (130348) CONTROLTASK: Pcur= -1.55 Rcur=  2.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (131348) CONTROLTASK: Pcur= -1.57 Rcur=  2.05 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (132348) CONTROLTASK: Pcur= -1.50 Rcur=  2.05 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (133348) CONTROLTASK: Pcur= -1.44 Rcur=  2.16 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (134348) CONTROLTASK: Pcur= -1.45 Rcur=  2.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (135348) CONTROLTASK: Pcur= -1.45 Rcur=  2.19 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (136348) CONTROLTASK: Pcur= -1.40 Rcur=  2.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (137348) CONTROLTASK: Pcur= -1.37 Rcur=  2.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (138348) CONTROLTASK: Pcur= -1.25 Rcur=  2.28 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (139348) CONTROLTASK: Pcur= -1.25 Rcur=  2.34 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (140348) CONTROLTASK: Pcur= -1.22 Rcur=  2.24 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (141348) CONTROLTASK: Pcur= -1.23 Rcur=  2.19 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (142348) CONTROLTASK: Pcur= -1.18 Rcur=  2.17 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (143348) CONTROLTASK: Pcur= -1.15 Rcur=  2.23 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (144348) CONTROLTASK: Pcur= -1.18 Rcur=  2.23 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (145348) CONTROLTASK: Pcur= -1.29 Rcur=  2.64 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (146348) CONTROLTASK: Pcur= -1.80 Rcur=  3.74 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (147348) CONTROLTASK: Pcur= -1.33 Rcur=  3.95 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (148348) CONTROLTASK: Pcur= -2.36 Rcur=  3.51 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (149348) CONTROLTASK: Pcur= -2.81 Rcur=  3.23 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (150348) CONTROLTASK: Pcur= -0.93 Rcur=  3.84 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (151348) CONTROLTASK: Pcur=  3.17 Rcur=  5.47 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (152348) CONTROLTASK: Pcur= -2.63 Rcur=  4.79 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (153348) CONTROLTASK: Pcur= -4.98 Rcur=  1.32 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (154348) CONTROLTASK: Pcur= -7.68 Rcur=  5.95 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (155348) CONTROLTASK: Pcur=  0.43 Rcur= 24.96 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (156348) CONTROLTASK: Pcur=-16.82 Rcur= 33.99 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (157348) CONTROLTASK: Pcur=-23.33 Rcur= 20.27 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (172) cpu_start: GPIO 20 and 21 are used as console UART I/O pI (4364) CONTROLTASK: Pcur=  5.76 Rcur=  4.23 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (5364) CONTROLTASK: Pcur=  5.83 Rcur=  4.70 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (6364) CONTROLTASK: Pcur=  5.96 Rcur=  4.74 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (7364) CONTROLTASK: Pcur=  6.13 Rcur=  4.88 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (8364) CONTROLTASK: Pcur=  6.23 Rcur=  4.97 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (9364) CONTROLTASK: Pcur=  6.30 Rcur=  4.98 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (10364) CONTROLTASK: Pcur=  6.39 Rcur=  5.18 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (11364) CONTROLTASK: Pcur=  6.45 Rcur=  5.15 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (12364) CONTROLTASK: Pcur=  6.49 Rcur=  5.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (13364) CONTROLTASK: Pcur=  6.55 Rcur=  5.05 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (14364) CONTROLTASK: Pcur=  6.59 Rcur=  5.09 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (15364) CONTROLTASK: Pcur=  6.64 Rcur=  5.03 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (16364) CONTROLTASK: Pcur=  6.68 Rcur=  5.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (17364) CONTROLTASK: Pcur=  6.74 Rcur=  5.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (18364) CONTROLTASK: Pcur=  6.86 Rcur=  5.19 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (19364) CONTROLTASK: Pcur=  6.86 Rcur=  5.16 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (20364) CONTROLTASK: Pcur=  6.93 Rcur=  5.14 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (21364) CONTROLTASK: Pcur=  6.95 Rcur=  5.01 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (22364) CONTROLTASK: Pcur=  6.98 Rcur=  5.06 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (23364) CONTROLTASK: Pcur=  7.01 Rcur=  5.07 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (24364) CONTROLTASK: Pcur=  7.06 Rcur=  5.12 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (25364) CONTROLTASK: Pcur=  7.11 Rcur=  5.02 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (26364) CONTROLTASK: Pcur=  7.17 Rcur=  5.07 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (27364) CONTROLTASK: Pcur=  7.19 Rcur=  5.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (28364) CONTROLTASK: Pcur=  7.20 Rcur=  5.13 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (29364) CONTROLTASK: Pcur=  7.25 Rcur=  5.02 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (30364) CONTROLTASK: Pcur=  6.53 Rcur=  4.38 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (31364) CONTROLTASK: Pcur=  6.38 Rcur=  4.40 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (32364) CONTROLTASK: Pcur=  6.70 Rcur=  4.68 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (33364) CONTROLTASK: Pcur=  6.70 Rcur=  4.64 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (34364) CONTROLTASK: Pcur=  6.77 Rcur=  4.77 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (35364) CONTROLTASK: Pcur=  6.75 Rcur=  4.66 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (36364) CONTROLTASK: Pcur=  6.64 Rcur=  4.39 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (37364) CONTROLTASK: Pcur=  6.57 Rcur=  4.42 Ptgt=  0.00 Rtgt=  0.00[0m
+[0;32mI (38364) CONTROLTASK: Pcur=  6.71 Rcur=  4.61 Ptgt=  0.00 Rtgt=  0.00[0m
