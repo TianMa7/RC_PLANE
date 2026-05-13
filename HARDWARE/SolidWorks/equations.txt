@@ -1,0 +1,4 @@
+﻿"tunnel_diameter"= 4mm
+"attachment_surface_length"= 16mm
+"D1@Tunnel Start"="tunnel_diameter"
+"D2@Tunnel Start"="attachment_surface_length"*1.25
