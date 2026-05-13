@@ -11,7 +11,8 @@
 | **Weight** | 837g |
 | **Motor** | 2212 1400kv BLDC Motor |
 | **Battery** | 3S 2200 mAh LIPO |
-| **Material Cost** | TIAN SAY THIS | [Materials List]
+| **Material Cost** | $157 CAD |
+| **Materials List** | [Excel Sheet](HARDWARE/RC Plane - Major Item List.xlsx)
 
 ---
 
@@ -24,7 +25,7 @@
 ### 💻 Systems & Integration
 * **Scope:** Development of electronics and control software capable of producing stable, controllable flight for plane. Controls are fly-by-wire for pitch and roll, and raw input for raw. Communication between radio rx/tx was beyond the scope of the project.
 * **Control Logic:** RTOS Implementation of a PID-based control loop taking input from blended IMU data with Mahony filter as well as user input from rc controller. Uses PID loop to maintain stability when external forces are acting upon it
-* **Electronics:** Protoboard containing esp32c3, lsm6ds3, and other components. Controlled a BLDC motor as well as 3 MG90s Servos. A full material list and breakdown can be found here.
+* **Electronics:** Protoboard containing esp32c3, lsm6ds3, and other components. Controlled a BLDC motor as well as 3 MG90s Servos. A full material list and breakdown can be found [HERE](HARDWARE/RC Plane - Major Item List.xlsx).
 
 ### 🚀 Validation & Flight Results
 * **Pre-Flight:** Aircraft was 16% below maximum calculated weight. Static thrust and controls testing validated structural integrity of the body as well as the electronics. 
