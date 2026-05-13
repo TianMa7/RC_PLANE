@@ -6,12 +6,12 @@
 ### 📋 Technical Specifications
 | Category | Metric |
 | :--- | :--- |
-| **Wingspan** | HUNTA SAY THIS |
+| **Wingspan** | 99.25cm |
 | **Airfoil** | HUNTA SAY THIS |
 | **Weight** | 837g |
 | **Motor** | 2212 1400kv BLDC Motor |
-| **Battery** | 3S 2200 MAH LIPO |
-| **Material Cost** | TIAN SAY THIS | Excel PO List
+| **Battery** | 3S 2200 mAh LIPO |
+| **Material Cost** | TIAN SAY THIS | [Materials List]
 
 ---
 
