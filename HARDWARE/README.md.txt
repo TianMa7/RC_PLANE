@@ -1,1 +1,0 @@
-Section detailing Hardware development for the project
