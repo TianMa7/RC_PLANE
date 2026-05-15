@@ -7,7 +7,7 @@
 | Category | Metric |
 | :--- | :--- |
 | **Wingspan** | 99.25cm |
-| **Airfoil** | HUNTA SAY THIS |
+| **Airfoil** | NACA 2412 |
 | **Weight** | 837g |
 | **Motor** | 2212 1400kv BLDC Motor |
 | **Battery** | 3S 2200 mAh LIPO |
@@ -17,10 +17,9 @@
 ---
 
 ### 🛠️ Design & Aerodynamics
-* **Research & Development:** Selection of the NACA 2412 airfoil was driven by the need for a stable lift-to-drag ratio across a variety of Reynolds numbers suitable for small-scale RC flight.[cite: 1]
-* **Simulation (CFD):** Aerodynamic performance was verified through Computational Fluid Dynamics to analyze stall characteristics and pressure distribution across the 80cm span.[cite: 1]
-* **Mechanical (CAD):** The structural architecture was developed using a hybrid approach, combining precision 3D-printed components with lightweight XPS foam.[cite: 1]
-* **Fabrication:**
+* **Research & Development:** Selection of the NACA 2412 airfoil was driven by the need for a stable lift-to-drag ratio across a variety of Reynolds numbers suitable for small-scale RC flight. Pull-Pull control systems were implemented to reduce and optimize weight distribution.
+* **Simulation (CFD):** Star-CCM+ CFD was used to validate design choices and identnitfy potential changes. It was also used to calculate the aerodynamic balance point to determine weight distribution.
+* **Mechanical (CAD):** SolidWorks was used to model the aircraft and internal components. Designs were orignially conisdered to be a combination of laser cut balsa wood, composite construction, and 3d printing. Project was gradually descoped to 3d prinitng and componsite components to save manufacturing time and complexity.
 
 ### 💻 Systems & Integration
 * **Scope:** Development of electronics and control software capable of producing stable, controllable flight for plane. Controls are fly-by-wire for pitch and roll, and raw input for raw. Communication between radio rx/tx was beyond the scope of the project.
