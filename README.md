@@ -35,12 +35,27 @@
 
 ### 📷 Photos & Videos
 
+#### Photos
 <table>
   <tr>
     <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6453.JPG" width="100%" alt="Plane Photo 1"></td>
     <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6507.JPG" width="100%" alt="Plane Photo 2"></td>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6516.JPG" width="100%" alt="Plane Photo 3"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6508.JPG" width="100%" alt="Plane Photo 3"></td>
   </tr>
+  <tr>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6516.JPG" width="100%" alt="Plane Photo 4"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6520.JPG" width="100%" alt="Plane Photo 5"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6551.JPG" width="100%" alt="Plane Photo 6"></td>
+  </tr>
+  <tr>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6554.JPG" width="100%" alt="Plane Photo 7"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_8495.jpeg" width="100%" alt="Plane Photo 8"></td>
+    <td width="33%"></td>
+  </tr>
+</table>
+
+#### Videos
+<table>
   <tr>
     <td width="33%">
       <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Flight%20Test.mov" width="100%" controls></video>
