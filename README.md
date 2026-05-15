@@ -35,15 +35,27 @@
 
 ### 📷 Photos & Videos
 
-**Photos:**
-![Plane Photo 1](R&D/Photos%20&%20Videos/IMG_6453.JPG)
-![Plane Photo 2](R&D/Photos%20&%20Videos/IMG_6507.JPG)
-![Plane Photo 3](R&D/Photos%20&%20Videos/IMG_6516.JPG)
-
-**Videos:**
-- [Flight Test](R&D/Photos%20&%20Videos/Flight%20Test.mov)
-- [Auto Balancing Test](R&D/Photos%20&%20Videos/Auto_Balancing_Test.mov)
-- [Ailerons Test](R&D/Photos%20&%20Videos/Ailerons_Test.mov)
+<table>
+  <tr>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6453.JPG" width="100%" alt="Plane Photo 1"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6507.JPG" width="100%" alt="Plane Photo 2"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6516.JPG" width="100%" alt="Plane Photo 3"></td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Flight%20Test.mov" width="100%" controls></video>
+      <br><em>Flight Test</em>
+    </td>
+    <td width="33%">
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Auto_Balancing_Test.mov" width="100%" controls></video>
+      <br><em>Auto Balancing Test</em>
+    </td>
+    <td width="33%">
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Ailerons_Test.mov" width="100%" controls></video>
+      <br><em>Ailerons Test</em>
+    </td>
+  </tr>
+</table>
 
 ---
 *Developed by Tian Ma, Hunter Liu, Andrew Poon*
