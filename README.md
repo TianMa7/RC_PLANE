@@ -1,5 +1,12 @@
 # Fixed-Wing RC Aircraft
 
+<table>
+  <tr>
+    <td width="50%"><video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/360%20plane.mp4" width="100%" controls></video></td>
+    <td width="50%"><video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Plane%20Rotation.mp4" width="100%" controls></video></td>
+  </tr>
+</table>
+
 ## ✈️ Summary and Takeaways
 **Mission Goal:** Design and fly an RC Aircraft capable of fly-by-wire controls and stable flight. Learn about nuances of designing systems capable of withstanding the complex dynamics of flight. 
 
@@ -17,6 +24,19 @@
 ---
 
 ### 🛠️ Design & Aerodynamics
+<table>
+  <tr>
+    <td width="50%">
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Vorticity_X_Sweep.mp4" width="100%" controls></video>
+      <br><em>Vorticity X Sweep</em>
+    </td>
+    <td width="50%">
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Velocity_Y_Sweep.mp4" width="100%" controls></video>
+      <br><em>Velocity Y Sweep</em>
+    </td>
+  </tr>
+</table>
+
 * **Research & Development:** Selection of the NACA 2412 airfoil was driven by the need for a stable lift-to-drag ratio across a variety of Reynolds numbers suitable for small-scale RC flight. Pull-Pull control systems were implemented to reduce and optimize weight distribution.
 * **Simulation (CFD):** Star-CCM+ CFD was used to validate design choices and identify potential changes. It was also used to calculate the aerodynamic balance point to determine weight distribution.
 * **Mechanical (CAD):** SolidWorks was used to model the aircraft and internal components. Designs were originally considered to be a combination of laser cut balsa wood, composite construction, and 3D printing. Project was gradually descoped to 3D printing and composite components to save manufacturing time and complexity.
@@ -33,44 +53,40 @@
 
 ---
 
-### 📷 Photos & Videos
+### 📷 Media Gallery
 
-#### Photos
 <table>
   <tr>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6453.JPG" width="100%" alt="Plane Photo 1"></td>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6507.JPG" width="100%" alt="Plane Photo 2"></td>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6508.JPG" width="100%" alt="Plane Photo 3"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Andrew_Plane.jpeg" width="100%" alt="Andrew Plane"><br><em>Andrew Plane</em></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Crashed_Plane.JPG" width="100%" alt="Crashed Plane"><br><em>Crashed Plane</em></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Finished_Plane.jpeg" width="100%" alt="Finished Plane"><br><em>Finished Plane</em></td>
   </tr>
   <tr>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6516.JPG" width="100%" alt="Plane Photo 4"></td>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6520.JPG" width="100%" alt="Plane Photo 5"></td>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6551.JPG" width="100%" alt="Plane Photo 6"></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Group_Plane.jpeg" width="100%" alt="Group Plane"><br><em>Group Plane</em></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Hunter_Plane.jpeg" width="100%" alt="Hunter Plane"><br><em>Hunter Plane</em></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/ProtoBoard.jpeg" width="100%" alt="Protoboard"><br><em>Protoboard</em></td>
   </tr>
   <tr>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_6554.JPG" width="100%" alt="Plane Photo 7"></td>
-    <td width="33%"><img src="R&D/Photos%20&%20Videos/IMG_8495.jpeg" width="100%" alt="Plane Photo 8"></td>
-    <td width="33%"></td>
-  </tr>
-</table>
-
-#### Videos
-<table>
-  <tr>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Servo_Mount.jpeg" width="100%" alt="Servo Mount"><br><em>Servo Mount</em></td>
+    <td width="33%"><img src="R&D/Photos%20&%20Videos/Tian_Plane.jpeg" width="100%" alt="Tian Plane"><br><em>Tian Plane</em></td>
     <td width="33%">
-      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Flight%20Test.mov" width="100%" controls></video>
-      <br><em>Flight Test</em>
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Ailerons_Test.mp4" width="100%" controls></video>
+      <br><em>Ailerons Test</em>
     </td>
+  </tr>
+  <tr>
     <td width="33%">
-      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Auto_Balancing_Test.mov" width="100%" controls></video>
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Auto_Balancing_Test.mp4" width="100%" controls></video>
       <br><em>Auto Balancing Test</em>
     </td>
     <td width="33%">
-      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R&D/Photos%20&%20Videos/Ailerons_Test.mov" width="100%" controls></video>
-      <br><em>Ailerons Test</em>
+      <video src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Flight%20Test.mp4" width="100%" controls></video>
+      <br><em>Flight Test</em>
     </td>
+    <td width="33%"></td>
   </tr>
 </table>
 
 ---
 *Developed by Tian Ma, Hunter Liu, Andrew Poon*
+
