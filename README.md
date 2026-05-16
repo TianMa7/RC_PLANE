@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/360%20plane.gif" width="100%"></td>
-    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Plane%20Rotation.gif" width="100%"></td>
+    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/360%20overview.gif" width="100%"></td>
+    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/solidworks360.gif" width="100%"></td>
   </tr>
 </table>
 
@@ -27,11 +27,11 @@
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Vorticity_X_Sweep.gif" width="100%">
+      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/vorticity%20sweep.gif" width="100%">
       <br><em>Vorticity X Sweep</em>
     </td>
     <td width="50%">
-      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Velocity_Y_Sweep.gif" width="100%">
+      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/velocity%20sweep.gif" width="100%">
       <br><em>Velocity Y Sweep</em>
     </td>
   </tr>
@@ -70,17 +70,17 @@
     <td width="33%"><img src="R&D/Photos%20&%20Videos/Servo_Mount.jpeg" width="100%" alt="Servo Mount"><br><em>Servo Mount</em></td>
     <td width="33%"><img src="R&D/Photos%20&%20Videos/Tian_Plane.jpeg" width="100%" alt="Tian Plane"><br><em>Tian Plane</em></td>
     <td width="33%">
-      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Ailerons_Test.gif" width="100%">
+      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/control%20surface%20test.gif" width="100%">
       <br><em>Ailerons Test</em>
     </td>
   </tr>
   <tr>
     <td width="33%">
-      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Auto_Balancing_Test.gif" width="100%">
+      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/pid%20test.gif" width="100%">
       <br><em>Auto Balancing Test</em>
     </td>
     <td width="33%">
-      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Flight%20Test.gif" width="100%">
+      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/flight%20test.gif" width="100%">
       <br><em>Flight Test</em>
     </td>
     <td width="33%"></td>
