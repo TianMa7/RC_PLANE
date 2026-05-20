@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/360%20overview.gif" width="100%"></td>
+    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Full_Plane_WSS.png" width="100%"></td>
     <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/solidworks360.gif" width="100%"></td>
   </tr>
 </table>
@@ -83,10 +83,12 @@
       <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/flight%20test.gif" width="100%">
       <br><em>Flight Test</em>
     </td>
-    <td width="33%"></td>
+    <td width="33%">
+      <img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/360%20overview.gif" width="100%">
+      <br><em>360 Overview</em>
+    </td>
   </tr>
 </table>
 
 ---
 *Developed by Tian Ma, Hunter Liu, Andrew Poon*
-
