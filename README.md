@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Full_Plane_WSS.png" width="100%"></td>
+    <td width="21.25%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/Full_Plane_WSS.png" width="100%"></td>
     <td width="50%"><img src="https://github.com/TianMa7/RC_PLANE/raw/master/R%26D/Photos%20%26%20Videos/solidworks360.gif" width="100%"></td>
   </tr>
 </table>
